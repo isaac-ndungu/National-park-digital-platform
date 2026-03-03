@@ -3,15 +3,14 @@
         {
             "id": "maasai-mara",
             "name": "Maasai Mara National Reserve",
-            "county": "Narok County",
-            "description": "Experience the great migration and see the Big Five in their natural habitat.",
+            "description": "Maasai Mara (Masai Mara) is situated in south-west Kenya and is one of Africa’s Greatest Wildlife Reserves. It is named in honor of the Maasai people, the ancestral inhabitants of the area, and the Mara River that runs through it. The reserve is renowned for its exceptional population of lions, leopards, cheetahs, elephants, and the annual migration of wildebeest and zebras. The Maasai Mara offers a quintessential African safari experience with its vast savannahs, diverse wildlife, and stunning landscapes.",
             "thumbnailImage": "assets/maasai-mara/mara-thumbnail.png",
             "galleryImages": [
                 "assets/maasai-mara/mara-1.png",
                 "assets/maasai-mara/mara-2.png",
                 "assets/maasai-mara/mara-3.png"
             ],
-            "WildlifeHighlights": [
+            "wildlifeHighlights": [
                 {
                     "name": "Lions",
                     "image": "assets/maasai-mara/lion.png"},
@@ -25,6 +24,144 @@
                     "name": "Wildebeests",
                     "image": "assets/maasai-mara/wildebeest.png"}
             ],
+            "activities": [
+                {
+                    "id": "game-drive",
+                    "name": "Game Drive",
+                    "image": "assets/maasai-mara/game-drive.png"},
+                {
+                    "id": "balloon-safari",
+                    "name": "Hot Air Balloon Safari",
+                    "image": "assets/maasai-mara/balloon.png"},
+                {
+                    "id": "cultural-visit",
+                    "name": "Maasai Cultural Visit",
+                    "image": "assets/maasai-mara/culture.png"}
+             ],
+             "entryFees": {
+                "kenyan": [
+                    {
+                        "category": "Adult",
+                        "fee": 1500
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 300
+                    }
+                ],
+                "eastAfrican": [
+                    {
+                        "category": "Adult",
+                        "fee": 2500
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 1000
+                    }
+                ],
+                "noneResident": [
+                    {
+                        "category": "Adult",
+                        "fee": 12000
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 5000
+                    }
+                ]
+             },
+
+             "lodges": [
+                {
+                    "id": "alan-walker-camp",
+                    "name": "Alan Walker Serian Camp",
+                    "type": "Tented Camp",
+                    "rank": "Luxury+",
+                    "heroImage": "assets/maasai-mara/alan-walker/alan-hero.png",
+                    "description": "Experience the ultimate in luxury and comfort at Alan Walker Serian Camp.",
+                    "gallery": [
+                        "assets/maasai-mara/alan-walker/alan-1.png",
+                        "assets/maasai-mara/alan-walker/alan-2.png"
+                    ],
+                    "ecoRating": 4.5,
+                    "rooms": [
+                        {
+                            "id": "standard",
+                            "name": "Standard Tent",
+                            "capacity": 2,
+                            "basePrice": 10000,
+                            "totalRooms": 5
+                        },
+                        {
+                            "id": "luxury",
+                            "name": "Luxury Tent",
+                            "capacity": 4,
+                            "basePrice": 18000,
+                            "totalRooms": 3
+                        }
+                     ]
+
+                },
+                {
+                    "id": "spirit-of-the-mara",
+                    "name": "Spirit of the Maasai Mara",
+                    "type": "Lodge",
+                    "rank": "Luxury",
+                    "heroImage": "assets/maasai-mara/spirit-of-the-mara/spirit-hero.png",
+                    "description": "Enjoy breathtaking views and exceptional service at Mara Serena Safari Lodge.",
+                    "gallery": [
+                        "assets/maasai-mara/spirit-of-the-mara/spirit-1.png",
+                        "assets/maasai-mara/spirit-of-the-mara/spirit-2.png"
+                    ],
+                    "ecoRating": 4.0,
+                    "rooms": [
+                        {
+                            "id": "standard",
+                            "name": "Standard Room",
+                            "capacity": 2,
+                            "basePrice": 56000,
+                            "totalRooms": 10
+                        },
+                        {
+                            "id": "deluxe",
+                            "name": "Deluxe Room",
+                            "capacity": 4,
+                            "basePrice": 80000,
+                            "totalRooms": 5
+                        }
+                     ]
+
+                 },
+                 {
+                    "id": "Entumoto-safari-camp",
+                    "name": "Entumoto Safari Camp",
+                    "type": "Tented Camp",
+                    "rank": "Mid-Range",
+                    "heroImage": "assets/maasai-mara/entumoto/entumoto-hero.png",
+                    "description": "Experience the perfect blend of comfort and nature at Entumoto Safari Camp.",
+                    "gallery": [
+                        "assets/maasai-mara/entumoto/entumoto-1.png",
+                        "assets/maasai-mara/entumoto/entumoto-2.png"
+                    ], 
+                    "ecoRating": 3.5,
+                    "rooms": [
+                        {
+                            "id": "main",
+                            "name": "Standard Tent",
+                            "capacity": 6,
+                            "basePrice": 8000,
+                            "totalRooms": 3
+                        },
+                        {
+                            "id": "toto",
+                            "name": "Family Tent",
+                            "capacity": 4,
+                            "basePrice": 15000,
+                            "totalRooms": 5
+                        }
+                     ]
+                 }
+             ]
         }
     ]
 }
