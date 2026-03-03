@@ -1,0 +1,30 @@
+{
+    "parks": [
+        {
+            "id": "maasai-mara",
+            "name": "Maasai Mara National Reserve",
+            "county": "Narok County",
+            "description": "Experience the great migration and see the Big Five in their natural habitat.",
+            "thumbnailImage": "assets/maasai-mara/mara-thumbnail.png",
+            "galleryImages": [
+                "assets/maasai-mara/mara-1.png",
+                "assets/maasai-mara/mara-2.png",
+                "assets/maasai-mara/mara-3.png"
+            ],
+            "WildlifeHighlights": [
+                {
+                    "name": "Lions",
+                    "image": "assets/maasai-mara/lion.png"},
+                {
+                    "name": "Elephants",
+                    "image": "assets/maasai-mara/elephant.png"},
+                {
+                    "name": "Cheetahs",
+                    "image": "assets/maasai-mara/cheetah.png"},
+                {
+                    "name": "Wildebeests",
+                    "image": "assets/maasai-mara/wildebeest.png"}
+            ],
+        }
+    ]
+}
