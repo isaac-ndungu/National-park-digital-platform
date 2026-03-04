@@ -335,4 +335,174 @@
                 }
             ]
         },
+        {
+            "id": "amboseli-national-park",
+            "name": "Amboseli National Park",
+            "description": "Renowned for large elephant herds and spectacular views of Mount Kilimanjaro.",
+            "thumbnailImage": "assets/amboseli/amboseli-thumbnail.png",
+            "heroImage": "assets/amboseli/amboseli-hero.png",
+            "galleryImages": [
+                "assets/amboseli/amboseli-1.png",
+                "assets/amboseli/amboseli-2.png",
+                "assets/amboseli/amboseli-3.png"
+            ],
+            "wildlifeHighlights": [
+                {
+                    "name": "Elephants",
+                    "image": "assets/amboseli/elephant.png"
+                },
+                {
+                    "name": "Lions",
+                    "image": "assets/amboseli/lion.png"
+                },
+                {
+                    "name": "Cheetahs",
+                    "image": "assets/amboseli/cheetah.png"
+                },
+                {
+                    "name": "Buffaloes",
+                    "image": "assets/amboseli/buffalo.png"
+                }
+            ],
+            "activities": [
+                {
+                    "id": "night-game-drive",
+                    "name": "Night Game Drive",
+                    "image": "assets/amboseli/night-game-drive.png"
+                },
+                {
+                    "id": "bird-watching",
+                    "name": "Bird Watching",
+                    "image": "assets/amboseli/birding.png"
+                },
+                {
+                    "id": "hot-air-balloon",
+                    "name": "Hot Air Balloon Ride",
+                    "image": "assets/amboseli/balloon.png"
+                }
+            ],
+            "entryFees": {
+                "kenyan": [
+                    {
+                        "category": "Adult",
+                        "fee": 1200
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 600
+                    }
+                ],
+                "eastAfrican": [
+                    {
+                        "category": "Adult",
+                        "fee": 2000
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 1000
+                    }
+                ],
+                "noneResident": [
+                    {
+                        "category": "Adult",
+                        "fee": 10000
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 5000
+                    }
+                ]
+            },
+            "lodges": [
+                {
+                    "id": "elerai-camp",
+                    "name": "Elerai Camp",
+                    "type": "Tented Camp",
+                    "rank": "Mid-Range",
+                    "heroImage": "assets/amboseli/elerai/elerai-hero.png",
+                    "description": "Elerai Camp is located in a quiet, unspoilt, unique setting on a 5000-acre private conservation area 12 kms south east of Amboseli.",
+                    "gallery": [
+                        "assets/amboseli/elerai/elerai-1.png",
+                        "assets/amboseli/elerai/elerai-2.png"
+                    ],
+                    "ecoRating": 4.0,
+                    "rooms": [
+                        {
+                            "id": "deluxe",
+                            "name": "Deluxe Tent",
+                            "capacity": 2,
+                            "basePrice": 26000,
+                            "totalRooms": 10
+                        },
+                        {
+                            "id": "cottage",
+                            "name": "Cottage Tent",
+                            "capacity": 4,
+                            "basePrice": 49000,
+                            "totalRooms": 5
+                        }
+                    ]
+                }
+                {
+                    "id": "Tortilis Camp",
+                    "name": "Tortilis Camp",
+                    "type": "Tented Camp",
+                    "rank": "Luxury+",
+                    "heroImage": "assets/amboseli/tortilis/tortilis-hero.png",
+                    "description": "Tortilis Camp is named after the flat-topped, umbrella thorn tree, the Acacia Tortilis, and is situated in one of Amboseli’s areas of Acacia",
+                    "gallery": [
+                        "assets/amboseli/tortilis/tortilis-1.png",
+                        "assets/amboseli/tortilis/tortilis-2.png"
+                    ],
+                    "ecoRating": 4.5,
+                    "rooms": [
+                        {
+                            "id": "deluxe",
+                            "name": "Deluxe Tent",
+                            "capacity": 2,
+                            "basePrice": 30000,
+                            "totalRooms": 8
+                        },
+                        {
+                            "id": "cottage",
+                            "name": "Cottage Tent",
+                            "capacity": 4,
+                            "basePrice": 55000,
+                            "totalRooms": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "kilima-safari-lodge",
+                    "name": "Kilima Safari Lodge",
+                    "type": "Tented Camp",
+                    "rank": "Mid-Range",
+                    "heroImage": "assets/amboseli/kilima/kilima-hero.png",
+                    "description": "Kilima safari camp is located in Amboseli National Park, next to the Kimana Gate Park entrance. It is set out on a 420 acres of a land.",
+                    "gallery": [
+                        "assets/amboseli/kilima/kilima-1.png",
+                        "assets/amboseli/kilima/kilima-2.png"
+                    ],
+                    "ecoRating": 4.5,
+                    "rooms": [
+                        {
+                            "id": "classic",
+                            "name": "Classic Tent",
+                            "capacity": 2,
+                            "basePrice": 40000,
+                            "totalRooms": 20
+                        },
+                        {
+                            "id": "superior",
+                            "name": "Superior Tent",
+                            "capacity": 4,
+                            "basePrice": 70000,
+                            "totalRooms": 12
+                        }
+                    ]
+                }
+            ]
+        },
+    ]
+}
         
