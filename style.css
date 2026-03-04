@@ -1,0 +1,17 @@
+.park-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.park-card:hover {
+    transform: translateY(-5px);
+}   
+
+.park-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+
+}
