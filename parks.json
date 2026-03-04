@@ -13,32 +13,39 @@
             "wildlifeHighlights": [
                 {
                     "name": "Lions",
-                    "image": "assets/maasai-mara/lion.png"},
+                    "image": "assets/maasai-mara/lion.png"
+                },
                 {
                     "name": "Elephants",
-                    "image": "assets/maasai-mara/elephant.png"},
+                    "image": "assets/maasai-mara/elephant.png"
+                },
                 {
                     "name": "Cheetahs",
-                    "image": "assets/maasai-mara/cheetah.png"},
+                    "image": "assets/maasai-mara/cheetah.png"
+                },
                 {
                     "name": "Wildebeests",
-                    "image": "assets/maasai-mara/wildebeest.png"}
+                    "image": "assets/maasai-mara/wildebeest.png"
+                }
             ],
             "activities": [
                 {
                     "id": "game-drive",
                     "name": "Game Drive",
-                    "image": "assets/maasai-mara/game-drive.png"},
+                    "image": "assets/maasai-mara/game-drive.png"
+                },
                 {
                     "id": "balloon-safari",
                     "name": "Hot Air Balloon Safari",
-                    "image": "assets/maasai-mara/balloon.png"},
+                    "image": "assets/maasai-mara/balloon.png"
+                },
                 {
                     "id": "cultural-visit",
                     "name": "Maasai Cultural Visit",
-                    "image": "assets/maasai-mara/culture.png"}
-             ],
-             "entryFees": {
+                    "image": "assets/maasai-mara/culture.png"
+                }
+            ],
+            "entryFees": {
                 "kenyan": [
                     {
                         "category": "Adult",
@@ -69,9 +76,8 @@
                         "fee": 5000
                     }
                 ]
-             },
-
-             "lodges": [
+            },
+            "lodges": [
                 {
                     "id": "alan-walker-camp",
                     "name": "Alan Walker Serian Camp",
@@ -99,8 +105,7 @@
                             "basePrice": 18000,
                             "totalRooms": 3
                         }
-                     ]
-
+                    ]
                 },
                 {
                     "id": "spirit-of-the-mara",
@@ -129,10 +134,9 @@
                             "basePrice": 80000,
                             "totalRooms": 5
                         }
-                     ]
-
-                 },
-                 {
+                    ]
+                },
+                {
                     "id": "Entumoto-safari-camp",
                     "name": "Entumoto Safari Camp",
                     "type": "Tented Camp",
@@ -142,7 +146,7 @@
                     "gallery": [
                         "assets/maasai-mara/entumoto/entumoto-1.png",
                         "assets/maasai-mara/entumoto/entumoto-2.png"
-                    ], 
+                    ],
                     "ecoRating": 3.5,
                     "rooms": [
                         {
@@ -159,9 +163,176 @@
                             "basePrice": 15000,
                             "totalRooms": 5
                         }
-                     ]
-                 }
-             ]
-        }
-    ]
-}
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "nairobi-national-park",
+            "name": "Nairobi National Park",
+            "description": "Nairobi National Park is a unique wildlife reserve located just a short drive from the bustling city of Nairobi. It offers visitors the rare opportunity to experience a safari adventure without leaving the city limits. The park is home to a diverse array of wildlife, including lions, giraffes, zebras, and rhinos, set against the backdrop of Nairobi's skyline. Nairobi National Park is a must-visit destination for those looking to combine urban exploration with wildlife encounters.",
+            "thumbnailImage": "assets/nairobi/nairobi-thumbnail.png",
+            "heroImage": "assets/nairobi/nairobi-hero.png",
+            "galleryImages": [
+                "assets/nairobi/nairobi-1.png",
+                "assets/nairobi/nairobi-2.png",
+                "assets/nairobi/nairobi-3.png"
+            ],
+            "wildlifeHighlights": [
+                {
+                    "name": "Lions",
+                    "image": "assets/nairobi/lion.png"
+                },
+                {
+                    "name": "Giraffes",
+                    "image": "assets/nairobi/giraffe.png"
+                },
+                {
+                    "name": "Zebras",
+                    "image": "assets/nairobi/zebra.png"
+                },
+                {
+                    "name": "Rhinos",
+                    "image": "assets/nairobi/rhino.png"
+                }
+            ],
+            "activities": [
+                {
+                    "id": "game-drive",
+                    "name": "Game Drive",
+                    "image": "assets/nairobi/game-drive.png"
+                },
+                {
+                    "id": "camping",
+                    "name": "Camping",
+                    "image": "assets/nairobi/camping.png"
+                },
+                {
+                    "id": "picnic",
+                    "name": "Picnic",
+                    "image": "assets/nairobi/picnic.png"
+                }
+            ],
+            "entryFees": {
+                "kenyan": [
+                    {
+                        "category": "Adult",
+                        "fee": 1000
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 500
+                    }
+                ],
+                "eastAfrican": [
+                    {
+                        "category": "Adult",
+                        "fee": 1500
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 750
+                    }
+                ],
+                "noneResident": [
+                    {
+                        "category": "Adult",
+                        "fee": 9000
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 4000
+                    }
+                ]
+            },
+            "lodges": [
+                {
+                    "id": "the-emakoko",
+                    "name": "The Emakoko",
+                    "type": "Hotel",
+                    "rank": "Luxury",
+                    "heroImage": "assets/nairobi/safari-club/emakoko-hero.png",
+                    "description": "Choose between our luxury Cliff Suites, River Suites, or our Private House. Make yourself at home.",
+                    "gallery": [
+                        "assets/nairobi/safari-club/emakoko-1.png",
+                        "assets/nairobi/safari-club/emakoko-2.png"
+                    ],
+                    "ecoRating": 4.0,
+                    "rooms": [
+                        {
+                            "id": "luxury",
+                            "name": "Luxury Suites",
+                            "capacity": 2,
+                            "basePrice": 150000,
+                            "totalRooms": 12
+                        },
+                        {
+                            "id": "deluxe",
+                            "name": "The Private House",
+                            "capacity": 4,
+                            "basePrice": 280000,
+                            "totalRooms": 6
+                        }
+                    ]
+                },
+                {
+                    "id": "nairobi-tented-camp",
+                    "name": "Nairobi Tented Camp",
+                    "type": "Tented Camp",
+                    "rank": "Mid-Range",
+                    "heroImage": "assets/nairobi/nairobi-tented/tented-hero.png",
+                    "description": "Authentic safari atmosphere with spacious canvas tents, en-suite bathrooms, solar lighting, and private verandas.",
+                    "gallery": [
+                        "assets/nairobi/nairobi-tented/tented-1.png",
+                        "assets/nairobi/nairobi-tented/tented-2.png"
+                    ],
+                    "ecoRating": 4.5,
+                    "rooms": [
+                        {
+                            "id": "single",
+                            "name": "Single Tent",
+                            "capacity": 2,
+                            "basePrice": 10000,
+                            "totalRooms": 8
+                        },
+                        {
+                            "id": "double",
+                            "name": "Double Tent",
+                            "capacity": 4,
+                            "basePrice": 24000,
+                            "totalRooms": 5
+                        }
+                    ]
+                },
+                {
+                    "id": "ololo-safari-lodge",
+                    "name": "Ololo Safari Lodge",
+                    "type": "Boutique Hotel",
+                    "rank": "Luxury",
+                    "heroImage": "assets/nairobi/ololo-safari/ololo-hero.png",
+                    "description": "Originally a Kenyan homestead, Ololo has transformed into a charming boutique lodge that feels both welcoming and exclusive.",
+                    "gallery": [
+                        "assets/nairobi/ololo-safari/ololo-1.png",
+                        "assets/nairobi/ololo-safari/ololo-2.png"
+                    ],
+                    "ecoRating": 3.5,
+                    "rooms": [
+                        {
+                            "id": "standard",
+                            "name": "The Terrace Suite",
+                            "capacity": 2,
+                            "basePrice": 50000,
+                            "totalRooms": 10
+                        },
+                        {
+                            "id": "family",
+                            "name": "The Family Wing",
+                            "capacity": 4,
+                            "basePrice": 90000,
+                            "totalRooms": 6
+                        }
+                    ]
+                }
+            ]
+        },
+        
