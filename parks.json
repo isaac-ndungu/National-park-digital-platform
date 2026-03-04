@@ -442,7 +442,7 @@
                             "totalRooms": 5
                         }
                     ]
-                }
+                },
                 {
                     "id": "Tortilis Camp",
                     "name": "Tortilis Camp",
@@ -476,7 +476,7 @@
                     "id": "kilima-safari-lodge",
                     "name": "Kilima Safari Lodge",
                     "type": "Tented Camp",
-                    "rank": "Mid-Range",
+                    "rank": "Luxury",
                     "heroImage": "assets/amboseli/kilima/kilima-hero.png",
                     "description": "Kilima safari camp is located in Amboseli National Park, next to the Kimana Gate Park entrance. It is set out on a 420 acres of a land.",
                     "gallery": [
@@ -503,6 +503,175 @@
                 }
             ]
         },
+        {
+            "id": "tsavo-east",
+            "name": "Tsavo East National Park",
+            "description": "Tsavo East National Park is one of the oldest parks in Kenya, located South East of Kenya near the Town of Voi in the Taita-Taveta District of Coast Province, inland from the Coast",
+            "thumbnailImage": "assets/tsavo-east/tsavo-thumbnail.png",
+            "heroImage": "assets/tsavo-east/tsavo-hero.png",
+            "galleryImages": [
+                "assets/tsavo-east/tsavo-1.png",
+                "assets/tsavo-east/tsavo-2.png",
+                "assets/tsavo-east/tsavo-3.png"
+            ],
+            "wildlifeHighlights": [
+                {
+                    "name": "Elephants",
+                    "image": "assets/tsavo-east/elephant.png"
+                },
+                {
+                    "name": "Lions",
+                    "image": "assets/tsavo-east/lion.png"
+                },
+                {
+                    "name": "Giraffes",
+                    "image": "assets/tsavo-east/giraffe.png"
+                },
+                {
+                    "name": "Zebras",
+                    "image": "assets/tsavo-east/zebra.png"
+                }
+            ],
+            "activities": [
+                {
+                    "id": "game-drive",
+                    "name": "Game Drive",
+                    "image": "assets/tsavo-east/game-drive.png"
+                },
+                {
+                    "id": "bird-watching",
+                    "name": "Bird Watching",
+                    "image": "assets/tsavo-east/birding.png"
+                },
+                {
+                    "id": "walking-safari",
+                    "name": "Walking Safari",
+                    "image": "assets/tsavo-east/walking-safari.png"
+                }
+            ],
+            "entryFees": {
+                "kenyan": [
+                    {
+                        "category": "Adult",
+                        "fee": 1200
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 600
+                    }
+                ],
+                "eastAfrican": [
+                    {
+                        "category": "Adult",
+                        "fee": 2000
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 1000
+                    }
+                ],
+                "noneResident": [
+                    {
+                        "category": "Adult",
+                        "fee": 7000
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 3000
+                    }
+                ]
+            },
+            "lodges": [
+                {
+                    "id": "satao-camp",
+                    "name": "Satao Camp",
+                    "type": "Tented Camp",
+                    "rank": "Mid-Range",
+                    "heroImage": "assets/tsavo-east/satao/satao-hero.png",
+                    "description": "satao camp is an unfenced tented camp in the heart of tsavo east national park in Kenya, it offers a unique and authentic safari experience.",
+                    "gallery": [
+                        "assets/tsavo-east/satao/satao-1.png",
+                        "assets/tsavo-east/satao/satao-2.png"
+                    ],
+                    "ecoRating": 4.0,
+                    "rooms": [
+                        {
+                            "id": "standard",
+                            "name": "Standard Tent",
+                            "capacity": 2,
+                            "basePrice": 40000,
+                            "totalRooms": 16
+                        },
+                        {
+                            "id": "suite",
+                            "name": "Suite Tent",
+                            "capacity": 4,
+                            "basePrice": 72000,
+                            "totalRooms": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "lions-bluff-lodge",
+                    "name": "Lions Bluff Lodge",
+                    "type": "Lodge",
+                    "rank": "Luxury",
+                    "heroImage": "assets/tsavo-east/lions-bluff/lions-hero.png",
+                    "description": "Lions Bluff Lodge is a luxury lodge located in Tsavo East National Park, Kenya. It offers stunning views of the park and its wildlife, making it a popular choice for safari-goers.",
+                    "gallery": [
+                        "assets/tsavo-east/lions-bluff/lions-1.png",
+                        "assets/tsavo-east/lions-bluff/lions-2.png"
+                    ],
+                    "ecoRating": 4.5,
+                    "rooms": [
+                        {
+                            "id": "standard",
+                            "name": "Standard Room",
+                            "capacity": 2,
+                            "basePrice": 50000,
+                            "totalRooms": 20
+                        },
+                        {
+                            "id": "deluxe",
+                            "name": "Deluxe Room",
+                            "capacity": 4,
+                            "basePrice": 120000,
+                            "totalRooms": 10
+                        }
+                    ]
+                },
+                {
+                    "id": "kilaguni-serena-safari-lodge",
+                    "name": "Kilaguni Serena Safari Lodge",
+                    "type": "Lodge",
+                    "rank": "Luxury+",
+                    "heroImage": "assets/tsavo-east/kilaguni/kilaguni-hero.png",
+                    "description": "Kilaguni Serena Safari Lodge is a luxury lodge located in Tsavo East National Park, Kenya. It offers stunning views of the park and its wildlife, making it a popular choice for safari-goers.",
+                    "gallery": [
+                        "assets/tsavo-east/kilaguni/kilaguni-1.png",
+                        "assets/tsavo-east/kilaguni/kilaguni-2.png"
+                    ],
+                    "ecoRating": 4.5,
+                    "rooms": [
+                        {
+                            "id": "standard",
+                            "name": "Standard Room",
+                            "capacity": 2,
+                            "basePrice": 60000,
+                            "totalRooms": 30
+                        },
+                        {
+                            "id": "deluxe",
+                            "name": "Deluxe Room",
+                            "capacity": 4,
+                            "basePrice": 150000,
+                            "totalRooms": 15
+                        }
+                    ]
+                }
+            ]
+        }
     ]
 }
         
+
