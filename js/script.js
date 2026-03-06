@@ -47,3 +47,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     await fetchParksData();
     createParkCards();
 });
+
+
+
+//  Dynamic routing
+
+
+const routes = {
+    404: {
+        template: "/templates/404.html",
+
+    }
+}
