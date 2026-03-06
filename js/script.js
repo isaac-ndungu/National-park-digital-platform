@@ -114,11 +114,11 @@ const locationHandler = async () => {
     html = await fetch(route.template).then((response) => response.text());
 
     content.innerHTML = html;
+    createParkCards();
     document.title = route.title;
 
     // set the desctiprion of the document to the descriotion of the route
     document.querySelector('meta[name="description"]').setAttribute("content", route.description);
-        createParkCards();
 }
 
 window.addEventListener("hashchange", locationHandler);
