@@ -115,8 +115,8 @@ const locationHandler = async () => {
 
     content.innerHTML = html;
     createParkCards();
-    document.title = route.title;
 
+    document.title = route.title;
     // set the desctiprion of the document to the descriotion of the route
     document.querySelector('meta[name="description"]').setAttribute("content", route.description);
 }
