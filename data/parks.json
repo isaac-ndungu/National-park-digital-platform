@@ -3,7 +3,7 @@
         {
             "id": "maasai-mara",
             "name": "Maasai Mara National Reserve",
-            "description": "The hearbeat of the Great Migration, the Maasai Mara National Reserve is a world-renowned wildlife sanctuary in Kenya.",
+            "description": "One of Africa’s greatest safari destinations, renowned for the dramatic Great Migration of millions of wildebeests.",
             "thumbnailImage": "assets/maasai-mara/mara-thumbnail.png",
             "heroImage": "assets/maasai-mara/mara-hero.png",
             "galleryImages": [
@@ -37,12 +37,12 @@
                 },
                 {
                     "id": "balloon-safari",
-                    "name": "Hot Air Balloon Safari",
+                    "name": "Hot Air Balloon",
                     "image": "assets/maasai-mara/balloon.png"
                 },
                 {
                     "id": "cultural-visit",
-                    "name": "Maasai Cultural Visit",
+                    "name": "Cultural Visit",
                     "image": "assets/maasai-mara/culture.png"
                 }
             ],
@@ -171,7 +171,7 @@
         {
             "id": "nairobi-national-park",
             "name": "Nairobi National Park",
-            "description": "Nairobi National Park is a unique wildlife reserve located just a short drive from the bustling city of Nairobi.",
+            "description": "The world’s only wildlife park set against a capital city skyline, where lions roam just minutes from they city.",
             "thumbnailImage": "assets/nairobi/nairobi-thumbnail.png",
             "heroImage": "assets/nairobi/nairobi-hero.png",
             "galleryImages": [
@@ -339,7 +339,7 @@
         {
             "id": "amboseli-national-park",
             "name": "Amboseli National Park",
-            "description": "Renowned for large elephant herds and spectacular views of Mount Kilimanjaro.",
+            "description": "A photographer’s paradise where giant elephant herds roam beneath the towering backdrop of Mount Kilimanjaro.",
             "thumbnailImage": "assets/amboseli/amboseli-thumbnail.png",
             "heroImage": "assets/amboseli/amboseli-hero.png",
             "galleryImages": [
@@ -373,12 +373,12 @@
                 },
                 {
                     "id": "bird-watching",
-                    "name": "Bird Watching",
+                    "name": "Birding",
                     "image": "assets/amboseli/birding.png"
                 },
                 {
                     "id": "hot-air-balloon",
-                    "name": "Hot Air Balloon Ride",
+                    "name": "Hot Air Balloon",
                     "image": "assets/amboseli/balloon.png"
                 }
             ],
@@ -507,7 +507,7 @@
         {
             "id": "tsavo-east",
             "name": "Tsavo East National Park",
-            "description": "Tsavo East National Park, Kenya's largest park, is located between Nairobi and Mombasa.",
+            "description": "Kenya’s largest wilderness, famous for its vast red-earth plains and the iconic red-dusted elephants of Tsavo.",
             "thumbnailImage": "assets/tsavo-east/tsavo-thumbnail.png",
             "heroImage": "assets/tsavo-east/tsavo-hero.png",
             "galleryImages": [
@@ -676,7 +676,7 @@
             "id": "lake-nakuru",
             "name": "Lake Nakuru National Park",
             "location": "Nakuru County, Kenya",
-            "description": "Lake Nakuru National Park is one of Kenya’s most famous wildlife sanctuaries, known for its flamingo-covered lake, rhino sanctuary, and diverse birdlife. The park protects both black and white rhinos and offers exceptional wildlife viewing in a compact but scenic landscape.",
+            "description": "A shimmering alkaline lake sanctuary famous for flamingos and both the black and white rhinos.",
             "thumbnailImage": "assets/nakuru/nakuru-thumbnail.png",
             "heroImage": "assets/nakuru/nakuru-hero.png",
             "galleryImages": [
@@ -844,7 +844,7 @@
         {
             "id": "samburu",
             "name": "Samburu National Reserve",
-            "description": "Samburu National Reserve is located in Northern Kenya and is a premier game reserve situated on the banks of the Ewaso Ng'iro river. This vast expanse of remote pristine wilderness measures 165 square kilometers in area and borders the Ewaso Ng'iro River to the south, which separates it from the Buffalo Springs National Reserve",
+            "description": "A rugged northern reserve known for rare wildlife species like the Grevy’s zebra, reticulated giraffe, and the gerenuk.",
             "thumbnailImage": "assets/samburu/samburu-thumbnail.png",
             "heroImage": "assets/samburu/samburu-hero.png",
             "galleryImages": [
@@ -878,7 +878,7 @@
                 },
                 {
                     "id": "bird-watching",
-                    "name": "Bird Watching",
+                    "name": "Birding",
                     "image": "assets/samburu/birding.png"
                 },
                 {
@@ -1012,7 +1012,7 @@
         {
             "id": "hell's-gate",
             "name": "Hell's Gate National Park",
-            "description": " Hell’s Gate National Park, a raw, rugged, and utterly unique corner of Kenya’s Great Rift Valley. Unlike most parks in the country, Hell’s Gate invites you to explore on foot, by bike, or even while climbing its cliffs, offering an immersive experience that feels like stepping back into a prehistoric world.",
+            "description": "One of the few parks in Africa where visitors can cycle or walk among dramatic cliffs, gorges, and geothermal landscapes.",
             "thumbnailImage": "assets/hells-gate/gate-thumbnail.png",
             "heroImage": "assets/hells-gate/gate-hero.png",
             "galleryImages": [
@@ -1180,7 +1180,7 @@
         {
             "id": "kisite-mpunguti",
             "name": "Kisite Mpunguti Marine Park",
-            "description": "Beautiful and sun kissed, Kisite Mpunguti Marine Park was established to protect the scenic islands and special habitats of a wide range of endemic marine animals and breeding migratory birds.",
+            "description": "A vibrant underwater paradise along Kenya’s coast celebrated for its coral reefs, playful dolphins, and crystal-clear snorkeling waters.",
             "thumbnailImage": "assets/kisite/kisite-thumbnail.png",
             "heroImage": "assets/kisite/kisite-hero.png",
             "galleryImages": [

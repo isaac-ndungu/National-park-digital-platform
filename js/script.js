@@ -38,8 +38,14 @@ function createParkCards() {
         <div class="park-content p-4">
             <h3 class="park-title text-lg font-bold mb-4">${park.name}</h3>
             <p class="park-description text-sm mb-4">${park.description}</p>
+
+            <div class="flex gap-4">
+                <p class="text-xs text-gray-700 px-4 py-1 rounded-full bg-gray-300/50">${park.activities[0].name}</p>
+                <p class="text-xs text-gray-700 px-4 py-1 rounded-full bg-gray-300/50">${park.activities[1].name}</p>
+                <p class="text-xs text-gray-700 px-4 py-1 rounded-full bg-gray-300/50">${park.activities[2].name}</p>
+            </div>
         
-        <button class="explore-btn bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded" data-id="${park.id}">Explore Park</button>
+        <button class="explore-btn bg-white/70 hover:bg-green-600 text-green-600 hover:text-white border border-2 border-green-600 font-bold py-2 px-4 mt-8 w-full rounded" data-id="${park.id}">Explore Park</button>
         </div>
     `;
         cardContainer.appendChild(card);
