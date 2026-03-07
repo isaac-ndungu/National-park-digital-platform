@@ -671,8 +671,175 @@
                     ]
                 }
             ]
-        }
+        },
+        {
+            "id": "lake-nakuru",
+            "name": "Lake Nakuru National Park",
+            "location": "Nakuru County, Kenya",
+            "description": "Lake Nakuru National Park is one of Kenya’s most famous wildlife sanctuaries, known for its flamingo-covered lake, rhino sanctuary, and diverse birdlife. The park protects both black and white rhinos and offers exceptional wildlife viewing in a compact but scenic landscape.",
+            "thumbnailImage": "assets/nakuru/nakuru-thumbnail.png",
+            "heroImage": "assets/nakuru/nakuru-hero.png",
+            "galleryImages": [
+                "assets/nakuru/nakuru-1.png",
+                "assets/nakuru/nakuru-2.png",
+                "assets/nakuru/nakuru-3.png"
+            ],
+            "wildlifeHighlights": [
+                {
+                    "name": "Flamingos",
+                    "image": "assets/nakuru/flamingo.png"
+                },
+                {
+                    "name": "Black Rhino",
+                    "image": "assets/nakuru/black-rhino.png"
+                },
+                {
+                    "name": "White Rhino",
+                    "image": "assets/nakuru/white-rhino.png"
+                },
+                {
+                    "name": "Rothschild Giraffe",
+                    "image": "assets/nakuru/rothschild.png"
+                }
+            ],
+            "activities": [
+                {
+                    "id": "game-drive",
+                    "name": "Game Drive",
+                    "image": "assets/nakuru/game-drive.png"
+                },
+                {
+                    "id": "bird-watching",
+                    "name": "Bird Watching",
+                    "image": "assets/nakuru/birding.png"
+                },
+                {
+                    "id": "river-wildlife-viewing",
+                    "name": "River Wildlife Viewing",
+                    "image": "assets/maasai-mara/river-wildlifr.png"
+                }
+            ],
+            "entryFees": {
+                "kenyan": [
+                    {
+                        "category": "Adult",
+                        "fee": 1000
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 300
+                    }
+                ],
+                "eastAfrican": [
+                    {
+                        "category": "Adult",
+                        "fee": 2000
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 800
+                    }
+                ],
+                "noneResident": [
+                    {
+                        "category": "Adult",
+                        "fee": 8000
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 3600
+                    }
+                ]
+            },
+             "lodges": [
+                {
+                    "id": "sarova-lion-hill",
+                    "name": "Sarova Lion Hill Lodge",
+                    "type": "Lodge",
+                    "rank": "Luxury",
+                    "heroImage": "assets/nakuru/sarova/sarova-hero.png",
+                    "description": "Experience the ultimate in luxury and comfort at Alan Walker Serian Camp.",
+                    "gallery": [
+                        "assets/nakuru/sarova/sarova-1.png",
+                        "assets/nakuru/sarova/sarova-2.png"
+                    ],
+                    "ecoRating": 4,
+                    "rooms": [
+                        {
+                            "id": "standard",
+                            "name": "Standard Room",
+                            "capacity": 2,
+                            "basePrice": 21000,
+                            "totalRooms": 5
+                        },
+                        {
+                            "id": "deluxe",
+                            "name": "Deluxe Room",
+                            "capacity": 4,
+                            "basePrice": 48000,
+                            "totalRooms": 3
+                        }
+                    ]
+                },
+                {
+                    "id": "lake-nakuru-lodge",
+                    "name": "Lake Nakuru Lodge",
+                    "type": "Lodge",
+                    "rank": "Luxury+",
+                    "heroImage": "assets/nakuru/lake-lodge/lake-hero.png",
+                    "description": "Enjoy breathtaking views and exceptional service at Mara Serena Safari Lodge.",
+                    "gallery": [
+                        "assets/nakuru/lake-lodge/lake-1.png",
+                        "assets/nakuru/lake-lodge/lake-2.png"
+                    ],
+                    "ecoRating": 3.5,
+                    "rooms": [
+                        {
+                            "id": "standard",
+                            "name": "Standard Room",
+                            "capacity": 2,
+                            "basePrice": 66000,
+                            "totalRooms": 10
+                        },
+                        {
+                            "id": "deluxe",
+                            "name": "Deluxe Room",
+                            "capacity": 4,
+                            "basePrice": 98000,
+                            "totalRooms": 5
+                        }
+                    ]
+                },
+                {
+                    "id": "flamingo-hill-camp",
+                    "name": "Flamingo Hill Camp",
+                    "type": "Tented Camp",
+                    "rank": "Luxury",
+                    "heroImage": "assets/nakuru/flamingo-hill/flamingo-hero.png",
+                    "description": "Experience the perfect blend of comfort and nature at Entumoto Safari Camp.",
+                    "gallery": [
+                        "assets/nakuru/flamingo-hill/flamingo-1.png",
+                        "assets/nakuru/flamingo-hill/flamingo-2.png"
+                    ],
+                    "ecoRating": 4.0,
+                    "rooms": [
+                        {
+                            "id": "main",
+                            "name": "Standard Tent",
+                            "capacity": 6,
+                            "basePrice": 8000,
+                            "totalRooms": 3
+                        },
+                        {
+                            "id": "toto",
+                            "name": "Family Tent",
+                            "capacity": 4,
+                            "basePrice": 15000,
+                            "totalRooms": 5
+                        }
+                    ]
+                }
+            ]
+        },
     ]
 }
-        
-
