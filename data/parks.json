@@ -709,14 +709,14 @@
                     "image": "assets/nakuru/game-drive.png"
                 },
                 {
-                    "id": "bird-watching",
-                    "name": "Bird Watching",
-                    "image": "assets/nakuru/birding.png"
+                    "id": "rhino-tracking",
+                    "name": "Rhino Tracking",
+                    "image": "assets/nakuru/tracking.png"
                 },
                 {
-                    "id": "river-wildlife-viewing",
-                    "name": "River Wildlife Viewing",
-                    "image": "assets/maasai-mara/river-wildlifr.png"
+                    "id": "photography-safari",
+                    "name": "Photgraphy Safari",
+                    "image": "assets/nakuru/photography.png"
                 }
             ],
             "entryFees": {
@@ -814,7 +814,7 @@
                     "id": "flamingo-hill-camp",
                     "name": "Flamingo Hill Camp",
                     "type": "Tented Camp",
-                    "rank": "Luxury",
+                    "rank": "Mid-Range",
                     "heroImage": "assets/nakuru/flamingo-hill/flamingo-hero.png",
                     "description": "Experience the perfect blend of comfort and nature at Entumoto Safari Camp.",
                     "gallery": [
@@ -841,5 +841,421 @@
                 }
             ]
         },
+        {
+            "id": "samburu",
+            "name": "Samburu National Reserve",
+            "description": "Samburu National Reserve is located in Northern Kenya and is a premier game reserve situated on the banks of the Ewaso Ng'iro river. This vast expanse of remote pristine wilderness measures 165 square kilometers in area and borders the Ewaso Ng'iro River to the south, which separates it from the Buffalo Springs National Reserve",
+            "thumbnailImage": "assets/samburu/samburu-thumbnail.png",
+            "heroImage": "assets/samburu/samburu-hero.png",
+            "galleryImages": [
+                "assets/samburu/samburu-1.png",
+                "assets/samburu/samburu-2.png",
+                "assets/msamburu/samburu-3.png"
+            ],
+            "wildlifeHighlights": [
+                {
+                    "name": "Grevy's Zebra",
+                    "image": "assets/samburu/grevys.png"
+                },
+                {
+                    "name": "Beisa Oryx",
+                    "image": "assets/samburu/beisa.png"
+                },
+                {
+                    "name": "Somali Ostrich",
+                    "image": "assets/samburu/ostrich.png"
+                },
+                {
+                    "name": "Gerenuk",
+                    "image": "assets/samburu/beisa.png"
+                }
+            ],
+            "activities": [
+                {
+                    "id": "game-drive",
+                    "name": "Game Drive",
+                    "image": "assets/samburu/beisa.png"
+                },
+                {
+                    "id": "bird-watching",
+                    "name": "Bird Watching",
+                    "image": "assets/samburu/birding.png"
+                },
+                {
+                    "id": "river-wildlife-viewing",
+                    "name": "River Wildlife Viewing",
+                    "image": "assets/samburu/river-wildlife.png"
+                }
+            ],
+            "entryFees": {
+                "kenyan": [
+                    {
+                        "category": "Adult",
+                        "fee": 1000
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 300
+                    }
+                ],
+                "eastAfrican": [
+                    {
+                        "category": "Adult",
+                        "fee": 2000
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 8000
+                    }
+                ],
+                "noneResident": [
+                    {
+                        "category": "Adult",
+                        "fee": 7000
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 3000
+                    }
+                ]
+            },
+            "lodges": [
+                {
+                    "id": "samburu-sopa",
+                    "name": "Samburu Sopa Lodge",
+                    "type": "Lodge",
+                    "rank": "Luxury+",
+                    "heroImage": "assets/samburu/samburu-sopa/sopa-hero.png",
+                    "description": "Experience the ultimate in luxury and comfort at Alan Walker Serian Camp.",
+                    "gallery": [
+                        "assets/samburu/samburu-sopa/sopa-1.png",
+                        "assets/samburu/samburu-sopa/sopa-2.png"
+                    ],
+                    "ecoRating": 4,
+                    "rooms": [
+                        {
+                            "id": "standard",
+                            "name": "Standard Room",
+                            "capacity": 2,
+                            "basePrice": 30000,
+                            "totalRooms": 24
+                        },
+                        {
+                            "id": "luxury",
+                            "name": "Luxury room",
+                            "capacity": 4,
+                            "basePrice": 68000,
+                            "totalRooms": 10
+                        }
+                    ]
+                },
+                {
+                    "id": "elephant-bedroom-camp",
+                    "name": "Elephant Bedroom Camp",
+                    "type": "Tented Camp",
+                    "rank": "Luxury",
+                    "heroImage": "assets/samburu/elephant-camp/elephant-hero.png",
+                    "description": "Enjoy breathtaking views and exceptional service at Mara Serena Safari Lodge.",
+                    "gallery": [
+                        "assets/samburu/elephant-camp/elephant-1.png",
+                        "assets/samburu/elephant-camp/elephant-2.png"
+                    ],
+                    "ecoRating": 4.0,
+                    "rooms": [
+                        {
+                            "id": "standard",
+                            "name": "Standard Tent",
+                            "capacity": 2,
+                            "basePrice": 36000,
+                            "totalRooms": 25
+                        },
+                        {
+                            "id": "luxury",
+                            "name": "Luxury Tent",
+                            "capacity": 4,
+                            "basePrice": 50000,
+                            "totalRooms":11
+                        }
+                    ]
+                },
+                {
+                    "id": "saruni-samburu",
+                    "name": "Saruni Basecamp",
+                    "type": "Lodge",
+                    "rank": "Luxury+",
+                    "heroImage": "assets/samburu/saruni/saruni-hero.png",
+                    "description": "Experience the perfect blend of comfort and nature at Entumoto Safari Camp.",
+                    "gallery": [
+                        "assets/samburu/saruni/saruni-1.png",
+                        "assets/samburu/saruni/saruni-2.png"
+                    ],
+                    "ecoRating": 3.5,
+                    "rooms": [
+                        {
+                            "id": "main",
+                            "name": "Standard Tent",
+                            "capacity": 6,
+                            "basePrice": 8000,
+                            "totalRooms": 3
+                        },
+                        {
+                            "id": "toto",
+                            "name": "Family Tent",
+                            "capacity": 4,
+                            "basePrice": 15000,
+                            "totalRooms": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hell's-gate",
+            "name": "Hell's Gate National Park",
+            "description": " Hell’s Gate National Park, a raw, rugged, and utterly unique corner of Kenya’s Great Rift Valley. Unlike most parks in the country, Hell’s Gate invites you to explore on foot, by bike, or even while climbing its cliffs, offering an immersive experience that feels like stepping back into a prehistoric world.",
+            "thumbnailImage": "assets/hells-gate/gate-thumbnail.png",
+            "heroImage": "assets/hells-gate/gate-hero.png",
+            "galleryImages": [
+                "assets/hells-gate/gate-1.png",
+                "assets/hells-gate/gate-2.png",
+                "assets/hells-gate/gate-3.png"
+            ],
+            "wildlifeHighlights": [
+                {
+                    "name": "Lions",
+                    "image": "assets/hells-gate/zebra.png"
+                },
+                {
+                    "name": "Elephants",
+                    "image": "assets/hells-gate/buffalo.png"
+                },
+                {
+                    "name": "Cheetahs",
+                    "image": "assets/hells-gate/giraffe.png"
+                },
+                {
+                    "name": "Wildebeests",
+                    "image": "assets/hells-gate/impala.png"
+                }
+            ],
+            "activities": [
+                {
+                    "id": "hiking",
+                    "name": "Hiking",
+                    "image": "assets/hells-gate/hiking.png"
+                },
+                {
+                    "id": "biking",
+                    "name": "Biking",
+                    "image": "assets/hells-gate/biking.png"
+                },
+                {
+                    "id": "rock-climbing",
+                    "name": "Rock Climbing",
+                    "image": "assets/hells-gate/rock-climbing.png"
+                }
+            ],
+            "entryFees": {
+                "kenyan": [
+                    {
+                        "category": "Adult",
+                        "fee": 1500
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 300
+                    }
+                ],
+                "eastAfrican": [
+                    {
+                        "category": "Adult",
+                        "fee": 2500
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 1000
+                    }
+                ],
+                "noneResident": [
+                    {
+                        "category": "Adult",
+                        "fee": 12000
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 5000
+                    }
+                ]
+            },
+            "lodges": [
+                {
+                    "id": "naivasha-kongoni",
+                    "name": "Naivasha Kongoni Lodge",
+                    "type": "Lodge",
+                    "rank": "Luxury",
+                    "heroImage": "assets/hells-gate/kongoni/kongoni-hero.png",
+                    "description": "Experience the ultimate in luxury and comfort at Alan Walker Serian Camp.",
+                    "gallery": [
+                        "assets/hells-gate/kongoni/kongoni-1.png",
+                        "assets/hells-gate/kongoni/kongoni-2.png"
+                    ],
+                    "ecoRating": 4.5,
+                    "rooms": [
+                        {
+                            "id": "deluxe",
+                            "name": "Deluxe Room",
+                            "capacity": 2,
+                            "basePrice": 10000,
+                            "totalRooms": 22
+                        },
+                        {
+                            "id": "executive",
+                            "name": "Executive Room",
+                            "capacity": 4,
+                            "basePrice": 18000,
+                            "totalRooms": 10
+                        }
+                    ]
+                },
+                {
+                    "id": "elsamere",
+                    "name": "Elsamere Lodge Naivasha",
+                    "type": "Lodge",
+                    "rank": "Mid-Range",
+                    "heroImage": "assets/hells-gate/elsamere/elsamere-hero.png",
+                    "description": "Enjoy breathtaking views and exceptional service at Mara Serena Safari Lodge.",
+                    "gallery": [
+                        "assets/hells-gate/elsamere/elsamere-1.png",
+                        "assets/hells-gate/elsamere/elsamere-2.png"
+                    ],
+                    "ecoRating": 4.0,
+                    "rooms": [
+                        {
+                            "id": "standard",
+                            "name": "Standard Room",
+                            "capacity": 2,
+                            "basePrice": 9000,
+                            "totalRooms": 16
+                        },
+                        {
+                            "id": "superior",
+                            "name": "Superior Room",
+                            "capacity": 4,
+                            "basePrice": 14000,
+                            "totalRooms": 7
+                        }
+                    ]
+                },
+                {
+                    "id": "the-great-rift",
+                    "name": "The Great Rift Valley Lodge",
+                    "type": "Lodge",
+                    "rank": "Luxury+",
+                    "heroImage": "assets/maasai-mara/entumoto/entumoto-hero.png",
+                    "description": "Experience the perfect blend of comfort and nature at Entumoto Safari Camp.",
+                    "gallery": [
+                        "assets/maasai-mara/entumoto/entumoto-1.png",
+                        "assets/maasai-mara/entumoto/entumoto-2.png"
+                    ],
+                    "ecoRating": 3.5,
+                    "rooms": [
+                        {
+                            "id": "lodge",
+                            "name": "Lodge Room",
+                            "capacity": 6,
+                            "basePrice": 24000,
+                            "totalRooms": 3
+                        },
+                        {
+                            "id": "villa",
+                            "name": "Longonot villas",
+                            "capacity": 4,
+                            "basePrice": 45000,
+                            "totalRooms": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "kisite-mpunguti",
+            "name": "Kisite Mpunguti Marine Park",
+            "description": "Beautiful and sun kissed, Kisite Mpunguti Marine Park was established to protect the scenic islands and special habitats of a wide range of endemic marine animals and breeding migratory birds.",
+            "thumbnailImage": "assets/kisite/kisite-thumbnail.png",
+            "heroImage": "assets/kisite/kisite-hero.png",
+            "galleryImages": [
+                "assets/kisite/kisite-1.png",
+                "assets/kisite/kisite-2.png",
+                "assets/kisite/kisite-3.png"
+            ],
+            "wildlifeHighlights": [
+                {
+                    "name": "Coral Reefs",
+                    "image": "assets/kisite/reefs.png"
+                },
+                {
+                    "name": "Dolphins",
+                    "image": "assets/kisite/dolphin.png"
+                },
+                {
+                    "name": "Butterflyfish",
+                    "image": "assets/kisite/butterflyfish.png"
+                },
+                {
+                    "name": "Sea Turtles",
+                    "image": "assets/kisite/turtle.png"
+                }
+            ],
+            "activities": [
+                {
+                    "id": "diving",
+                    "name": "Scuba Diving",
+                    "image": "assets/kisite/diving.png"
+                },
+                {
+                    "id": "snorkeling",
+                    "name": "Snorkeling",
+                    "image": "assets/kisite/snorkeling.png"
+                },
+                {
+                    "id": "boat-safaries",
+                    "name": "Boat Safaris",
+                    "image": "assets/kisite/boat-safari.png"
+                }
+            ],
+            "entryFees": {
+                "kenyan": [
+                    {
+                        "category": "Adult",
+                        "fee": 600
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 250
+                    }
+                ],
+                "eastAfrican": [
+                    {
+                        "category": "Adult",
+                        "fee": 1200
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 500
+                    }
+                ],
+                "noneResident": [
+                    {
+                        "category": "Adult",
+                        "fee": 4000
+                    },
+                    {
+                        "category": "Child",
+                        "fee": 2000
+                    }
+                ]
+            }
+            
+        }
     ]
 }
