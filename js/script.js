@@ -51,6 +51,13 @@ function createParkCards() {
     `;
         cardContainer.appendChild(card);
     });
+    cardContainer.addEventListener('click', (event) => {
+            if (event.target.classList.contains('explore-btn')) {
+                const id = event.target.dataset.id;
+                window.location.hash = `park/${id}`;
+            }
+        });
+
 }
 
 
@@ -66,7 +73,7 @@ const routes = {
         title: "404 | " + pageTitle,
         description: "Page not found"
     },
-    "/": {
+    "": {
         template: "/templates/index.html",
         title: "Home " + pageTitle,
         description: "Safarii home page"
@@ -92,12 +99,12 @@ const routes = {
         description: "Contact Us"
     },
     blog: {
-        template: "/templates.blog.html",
+        template: "/templates/blog.html",
         title: "Blog | " + pageTitle,
         description: " Safarii blogs"
     },
     park: {
-        template: "../template/park.html",
+        template: "/templates/park.html",
         title: "Park | " + pageTitle,
         description: "National Park Details"
     },
@@ -108,11 +115,12 @@ const locationHandler = async () => {
     var location = window.location.hash.replace('#', '');
 
     // handle parks
-    const [route, id] = location.split('/');
+
 
     if (location.length == 0) {
         location = '/';
     }
+    const [route, id] = location.split('/');
 
     // get the route object from the routes object
     const routeObj = routes[route] || routes[404];
@@ -196,16 +204,26 @@ function addParks() {
                 <div class="w-[45%]">
                     <div class="h-1 bg-orange-700 mb-4"></div>
                     <img src="${park.thumbnailImage}" alt="${park.name}">
-                    <a href="#${park.id}"><button class="explore-btn bg-white/70 hover:bg-green-600 text-green-600 hover:text-white border border-2 border-green-600 font-bold py-2 px-4 mt-8 w-full rounded" data-id="${park.id}">Explore Park</button></a>
+                    <button class="explore-btn bg-white/70 hover:bg-green-600 text-green-600 hover:text-white border border-2 border-green-600 font-bold py-2 px-4 mt-8 w-full rounded" data-id="${park.id}">Explore Park</button>
                 </div>
     `;
-        if(isEven) {
+        if (isEven) {
             parkWrapper.innerHTML = textContent + imageContent;
         } else {
             parkWrapper.innerHTML = imageContent + textContent;
         }
         parkContainer.appendChild(parkWrapper);
+
+        
     });
+
+    
+    parkContainer.addEventListener('click', (event) => {
+            if (event.target.classList.contains('explore-btn')) {
+                const id = event.target.dataset.id;
+                window.location.hash = `park/${id}`;
+            }
+        });
 }
 
 // load Park Details in park.html
@@ -214,5 +232,73 @@ function loadParkDetails(id) {
     const park = parksData.find(park => park.id == id);
     if (!park) return;
 
-    
+    // Elements
+    const parkHero = document.getElementById('park-hero');
+    const parkName = document.getElementById('park-name');
+    const parkDescription = document.getElementById('park-description');
+    const mainDescription = document.getElementById('park-main-desc');
+    const mainDescription1 = document.getElementById('park-main-desc1');
+    const parkThumbnail = document.getElementById('park-thumbnail');
+    const wildlife = document.getElementById('park-wildlife');
+    const activities = document.getElementById('park-activities');
+    const lodges = document.getElementById('park-lodges');
+
+    // hero section
+    parkHero.src = park.heroImage;
+    parkHero.alt = park.name;
+    parkName.textContent = park.name;
+    parkDescription.textContent = park.description;
+
+    // about section
+    mainDescription.textContent = park.mainDescription;
+    mainDescription1.textContent = park.mainDescription1;
+    parkThumbnail.src = park.thumbnailImage;
+    parkThumbnail.alt = park.name;
+
+    // highlights section
+    wildlife.innerHTML = '';
+    park.wildlifeHighlights.forEach(animal => {
+        wildlife.innerHTML += `
+        <div class="text-center">
+            <img src="${animal.image}" alt="${animal.name}" class="w-full h-48 object-cover rounded mb-2">
+            <p class="font-semibold">${animal.name}</p>
+        </div>
+        `;
+    });
+
+    // activities 
+    activities.innerHTML = '';
+    park.activities.forEach(activity => {
+        activities.innerHTML += `
+        <div class="text-center">
+            <img src="${activity.image}" alt="${activity.name}" class="w-full h-48 object-cover rounded mb-2">
+            <p class="font-semibold">${activity.name}</p>
+        </div>
+        `;
+    });
+
+    // Lodges
+    lodges.innerHTML = '';
+    park.lodges.forEach(lodge => {
+        lodges.innerHTML += `
+        <div class="bg-white rounded shadow-sm overflow-hidden">
+            <img src="${lodge.heroImage}" alt="${lodge.name}" class="w-full h-48 object-cover rounded mb-2">
+
+            <div class="p-8">
+                <div class="flex justify-between items-center mb-2">
+                    <h3 class="font-bold text-lg"> ${lodge.name}</h3>
+                    <span class="text-xs px-2 py-1 bg-green-100 text-green-700 rounded-full">${lodge.rank}</span>
+                </div>
+                <p class="text-sm text-gray-500 mb-1">${lodge.type}</p>
+                <p class="text-sm text-gray-700">${lodge.description}</p>
+            </div>
+
+            <p class="font-semibold">${lodge.name}</p>
+        </div>
+        `;
+    });
+
+    document.title = `${park.name} | Safarii`;
+
 }
+
