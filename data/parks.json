@@ -4,6 +4,8 @@
             "id": "maasai-mara",
             "name": "Maasai Mara National Reserve",
             "description": "One of Africa’s greatest safari destinations, renowned for the dramatic Great Migration of millions of wildebeests.",
+            "mainDescription": "The Maasai Mara National Reserve is one of Africa’s most renowned wildlife conservation areas and forms the northern extension of Tanzania’s Serengeti ecosystem. Covering vast rolling grasslands dotted with acacia trees, the reserve supports one of the highest concentrations of wildlife in the world. It is particularly famous for the annual Great Migration, during which millions of wildebeest, zebras, and gazelles move across the plains in search of fresh grazing.",
+            "mainDescription1": "This dramatic migration attracts large numbers of predators, including lions, cheetahs, leopards, and crocodiles, making the Maasai Mara one of the best places in Africa to observe predator-prey interactions. In addition to the migration, the reserve is home to elephants, buffalo, giraffes, hippos, and over 450 species of birds.",
             "thumbnailImage": "assets/maasai-mara/mara-thumbnail.png",
             "heroImage": "assets/maasai-mara/mara-hero.png",
             "galleryImages": [
@@ -28,7 +30,6 @@
                     "name": "Cheetahs",
                     "image": "assets/maasai-mara/cheetah.png"
                 }
-                
             ],
             "activities": [
                 {
@@ -173,6 +174,8 @@
             "id": "nairobi-national-park",
             "name": "Nairobi National Park",
             "description": "The world’s only wildlife park set against a capital city skyline, where lions roam just minutes from they city.",
+            "mainDescription": "Nairobi National Park is one of the most unique wildlife parks in the world, located just 7 kilometers from Nairobi’s city center. It is the only national park adjacent to a capital city, offering visitors an opportunity to experience a real African safari without leaving the urban environment. Spanning 117 square kilometers, the park is home to over 100 mammal species and 400 bird species, making it a perfect destination for wildlife lovers, photographers, and conservation enthusiasts.",
+            "mainDescription1": "The park is also one of the most important sanctuaries for the endangered black rhino, making it a key conservation area for Kenya’s wildlife protection efforts. Visitors can enjoy classic safari game drives while observing animals roaming freely against the striking backdrop of Nairobi’s skyline. In addition to wildlife viewing, the park features walking trails, picnic sites, and educational centers such as the Nairobi Animal Orphanage and the David Sheldrick Wildlife Trust, which focuses on elephant conservation.",
             "thumbnailImage": "assets/nairobi/nairobi-thumbnail.png",
             "heroImage": "assets/nairobi/nairobi-hero.png",
             "galleryImages": [
@@ -341,6 +344,8 @@
             "id": "amboseli-national-park",
             "name": "Amboseli National Park",
             "description": "A photographer’s paradise where giant elephant herds roam beneath the towering backdrop of Mount Kilimanjaro.",
+            "mainDescription": "Amboseli National Park is one of Kenya’s most famous wildlife destinations, celebrated for its spectacular scenery and exceptional elephant viewing opportunities. The park lies near the Kenya–Tanzania border and offers stunning views of Mount Kilimanjaro, Africa’s highest mountain. On clear mornings and evenings, the snow-capped peak provides a dramatic backdrop to the park’s open savannah and wetlands.",
+            "mainDescription1": "Although relatively small in size compared to other Kenyan parks, Amboseli is incredibly rich in wildlife. Large herds of elephants roam the plains and marshlands, while lions, cheetahs, hyenas, giraffes, zebras, and numerous antelope species are commonly seen. The park’s wetlands, fed by underground streams from Mount Kilimanjaro’s melting snow, attract a wide variety of birdlife and other animals throughout the year.",
             "thumbnailImage": "assets/amboseli/amboseli-thumbnail.png",
             "heroImage": "assets/amboseli/amboseli-hero.png",
             "galleryImages": [
@@ -361,7 +366,6 @@
                     "name": "Lions",
                     "image": "assets/amboseli/lion.png"
                 },
-                
                 {
                     "name": "Buffaloes",
                     "image": "assets/amboseli/buffalo.png"
@@ -510,6 +514,8 @@
             "id": "tsavo-east",
             "name": "Tsavo East National Park",
             "description": "Kenya’s largest wilderness, famous for its vast red-earth plains and the iconic red-dusted elephants of Tsavo.",
+            "mainDescription": "Tsavo East National Park is one of the largest protected areas in Kenya and forms part of the vast Tsavo Conservation Area. Covering more than 13,000 square kilometers, the park is characterized by its expansive semi-arid plains, scattered baobab trees, volcanic hills, and seasonal rivers. The landscape is rugged and dramatic, offering visitors a sense of true wilderness rarely found elsewhere.",
+            "mainDescription1": "The park is especially famous for its red elephants, which often appear coated in the region’s distinctive reddish soil after dust bathing. Tsavo East supports an impressive variety of wildlife including lions, leopards, cheetahs, giraffes, buffalo, zebras, and numerous bird species. One of the park’s most striking features is the Galana River, which flows through the park and forms the beautiful Lugard Falls, a series of rapids flowing through sculpted rock formations.",
             "thumbnailImage": "assets/tsavo-east/tsavo-thumbnail.png",
             "heroImage": "assets/tsavo-east/tsavo-hero.png",
             "galleryImages": [
@@ -679,6 +685,8 @@
             "name": "Lake Nakuru National Park",
             "location": "Nakuru County, Kenya",
             "description": "A shimmering alkaline lake sanctuary famous for flamingos and both the black and white rhinos.",
+            "mainDescription": "Lake Nakuru National Park is a beautiful wildlife sanctuary centered around Lake Nakuru, a shallow alkaline lake located in Kenya’s Rift Valley. The park is internationally famous for the large flocks of flamingos that historically gathered along the lake’s shores, creating a stunning pink spectacle visible from surrounding viewpoints.",
+            "mainDescription1": "Beyond the flamingos, the park has become one of Kenya’s most important rhino conservation areas and now protects both black and white rhino populations. The park’s diverse habitats include open grasslands, acacia woodlands, rocky escarpments, and waterfalls, supporting wildlife such as lions, leopards, buffalo, giraffes, and numerous bird species.",
             "thumbnailImage": "assets/nakuru/nakuru-thumbnail.png",
             "heroImage": "assets/nakuru/nakuru-hero.png",
             "galleryImages": [
@@ -753,7 +761,7 @@
                     }
                 ]
             },
-             "lodges": [
+            "lodges": [
                 {
                     "id": "sarova-lion-hill",
                     "name": "Sarova Lion Hill Lodge",
@@ -847,6 +855,8 @@
             "id": "samburu",
             "name": "Samburu National Reserve",
             "description": "A rugged northern reserve known for rare wildlife species like the Grevy’s zebra, reticulated giraffe, and the gerenuk.",
+            "mainDescription": "Samburu National Reserve is located in Kenya’s northern frontier along the banks of the Ewaso Nyiro River, which provides a vital water source for wildlife in this otherwise arid landscape. The reserve is known for its rugged beauty, characterized by dry savannah, rocky hills, and acacia woodlands that create a striking contrast with the river’s lush vegetation.",
+            "mainDescription1": "Samburu is particularly famous for hosting several rare animal species collectively known as the “Samburu Special Five.” These include the Grevy’s zebra, reticulated giraffe, Beisa oryx, Somali ostrich, and the graceful gerenuk, an antelope known for standing on its hind legs to reach leaves. Other wildlife found in the reserve includes elephants, lions, leopards, cheetahs, and crocodiles along the riverbanks.",
             "thumbnailImage": "assets/samburu/samburu-thumbnail.png",
             "heroImage": "assets/samburu/samburu-hero.png",
             "galleryImages": [
@@ -976,7 +986,7 @@
                             "name": "Luxury Tent",
                             "capacity": 4,
                             "basePrice": 50000,
-                            "totalRooms":11
+                            "totalRooms": 11
                         }
                     ]
                 },
@@ -1015,6 +1025,8 @@
             "id": "hell's-gate",
             "name": "Hell's Gate National Park",
             "description": "One of the few parks in Africa where visitors can cycle or walk among dramatic cliffs, gorges, and geothermal landscapes.",
+            "mainDescription": "Hell’s Gate National Park is one of Kenya’s most distinctive parks, known for its dramatic scenery and unique geological features. Located in the Great Rift Valley near Lake Naivasha, the park is named after a narrow break in the cliffs that was once a tributary of a prehistoric lake. Towering red cliffs, deep gorges, geothermal steam vents, and volcanic rock formations create a landscape unlike any other park in Kenya.",
+            "mainDescription1": "One of the most unusual aspects of Hell’s Gate is that visitors are allowed to explore certain areas on foot or by bicycle, providing a more active and immersive experience than traditional safari parks. Wildlife such as zebras, buffalo, antelopes, and various bird species roam the open plains, while towering rock formations like Fischer’s Tower attract climbers and photographers.",
             "thumbnailImage": "assets/hells-gate/gate-thumbnail.png",
             "heroImage": "assets/hells-gate/gate-hero.png",
             "galleryImages": [
@@ -1039,7 +1051,6 @@
                     "name": "Cheetahs",
                     "image": "assets/hells-gate/giraffe.png"
                 }
-            
             ],
             "activities": [
                 {
@@ -1184,6 +1195,8 @@
             "id": "kisite-mpunguti",
             "name": "Kisite Mpunguti Marine Park",
             "description": "A vibrant underwater paradise along Kenya’s coast celebrated for its coral reefs, playful dolphins, and crystal-clear snorkeling waters.",
+            "mainDescription": "Kisite-Mpunguti Marine Park is a protected marine ecosystem located along Kenya’s southern coastline near the historic town of Shimoni. The park encompasses a group of small islands, coral reefs, and crystal-clear waters that support one of the richest marine biodiversity areas in the Western Indian Ocean. The coral reefs provide habitat for hundreds of species of fish, sea turtles, and other marine creatures, making the park a paradise for snorkeling and scuba diving enthusiasts. Visitors frequently encounter playful dolphins that inhabit the waters surrounding the park, adding to the unforgettable marine experience.",
+            "mainDescription1": "Although relatively small in size compared to other Kenyan parks, Amboseli is incredibly rich in wildlife. Large herds of elephants roam the plains and marshlands, while lions, cheetahs, hyenas, giraffes, zebras, and numerous antelope species are commonly seen. The park’s wetlands, fed by underground streams from Mount Kilimanjaro’s melting snow, attract a wide variety of birdlife and other animals throughout the year.",
             "thumbnailImage": "assets/kisite/kisite-thumbnail.png",
             "heroImage": "assets/kisite/kisite-hero.png",
             "galleryImages": [
@@ -1200,7 +1213,6 @@
                     "name": "Coral Reefs",
                     "image": "assets/kisite/reefs.png"
                 },
-                
                 {
                     "name": "Butterflyfish",
                     "image": "assets/kisite/butterflyfish.png"
@@ -1259,7 +1271,6 @@
                     }
                 ]
             }
-            
         }
     ]
 }

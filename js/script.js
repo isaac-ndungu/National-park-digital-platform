@@ -24,6 +24,7 @@ async function fetchParksData() {
 function createParkCards() {
     // clear existing cards
     const cardContainer = document.getElementById('cardContainer');
+    if (!cardContainer) return;
     cardContainer.innerHTML = '';
 
     parksData.slice(0, 3).forEach(park => {
@@ -52,11 +53,7 @@ function createParkCards() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
-    await fetchParksData();
-    createParkCards();
-    createWildlifeHighlights();
-});
+
 
 
 
@@ -85,7 +82,7 @@ const routes = {
         description: "Featured parks"
     },
     safari: {
-        template: "/template/safari.com",
+        template: "/templates/safari.html",
         title: "Safaris | " + pageTitle,
         description: "Featured safari packages"
     },
@@ -121,8 +118,10 @@ const locationHandler = async () => {
     html = await fetch(route.template).then((response) => response.text());
 
     content.innerHTML = html;
+    await fetchParksData();
     createParkCards();
     createWildlifeHighlights();
+    addParks();;
 
     document.title = route.title;
     // set the desctiprion of the document to the descriotion of the route
@@ -139,6 +138,7 @@ locationHandler();
 
 function createWildlifeHighlights() {
     const wildlife = document.getElementById('wildlife-highlights');
+    if (!wildlife) return;
     wildlife.innerHTML = '';
 
     parksData.slice(0, 8).forEach(park => {
@@ -158,7 +158,46 @@ function createWildlifeHighlights() {
         </div>
         `;
         wildlife.appendChild(card)
-    })
+    });
 }
 
-createWildlifeHighlights();
+
+
+// add parks to the park page
+
+function addParks() {
+    // clear existing cards
+    let parkContainer = document.getElementById('parkContainer');
+    if (!parkContainer) return;
+    parkContainer.innerHTML = '';
+
+    parksData.forEach((park, index) => {
+        const parkWrapper = document.createElement('div');
+        parkWrapper.className = 'flex gap-8 mb-8';
+
+        let isEven = index % 2 === 0;
+
+
+        const textContent = `
+                <div class="w-[55%]">
+                    <h3 class="text-3xl font-bold tracking-wide mb-4 pt-16">${park.name}</h3>
+                    <p class="texl-md px-8 font-regular mb-4"> ${park.mainDescription}</p>
+                    <p class="texl-md px-8 font-regular">${[park.mainDescription1]}</p>
+                </div>
+                `;
+        const imageContent = `
+                <div class="w-[45%]">
+                    <div class="h-1 bg-orange-700 mb-4"></div>
+                    <img src="${park.thumbnailImage}" alt="${park.name}">
+                    <a href=""><button class="explore-btn bg-white/70 hover:bg-green-600 text-green-600 hover:text-white border border-2 border-green-600 font-bold py-2 px-4 mt-8 w-full rounded" data-id="${park.id}">Explore Park</button></a>
+                </div>
+    `;
+        if(isEven) {
+            parkWrapper.innerHTML = textContent + imageContent;
+        } else {
+            parkWrapper.innerHTML = imageContent + textContent;
+        }
+        parkContainer.appendChild(parkWrapper);
+    });
+}
+
