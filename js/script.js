@@ -26,7 +26,7 @@ function createParkCards() {
     const cardContainer = document.getElementById('cardContainer');
     cardContainer.innerHTML = '';
 
-    parksData.forEach(park => {
+    parksData.slice(0, 3).forEach(park => {
         const card = document.createElement('div');
         card.classList.add('park-card');
 
