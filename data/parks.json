@@ -13,6 +13,10 @@
             ],
             "wildlifeHighlights": [
                 {
+                    "name": "Wildebeests",
+                    "image": "assets/maasai-mara/wildebeest.png"
+                },
+                {
                     "name": "Lions",
                     "image": "assets/maasai-mara/lion.png"
                 },
@@ -23,11 +27,8 @@
                 {
                     "name": "Cheetahs",
                     "image": "assets/maasai-mara/cheetah.png"
-                },
-                {
-                    "name": "Wildebeests",
-                    "image": "assets/maasai-mara/wildebeest.png"
                 }
+                
             ],
             "activities": [
                 {
@@ -349,6 +350,10 @@
             ],
             "wildlifeHighlights": [
                 {
+                    "name": "Cheetahs",
+                    "image": "assets/amboseli/cheetah.png"
+                },
+                {
                     "name": "Elephants",
                     "image": "assets/amboseli/elephant.png"
                 },
@@ -356,10 +361,7 @@
                     "name": "Lions",
                     "image": "assets/amboseli/lion.png"
                 },
-                {
-                    "name": "Cheetahs",
-                    "image": "assets/amboseli/cheetah.png"
-                },
+                
                 {
                     "name": "Buffaloes",
                     "image": "assets/amboseli/buffalo.png"
@@ -1022,7 +1024,11 @@
             ],
             "wildlifeHighlights": [
                 {
-                    "name": "Lions",
+                    "name": "Impala",
+                    "image": "assets/hells-gate/impala.png"
+                },
+                {
+                    "name": "Zebra",
                     "image": "assets/hells-gate/zebra.png"
                 },
                 {
@@ -1032,11 +1038,8 @@
                 {
                     "name": "Cheetahs",
                     "image": "assets/hells-gate/giraffe.png"
-                },
-                {
-                    "name": "Wildebeests",
-                    "image": "assets/hells-gate/impala.png"
                 }
+            
             ],
             "activities": [
                 {
@@ -1190,13 +1193,14 @@
             ],
             "wildlifeHighlights": [
                 {
-                    "name": "Coral Reefs",
-                    "image": "assets/kisite/reefs.png"
-                },
-                {
                     "name": "Dolphins",
                     "image": "assets/kisite/dolphin.png"
                 },
+                {
+                    "name": "Coral Reefs",
+                    "image": "assets/kisite/reefs.png"
+                },
+                
                 {
                     "name": "Butterflyfish",
                     "image": "assets/kisite/butterflyfish.png"

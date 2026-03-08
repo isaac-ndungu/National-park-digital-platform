@@ -35,7 +35,7 @@ function createParkCards() {
             <img src="${park.thumbnailImage}" alt="${park.name}">
         </div>
 
-        <div class="park-content p-4">
+        <div class="park-content p-4 bg-white/90">
             <h3 class="park-title text-lg font-bold mb-4">${park.name}</h3>
             <p class="park-description text-sm mb-4">${park.description}</p>
 
@@ -55,6 +55,7 @@ function createParkCards() {
 document.addEventListener('DOMContentLoaded', async () => {
     await fetchParksData();
     createParkCards();
+    createWildlifeHighlights();
 });
 
 
@@ -109,18 +110,19 @@ const routes = {
 const locationHandler = async () => {
     var location = window.location.hash.replace('#', '');
 
-    if (location.length == 0){
+    if (location.length == 0) {
         location = '/';
     }
 
     // get the route object from the routes object
     const route = routes[location] || routes[404];
-    
+
     // get the html from the template
     html = await fetch(route.template).then((response) => response.text());
 
     content.innerHTML = html;
     createParkCards();
+    createWildlifeHighlights();
 
     document.title = route.title;
     // set the desctiprion of the document to the descriotion of the route
@@ -130,3 +132,33 @@ const locationHandler = async () => {
 window.addEventListener("hashchange", locationHandler);
 
 locationHandler();
+
+
+
+// Add wildlife highlights
+
+function createWildlifeHighlights() {
+    const wildlife = document.getElementById('wildlife-highlights');
+    wildlife.innerHTML = '';
+
+    parksData.slice(0, 8).forEach(park => {
+        const card = document.createElement('div');
+        card.classList.add('wildlife-card');
+        card.style.cssText = ' overflow: hidden; transition: transform 0.3s ease;'
+
+
+        card.innerHTML = `
+        <div class="park-image">
+            <img src="${park.wildlifeHighlights[0].image}" alt="${park.wildlifeHighlights[0].name}">
+        </div>
+
+        <div class="park-content p-4">
+            <h3 class="park-title text-lg font-bold mb-4">${park.wildlifeHighlights[0].name}</h3>
+        
+        </div>
+        `;
+        wildlife.appendChild(card)
+    })
+}
+
+createWildlifeHighlights();
