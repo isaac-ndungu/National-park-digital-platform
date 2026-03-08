@@ -96,10 +96,10 @@ const routes = {
         title: "Blog | " + pageTitle,
         description: " Safarii blogs"
     },
-    nairobi: {
-        template: "../template/nairobi-park.html",
-        title: "Nairobi National Park | " + pageTitle,
-        description: "Nairobi national park pahe"
+    park: {
+        template: "../template/park.html",
+        title: "Park | " + pageTitle,
+        description: "National Park Details"
     },
 };
 
@@ -107,15 +107,18 @@ const routes = {
 const locationHandler = async () => {
     var location = window.location.hash.replace('#', '');
 
+    // handle parks
+    const [route, id] = location.split('/');
+
     if (location.length == 0) {
         location = '/';
     }
 
     // get the route object from the routes object
-    const route = routes[location] || routes[404];
+    const routeObj = routes[route] || routes[404];
 
     // get the html from the template
-    html = await fetch(route.template).then((response) => response.text());
+    html = await fetch(routeObj.template).then((response) => response.text());
 
     content.innerHTML = html;
     await fetchParksData();
@@ -123,9 +126,13 @@ const locationHandler = async () => {
     createWildlifeHighlights();
     addParks();;
 
-    document.title = route.title;
+    if (route === 'park' && id) {
+        loadParkDetails(id);
+    }
+
+    document.title = routeObj.title;
     // set the desctiprion of the document to the descriotion of the route
-    document.querySelector('meta[name="description"]').setAttribute("content", route.description);
+    document.querySelector('meta[name="description"]').setAttribute("content", routeObj.description);
 }
 
 window.addEventListener("hashchange", locationHandler);
@@ -189,7 +196,7 @@ function addParks() {
                 <div class="w-[45%]">
                     <div class="h-1 bg-orange-700 mb-4"></div>
                     <img src="${park.thumbnailImage}" alt="${park.name}">
-                    <a href=""><button class="explore-btn bg-white/70 hover:bg-green-600 text-green-600 hover:text-white border border-2 border-green-600 font-bold py-2 px-4 mt-8 w-full rounded" data-id="${park.id}">Explore Park</button></a>
+                    <a href="#${park.id}"><button class="explore-btn bg-white/70 hover:bg-green-600 text-green-600 hover:text-white border border-2 border-green-600 font-bold py-2 px-4 mt-8 w-full rounded" data-id="${park.id}">Explore Park</button></a>
                 </div>
     `;
         if(isEven) {
@@ -201,3 +208,11 @@ function addParks() {
     });
 }
 
+// load Park Details in park.html
+
+function loadParkDetails(id) {
+    const park = parksData.find(park => park.id == id);
+    if (!park) return;
+
+    
+}
