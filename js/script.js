@@ -52,11 +52,11 @@ function createParkCards() {
         cardContainer.appendChild(card);
     });
     cardContainer.addEventListener('click', (event) => {
-            if (event.target.classList.contains('explore-btn')) {
-                const id = event.target.dataset.id;
-                window.location.hash = `park/${id}`;
-            }
-        });
+        if (event.target.classList.contains('explore-btn')) {
+            const id = event.target.dataset.id;
+            window.location.hash = `park/${id}`;
+        }
+    });
 
 }
 
@@ -214,16 +214,16 @@ function addParks() {
         }
         parkContainer.appendChild(parkWrapper);
 
-        
+
     });
 
-    
+
     parkContainer.addEventListener('click', (event) => {
-            if (event.target.classList.contains('explore-btn')) {
-                const id = event.target.dataset.id;
-                window.location.hash = `park/${id}`;
-            }
-        });
+        if (event.target.classList.contains('explore-btn')) {
+            const id = event.target.dataset.id;
+            window.location.hash = `park/${id}`;
+        }
+    });
 }
 
 // load Park Details in park.html
@@ -277,23 +277,29 @@ function loadParkDetails(id) {
         `;
     });
 
+    // entry fees
+    
+
     // Lodges
     lodges.innerHTML = '';
     park.lodges.forEach(lodge => {
         lodges.innerHTML += `
-        <div class="bg-white rounded shadow-sm overflow-hidden">
-            <img src="${lodge.heroImage}" alt="${lodge.name}" class="w-full h-48 object-cover rounded mb-2">
+        <div class=" bg-white shadow-sm overflow-hidden"> 
+            <img src="${lodge.heroImage}" alt="${lodge.name}" class=" w-full h-48 object-cover mb-2">
+             
 
-            <div class="p-8">
-                <div class="flex justify-between items-center mb-2">
-                    <h3 class="font-bold text-lg"> ${lodge.name}</h3>
-                    <span class="text-xs px-2 py-1 bg-green-100 text-green-700 rounded-full">${lodge.rank}</span>
+            <div class="p-4">
+            <h3 class="font-bold text-lg"> ${lodge.name}</h3>
+                <div class="flex items-center mb-2 gap-4  mt-2">
+                   <p class="text-xs px-2 py-1 bg-green-100 text-green-700 rounded-full">${lodge.type}</p>
+                    <p class="text-xs px-2 py-1 bg-green-100 text-green-700 rounded-full">${lodge.rank}</p>
                 </div>
-                <p class="text-sm text-gray-500 mb-1">${lodge.type}</p>
+                
                 <p class="text-sm text-gray-700">${lodge.description}</p>
-            </div>
 
-            <p class="font-semibold">${lodge.name}</p>
+                <button class="explore-btn bg-white/70 hover:bg-green-600 text-green-600 hover:text-white border border-2 border-green-600 font-bold py-2 px-4 mt-4 w-full rounded" data-id="${lodge.id}">Explore Lodge</button>
+            </div>
+        
         </div>
         `;
     });

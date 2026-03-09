@@ -1,24 +1,25 @@
 <div class="bg-gray-200">
     <!-- Hero Section -->
     <section class=" flex flex-col items-center justify-center text-center mb-10">
-        <img id="park-hero" src="" alt="" class="relative opacity-70 w-full h-screen object-cover">
+        <img id="park-hero" src="" alt="" class="relative w-full h-screen object-cover">
         <div class="absolute">
-            <h1 id="park-name" class="text-6xl font-bold text-green-700 tracking-wide"></h1>
-            <p id="park-description" class="text-2xl font-bold text-gray-700 p-10 tracking-tight"></p>
+            <h1 id="park-name" class="text-6xl font-bold text-white tracking-wide"></h1>
+            <p id="park-description" class="text-2xl font-bold text-white/80 p-10 tracking-tight max-w-4xl"></p>
             
         </div>
     </section>
 
     <!-- About Section -->
     <section class="max-w-7xl mx-auto px-4 py-16">
-        <div class="w-24 h-1 bg-orange-900 rounded-full mb-8"></div>
+        
 
         <div class="flex gap-8">
-            <div class="w-[55%]">
+            <div class="w-[55%] pt-10">
                 <p id="park-main-desc" class="text-gray-700 mb-4"></p>
                 <p id="park-main-desc1" class="text-gray-700"></p>
             </div>
             <div>
+                <div class="w-full h-1 bg-orange-900  mb-8"></div>
                 <img id="park-thumbnail" src="" alt="" class="w-full object-cover rounded">
             </div>
         </div>
@@ -28,24 +29,32 @@
 
     <!-- Wildlife Highlights -->
 
-    <section class="bg-gray-50 py-16 max-w-7xl">
-        <div class="mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-2">Wildlife Highlights</h2>
-            <div id="park-wildlife" class="grid grid-cols-2 md:grid-cols-4 gap-6"></div>
+    <section class="py-16 ">
+        
+        <div class="mx-auto px-4 max-w-7xl">
+            <div class="w-full h-1 bg-orange-900  mb-8"></div>
+            <h2 class="text-3xl font-bold mb-8 text-center">Wildlife Highlights</h2>
+            <p class="text-gray-700 mb-6 text-center mt-4 max-w-4xl mx-auto">Species commonly sighted in this park include both year-round residents and seasonal migratory birds. Population density varies by season, but the following species are currently documented within the park boundaries.</p>
+            <div id="park-wildlife" class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10"></div>
         </div>
     </section>
 
     <!-- Park Activities -->
-    <section class="max-w-7xl mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold mb-2">Activities</h2>
-        <div id="park-activities" class="grid grid-cols-1 sm:grid-cols-3 gap-6"></div>
+        <section class="max-w-7xl mx-auto px-4 py-16">
+            <div class="w-full h-1 bg-orange-900  mb-8"></div>
+            <h2 class="text-3xl font-bold mb-8 text-center">Activities</h2>
+            <p class="text-gray-700 mb-6 text-center mt-4 max-w-4xl mx-auto">Park activities are managed by authorized rangers and licensed tour operators. All excursions must adhere to conservation guidelines to ensure minimal environmental impact. Current available options include</p>
+            <div id="park-activities" class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-10"></div>
+        </section>
 
-    </section>
 
     <!-- Entry Fees -->
-    <section class="max-w-7xl bg-gray-50 py-16">
-        <div class="mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-2">Entry Fees</h2>
+    <section class=" py-16">
+
+        <div class="mx-auto px-4 max-w-7xl">
+            <div class="w-full h-1 bg-orange-900  mb-8"></div>
+            <h2 class="text-3xl font-bold mb-2 text-center">Entry Fees</h2>
+            <p class="text-gray-700 mb-6 text-center mt-4 max-w-4xl mx-auto">Daily conservation fees are required for all visitors and are valid for a single 24-hour entry. Prices are subject to change based on seasonal rates and residency status. Proof of identification is required at the gate.</p>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 <div class="bg-white p-6 shadow-sm rounded">
                     <h3 class="font-bold text-lg mb-4 text-green-700">Kenyan Resident</h3>
@@ -67,7 +76,9 @@
 
     <!-- Lodges -->
     <section class="max-w-7xl mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold mb-2">accommodations</h2>
+        <div class="w-full h-1 bg-orange-900  mb-8"></div>
+        <h2 class="text-3xl font-bold mb-8 text-center">Accommodations</h2>
+        <p class="text-gray-700 mb-6 text-center mt-4 max-w-4xl mx-auto">Lodging options within and around the park range from high-end safari camps to budget-friendly public campsites. Availability is often limited during peak seasons; early booking is recommended</p>
         <div id="park-lodges" class="grid grid-cols-1 sm:grid-cols-3 gap-6"></div>
 
     </section>
