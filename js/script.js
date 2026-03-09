@@ -132,7 +132,7 @@ const locationHandler = async () => {
     await fetchParksData();
     createParkCards();
     createWildlifeHighlights();
-    addParks();;
+    addParks();
 
     if (route === 'park' && id) {
         loadParkDetails(id);
@@ -242,6 +242,9 @@ function loadParkDetails(id) {
     const wildlife = document.getElementById('park-wildlife');
     const activities = document.getElementById('park-activities');
     const lodges = document.getElementById('park-lodges');
+    const feesKenyan = document.getElementById('fees-kenyan');
+    const feesEastAfrican = document.getElementById('fees-eastafrican');
+    const feesNonResident = document.getElementById('fees-nonresident');
 
     // hero section
     parkHero.src = park.heroImage;
@@ -278,7 +281,37 @@ function loadParkDetails(id) {
     });
 
     // entry fees
-    
+    feesKenyan.innerHTML = '';
+    feesEastAfrican.innerHTML = '';
+    feesNonResident.innerHTML = '';
+
+    park.entryFees.kenyan.forEach(fee => {
+        feesKenyan.innerHTML += `
+        <div class="flex justify-between border-b py-2">
+            <span>${fee.category}</span>
+            <span class="font-bold">${fee.fee}</span>
+        </div>
+        `
+    });
+
+    park.entryFees.eastAfrican.forEach(fee => {
+        feesEastAfrican.innerHTML += `
+        <div class="flex justify-between border-b py-2">
+            <span>${fee.category}</span>
+            <span class="font-bold">${fee.fee}</span>
+        </div>
+        `
+    });
+
+    park.entryFees.noneResident.forEach(fee => {
+        feesNonResident.innerHTML += `
+        <div class="flex justify-between border-b py-2">
+            <span>${fee.category}</span>
+            <span class="font-bold">${fee.fee}</span>
+        </div>
+        `
+    });
+
 
     // Lodges
     lodges.innerHTML = '';
@@ -307,4 +340,3 @@ function loadParkDetails(id) {
     document.title = `${park.name} | Safarii`;
 
 }
-
