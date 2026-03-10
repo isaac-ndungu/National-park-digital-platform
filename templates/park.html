@@ -1,26 +1,29 @@
 <div class="bg-gray-200">
     <!-- Hero Section -->
-    <section class=" flex flex-col items-center justify-center text-center mb-10">
-        <img id="park-hero" src="" alt="" class="relative w-full h-screen object-cover">
-        <div class="absolute">
-            <h1 id="park-name" class="text-6xl font-bold text-white tracking-wide"></h1>
-            <p id="park-description" class="text-2xl font-bold text-white/80 p-10 tracking-tight max-w-4xl"></p>
+    <section class="relative h-screen overflow-hidden">
+        <img id="park-hero" src="" alt="" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/30 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-10 md:p-16">
+            <p class="text-xs tracking-widest uppercase text-orange-400 mb-3">National Park</p>
+            <h1 id="park-name" class="font-serif text-3xl md:text-5xl font-bold text-white tracking-wide mb-3"></h1>
+            <p id="park-description" class="text-white/70 text-lg max-w-2xl font-light"></p>
             
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="max-w-7xl mx-auto px-4 py-16">
+    <section class="max-w-7xl mx-auto px-4 py-10">
         
 
-        <div class="flex gap-8">
-            <div class="w-[55%] pt-10">
-                <p id="park-main-desc" class="text-gray-700 mb-4"></p>
-                <p id="park-main-desc1" class="text-gray-700"></p>
+        <div class="flex gap-12">
+            <div class="w-[55%] flex flex-col justify-center">
+                <p class="text-lg tracking-widest uppercase text-orange-700 mb-3">About</p>
+                <p id="park-main-desc" class="text-gray-600 text-md leading-relaxed mb-4"></p>
+                <p id="park-main-desc1" class="text-gray-600 text-md leading-relaxed mb-4"></p>
             </div>
-            <div>
-                <div class="w-full h-1 bg-orange-900  mb-8"></div>
-                <img id="park-thumbnail" src="" alt="" class="w-full object-cover rounded">
+            <div class="w-[45%]">
+                <div class="w-full h-1 bg-orange-900  mb-4"></div>
+                <img id="park-thumbnail" src="" alt="" class="w-full object-cover">
             </div>
         </div>
 
@@ -33,39 +36,41 @@
         
         <div class="mx-auto px-4 max-w-7xl">
             <div class="w-full h-1 bg-orange-900  mb-8"></div>
-            <h2 class="text-3xl font-bold mb-8 text-center">Wildlife Highlights</h2>
-            <p class="text-gray-700 mb-6 text-center mt-4 max-w-4xl mx-auto">Species commonly sighted in this park include both year-round residents and seasonal migratory birds. Population density varies by season, but the following species are currently documented within the park boundaries.</p>
-            <div id="park-wildlife" class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10"></div>
+            <p class="text- tracking-widest uppercase text-orange-700 text-center mb-2">Fauna</p>
+            <h2 class="text-3xl font-serif font-bold mb-8 text-center text-stone-800">Wildlife Highlights</h2>
+            <p class="text-gray-500 text-md mb-6 text-center mt-4 max-w-4xl mx-auto">Species commonly sighted in this park include both year-round residents and seasonal migratory birds. Population density varies by season, but the following species are currently documented within the park boundaries.</p>
+            <div id="park-wildlife" class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10"></div>
         </div>
     </section>
 
     <!-- Park Activities -->
         <section class="max-w-7xl mx-auto px-4 py-16">
             <div class="w-full h-1 bg-orange-900  mb-8"></div>
-            <h2 class="text-3xl font-bold mb-8 text-center">Activities</h2>
-            <p class="text-gray-700 mb-6 text-center mt-4 max-w-4xl mx-auto">Park activities are managed by authorized rangers and licensed tour operators. All excursions must adhere to conservation guidelines to ensure minimal environmental impact. Current available options include</p>
+            <p class="text-xs tracking-widest uppercase text-orange-700 text-center mb-2">Things To Do</p>
+            <h2 class="font-serif text-3xl font-bold text-stone-800 text-center mb-4">Park Activities</h2>
+            <p class="text-gray-500 text-sm text-center max-w-2xl mx-auto mb-12">Park activities are managed by authorized rangers and licensed tour operators. All excursions must adhere to conservation guidelines to ensure minimal environmental impact. Current available options include</p>
             <div id="park-activities" class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-10"></div>
         </section>
 
 
     <!-- Entry Fees -->
-    <section class=" py-16">
+    <section class="py-16">
 
         <div class="mx-auto px-4 max-w-7xl">
             <div class="w-full h-1 bg-orange-900  mb-8"></div>
-            <h2 class="text-3xl font-bold mb-2 text-center">Entry Fees</h2>
-            <p class="text-gray-700 mb-6 text-center mt-4 max-w-4xl mx-auto">Daily conservation fees are required for all visitors and are valid for a single 24-hour entry. Prices are subject to change based on seasonal rates and residency status. Proof of identification is required at the gate.</p>
+            <h2 class="font-serif text-3xl font-bold text-stone-800 text-center mb-4">Entry Fees</h2>
+            <p class="text-gray-500 text-sm text-center max-w-2xl mx-auto mb-12">Daily conservation fees are required for all visitors and are valid for a single 24-hour entry. Prices are subject to change based on seasonal rates and residency status. Proof of identification is required at the gate.</p>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 <div class="bg-white p-6 shadow-sm rounded">
-                    <h3 class="font-bold text-lg mb-4 text-green-700">Kenyan Resident</h3>
+                    <h3 class="font-serif font-bold text-lg mb-4 text-orange-700">Kenyan Resident</h3>
                     <div id="fees-kenyan"></div>
                 </div>
                 <div class="bg-white p-6 shadow-sm rounded">
-                    <h3 class="font-bold text-lg mb-4 text-green-700">East African</h3>
+                    <h3 class="font-serif font-bold text-lg mb-4 text-orange-700">East African</h3>
                     <div id="fees-eastafrican"></div>
                 </div>
                 <div class="bg-white p-6 shadow-sm rounded">
-                    <h3 class="font-bold text-lg mb-4 text-green-700">Non Resident</h3>
+                    <h3 class="font-serif font-bold text-lg mb-4 text-orange-700">Non Resident</h3>
                     <div id="fees-nonresident"></div>
                 </div>
             </div>
@@ -77,9 +82,20 @@
     <!-- Lodges -->
     <section class="max-w-7xl mx-auto px-4 py-16">
         <div class="w-full h-1 bg-orange-900  mb-8"></div>
-        <h2 class="text-3xl font-bold mb-8 text-center">Accommodations</h2>
-        <p class="text-gray-700 mb-6 text-center mt-4 max-w-4xl mx-auto">Lodging options within and around the park range from high-end safari camps to budget-friendly public campsites. Availability is often limited during peak seasons; early booking is recommended</p>
+        <p class="text-xs tracking-widest uppercase text-orange-700 text-center mb-2">Where To Stay</p>
+        <h2 class="font-serif text-3xl font-bold text-stone-800 text-center mb-4">Accommodations</h2>
+        <p class="text-gray-500 text-sm text-center max-w-2xl mx-auto mb-12">Lodging options within and around the park range from high-end safari camps to budget-friendly public campsites. Availability is often limited during peak seasons; early booking is recommended</p>
         <div id="park-lodges" class="grid grid-cols-1 sm:grid-cols-3 gap-6"></div>
 
+    </section>
+
+    <!-- CTa Section -->
+     <section class="py-20 bg-green-700 text-white text-center">
+        <p class="text-xs tracking-widest uppercase text-orange-400 mb-3">Plan Your Visit</p>
+        <h3 id="park-cta-name" class="font-serif text-4xl md:text-5xl font-bold mb-4"></h3>
+        <p class="text-white/60 text-lg max-w-xl mx-auto mb-10">Secure your lodge and safari experience before peak season fills up.</p>
+        <a href="#safaris" class="inline-block px-10 py-3.5 bg-orange-700 hover:bg-orange-600 text-white tracking-widest uppercase text-sm transition-colors">
+            View Safari Packages
+        </a>
     </section>
 </div>

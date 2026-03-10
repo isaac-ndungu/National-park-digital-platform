@@ -226,15 +226,17 @@ function addParks() {
 
         const textContent = `
                 <div class="w-[55%]">
-                    <h3 class="text-3xl font-bold tracking-wide mb-4 pt-16">${park.name}</h3>
-                    <p class="texl-md px-8 font-regular mb-4"> ${park.mainDescription}</p>
-                    <p class="texl-md px-8 font-regular">${[park.mainDescription1]}</p>
+                <p class="text-xs tracking-widest uppercase text-orange-700 mb-3">National Park</p>
+                    <h3 class="font-serif text-4xl font-bold text-stone-800 tracking-wide mb-6">${park.name}</h3>
+                    <p class="texl-md px-8 mb-4"> ${park.mainDescription}</p>
+                    <p class="texl-md px-8 mb-8">${[park.mainDescription1]}</p>
+                    
                 </div>
                 `;
         const imageContent = `
                 <div class="w-[45%]">
                     <div class="h-1 bg-orange-700 mb-4"></div>
-                    <img src="${park.thumbnailImage}" alt="${park.name}">
+                    <img src="${park.thumbnailImage}" alt="${park.name}" class="w-full object-cover">
                     <button class="explore-btn bg-white/70 hover:bg-green-600 text-green-600 hover:text-white border border-2 border-green-600 font-bold py-2 px-4 mt-8 w-full rounded" data-id="${park.id}">Explore Park</button>
                 </div>
     `;
@@ -350,17 +352,21 @@ function loadParkDetails(id) {
         park.lodges.forEach(lodge => {
             lodges.innerHTML += `
         <div class=" bg-white shadow-sm overflow-hidden"> 
-            <img src="${lodge.heroImage}" alt="${lodge.name}" class=" w-full h-48 object-cover mb-2">
+            <div class="relative">
+                <img src="${lodge.heroImage}" alt="${lodge.name}" class=" w-full h-48 object-cover">
+                <div class="absolute bottom-0 left-0 flex items-center gap-2 p-3">
+                   <p class="text-xs tracking-widest uppercase px-3 py-1 border border-white/80 text-white">${lodge.type}</p>
+                    <p class="text-xs tracking-widest uppercase px-3 py-1 bg-orange-700 text-white">${lodge.rank}</p>
+                </div>
+            </div>
+            
              
 
             <div class="p-4">
             <h3 class="font-bold text-lg"> ${lodge.name}</h3>
-                <div class="flex items-center mb-2 gap-4  mt-2">
-                   <p class="text-xs px-2 py-1 bg-green-100 text-green-700 rounded-full">${lodge.type}</p>
-                    <p class="text-xs px-2 py-1 bg-green-100 text-green-700 rounded-full">${lodge.rank}</p>
-                </div>
                 
-                <p class="text-sm text-gray-700">${lodge.description}</p>
+                
+                <p class="text-sm text-gray-700 my-4">${lodge.description}</p>
 
                 <button class="explore-btn bg-white/70 hover:bg-green-600 text-green-600 hover:text-white border border-2 border-green-600 font-bold py-2 px-4 mt-4 w-full rounded" data-id="${lodge.id}">Explore Lodge</button>
             </div>
