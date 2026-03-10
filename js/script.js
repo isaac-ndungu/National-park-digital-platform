@@ -4,6 +4,7 @@ const content = document.getElementById('content');
 // fetch
 
 let parksData = [];
+let currentSafari = null;
 
 async function fetchParksData() {
     if (parksData.length > 0) return;
@@ -601,10 +602,11 @@ function filterSafaris(category) {
 }
 
 // load safari details for each safari
-currentSafari = safari;
 function loadSafariDetails(id) {
     const safari = safarisData.find(safari => safari.id === id);
     if (!safari) return;
+
+    currentSafari = safari;
 
     // Elements
     const safariHero        = document.getElementById('safari-hero');
@@ -737,3 +739,91 @@ function loadSafariDetails(id) {
     subject.value = '';
     message.value = '';
  }
+
+ // Safari booking
+
+let safariGuestCount = 2;
+
+function safariBooking(id) {
+    currentSafari = safarisData.find(safari => safari.id === id);
+    if (!currentSafari) return;
+
+    // reset to step 1
+    document.getElementById('safari-step-1').classList.remove('hidden');
+    document.getElementById('safari-step-2').classList.add('hidden');
+
+    // reset fields
+    document.getElementById('safari-firstname').value = '';
+    document.getElementById('safari-lastname').value  = '';
+    document.getElementById('safari-email').value     = '';
+    document.getElementById('safari-phone').value     = '';
+    document.getElementById('safari-checkin').value   = '';
+    document.getElementById('safari-requests').value  = '';
+    safariGuestCount = 2;
+    document.getElementById('safari-guest-count').textContent = safariGuestCount;
+
+    // clear errors
+    ['err-safari-firstname', 'err-safari-lastname', 'err-safari-email', 'err-safari-date'].forEach(id => {
+        document.getElementById(id).classList.add('hidden');
+    });
+
+    document.getElementById('modal-safari-name').textContent = currentSafari.name;
+
+    const modal = document.getElementById('safari-booking-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+}
+
+function closeSafariModal() {
+    const modal = document.getElementById('safari-booking-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+}
+
+function changeSafariGuests(delta) {
+    safariGuestCount = Math.max(1, Math.min(20, safariGuestCount + delta));
+    document.getElementById('safari-guest-count').textContent = safariGuestCount;
+}
+
+function submitSafariBooking() {
+    const firstname = document.getElementById('safari-firstname');
+    const lastname  = document.getElementById('safari-lastname');
+    const email     = document.getElementById('safari-email');
+    const checkin   = document.getElementById('safari-checkin');
+
+    let valid = true;
+
+    // clear errors
+    ['err-safari-firstname', 'err-safari-lastname', 'err-safari-email', 'err-safari-date'].forEach(id => {
+        document.getElementById(id).classList.add('hidden');
+    });
+
+    if (!firstname.value.trim()) {
+        document.getElementById('err-safari-firstname').textContent = 'Required';
+        document.getElementById('err-safari-firstname').classList.remove('hidden');
+        valid = false;
+    }
+    if (!lastname.value.trim()) {
+        document.getElementById('err-safari-lastname').textContent = 'Required';
+        document.getElementById('err-safari-lastname').classList.remove('hidden');
+        valid = false;
+    }
+    if (!email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+        document.getElementById('err-safari-email').textContent = 'Valid email required';
+        document.getElementById('err-safari-email').classList.remove('hidden');
+        valid = false;
+    }
+    if (!checkin.value) {
+        document.getElementById('err-safari-date').textContent = 'Please select a departure date';
+        document.getElementById('err-safari-date').classList.remove('hidden');
+        valid = false;
+    }
+
+    if (!valid) return;
+
+    //show success
+    const ref = 'SFR-' + Date.now().toString(36).toUpperCase().slice(-6);
+    document.getElementById('safari-booking-ref').textContent = ref;
+    document.getElementById('safari-step-1').classList.add('hidden');
+    document.getElementById('safari-step-2').classList.remove('hidden');
+}
