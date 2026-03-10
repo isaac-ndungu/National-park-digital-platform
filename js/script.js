@@ -120,11 +120,6 @@ const routes = {
         title: "Contact Us |" + pageTitle,
         description: "Contact Us"
     },
-    blog: {
-        template: "/templates/blog.html",
-        title: "Blog | " + pageTitle,
-        description: " Safarii blogs"
-    },
     park: {
         template: "/templates/park.html",
         title: "Park | " + pageTitle,
@@ -169,6 +164,9 @@ const locationHandler = async () => {
     await fetchsafarisData();
     if (route === 'safaris') {
         loadSafaris();
+    }
+    if (route === 'safari' && id) {
+        loadSafariDetails(id);
     }
 
     document.title = routeObj.title;
@@ -536,7 +534,7 @@ function loadSafaris() {
     safariContainer.addEventListener('click', (event) => {
         if (event.target.classList.contains('view-safari-btn')) {
             const id = event.target.dataset.id;
-            window.location.hash = `safari-detail/${id}`;
+            window.location.hash = `safari/${id}`;
         }
     });
 }
@@ -591,7 +589,111 @@ function filterSafaris(category) {
     safariContainer.addEventListener('click', (event) => {
         if (event.target.classList.contains('view-safari-btn')) {
             const id = event.target.dataset.id;
-            window.location.hash = `safari-detail/${id}`;
+            window.location.hash = `safaris/${id}`;
         }
     });
+}
+
+// load safari details for each safari
+currentSafari = safari;
+function loadSafariDetails(id) {
+    const safari = safarisData.find(safari => safari.id === id);
+    if (!safari) return;
+
+    // Elements
+    const safariHero        = document.getElementById('safari-hero');
+    const safariCategory    = document.getElementById('safari-category');
+    const safariDuration    = document.getElementById('safari-duration');
+    const safariName        = document.getElementById('safari-name');
+    const safariTagline     = document.getElementById('safari-tagline');
+    const safariDescription = document.getElementById('safari-description');
+    const safariRoute       = document.getElementById('safari-route');
+    const safariHighlights  = document.getElementById('safari-highlights');
+    const safariIncludes    = document.getElementById('safari-includes');
+    const safariExcludes    = document.getElementById('safari-excludes');
+    const ctaName           = document.getElementById('cta-safari-name');
+    const summaryPrice     = document.getElementById('summary-price');
+    const summaryDuration  = document.getElementById('summary-duration');
+    const summaryParks     = document.getElementById('summary-parks');
+    const summaryCategory  = document.getElementById('summary-category');
+    const summaryBestTime  = document.getElementById('summary-best-time');
+    const summaryRating = document.getElementById('summary-rating')
+
+    // Hero
+    safariHero.src = safari.heroImage;
+    safariHero.alt = safari.name;
+    safariCategory.textContent = safari.category;
+    safariDuration.textContent = safari.duration;
+    safariName.textContent = safari.name;
+    safariTagline.textContent = safari.tagline;
+    safariDescription.textContent = safari.description;
+
+    // Summary card
+    summaryPrice.textContent    = 'KES ' + Number(safari.price).toLocaleString('en-KE');
+    summaryDuration.textContent = safari.duration;
+    summaryParks.textContent    = safari.parks.map(p => p.parkName).join(', ');
+    summaryCategory.textContent = safari.category;
+    summaryBestTime.textContent = safari.bestTime.join(', ');
+    ctaName.textContent         = safari.name;
+    summaryRating.textContent = safari.rating;
+
+    // Journey route stops
+    safariRoute.innerHTML = '';
+    safari.parks.forEach((stop, index) => {
+        const isLast = index === safari.parks.length - 1;
+        safariRoute.innerHTML += `
+            <div class="flex gap-4 ${isLast ? '' : 'mb-0'}">
+                <div class="flex flex-col items-center w-8 flex-shrink-0">
+                    <div class="w-3 h-3 rounded-full bg-orange-700 mt-1 flex-shrink-0"></div>
+                </div>
+                <div class="pb-8 flex-1">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <p class="text-xs tracking-widest uppercase text-orange-700 mb-0.5">Stop ${index + 1}</p>
+                            <h4 class="font-serif text-lg text-stone-800">${stop.parkName}</h4>
+                            <p class="text-sm text-stone-500">${stop.lodgeName}</p>
+                        </div>
+                        <span class="text-xs bg-stone-100 text-stone-600 px-3 py-1 mt-1 ml-4 whitespace-nowrap">
+                            ${stop.nights} night${stop.nights !== 1 ? 's' : ''}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+
+    // Highlights
+    safariHighlights.innerHTML = '';
+    safari.highlights.forEach(highlight => {
+        safariHighlights.innerHTML += `
+            <div class="flex items-start gap-3 bg-stone-50 p-4">
+                <i class="fa-solid fa-paw text-orange-600 mt-0.5 flex-shrink-0 text-sm"></i>
+                <p class="text-sm text-stone-700">${highlight}</p>
+            </div>
+        `;
+    });
+
+    // Includes
+    safariIncludes.innerHTML = '';
+    safari.includes.forEach(item => {
+        safariIncludes.innerHTML += `
+            <li class="flex items-start gap-3 text-sm text-stone-700">
+                <i class="fa-solid fa-circle-check text-green-600 mt-0.5 flex-shrink-0"></i>
+                <span>${item}</span>
+            </li>
+        `;
+    });
+
+    // Excludes
+    safariExcludes.innerHTML = '';
+    safari.excludes.forEach(item => {
+        safariExcludes.innerHTML += `
+            <li class="flex items-start gap-3 text-sm text-stone-500">
+                <i class="fa-solid fa-circle-xmark text-red-400 mt-0.5 flex-shrink-0"></i>
+                <span>${item}</span>
+            </li>
+        `;
+    });
+
+    document.title = `${safari.name} | Safarii`;
 }

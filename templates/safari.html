@@ -1,0 +1,126 @@
+<div class="bg-stone-50">
+
+    <!-- hero section -->
+    <section class="relative h-[85vh] overflow-hidden">
+        <img id="safari-hero" src="" alt="" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/30 to-transparent"></div>
+
+        <div class="absolute bottom-0 left-0 right-0 p-10 md:p-16">
+            <div class="flex items-center gap-3 mb-4">
+                <span id="safari-category"
+                    class="text-xs tracking-widest uppercase px-3 py-1 border border-white/60 text-white/90"></span>
+                <span id="safari-duration"
+                    class="text-xs tracking-widest uppercase px-3 py-1 bg-orange-700 text-white"></span>
+            </div>
+            <h1 id="safari-name" class="font-serif text-5xl md:text-7xl font-bold text-white tracking-wide mb-3"></h1>
+            <p id="safari-tagline" class="text-white/80 text-lg max-w-2xl font-light"></p>
+        </div>
+    </section>
+
+    <!-- overview -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="flex flex-col lg:flex-row gap-12">
+
+            <!-- description + route -->
+            <div class="lg:w-[60%]">
+                <p class="text-xs tracking-widest uppercase text-orange-700 mb-3">About This Package</p>
+                <p id="safari-description" class="text-gray-600 text-base leading-relaxed mb-10"></p>
+
+                <p class="text-xs tracking-widest uppercase text-orange-700 mb-6">Your Journey</p>
+                <div id="safari-route"></div>
+            </div>
+
+            <!--  summary card -->
+            <div class="lg:w-[40%]">
+                <div class="bg-white shadow-md p-6">
+
+                    <p class="text-xs tracking-widest uppercase text-stone-400 mb-2">Package Price</p>
+                    <p id="summary-price" class="font-serif text-4xl text-orange-700 mb-1"></p>
+                    <p class="text-xs text-stone-400 mb-6">per person</p>
+
+                    <div class="border-t border-stone-100 pt-5 mb-6">
+                        <div class="flex justify-between border-b py-2">
+                            <span class="text-sm text-stone-500">Duration</span>
+                            <span id="summary-duration" class="text-sm font-semibold text-stone-800"></span>
+                        </div>
+                        <div class="flex justify-between border-b py-2">
+                            <span class="text-sm text-stone-500">Parks</span>
+                            <span id="summary-parks"
+                                class="text-sm font-semibold text-stone-800 text-right max-w-[200px]"></span>
+                        </div>
+                        <div class="flex justify-between border-b py-2">
+                            <span class="text-sm text-stone-500">Category</span>
+                            <span id="summary-category" class="text-sm font-semibold text-stone-800"></span>
+                        </div>
+                        <div class="flex justify-between border-b py-2">
+                            <span class="text-sm text-stone-500">Rating</span>
+                            <span id="summary-rating" class="text-sm font-semibold text-stone-800"></span>
+                        </div>
+                        <div class="flex justify-between py-2">
+                            <span class="text-sm text-stone-500">Best Time</span>
+                            <span id="summary-best-time"
+                                class="text-sm font-semibold text-stone-800 text-right max-w-[200px]"></span>
+                        </div>
+                    </div>
+
+                    <button id="book-safari-btn"
+                        class="bg-white/70 hover:bg-orange-700 text-orange-700 hover:text-white border border-2 border-orange-700 font-bold py-2 px-4 mb-3 w-full rounded transition-colors">
+                        Book This Package
+                    </button>
+                    <button
+                        class="bg-white/70 hover:bg-stone-800 text-stone-700 hover:text-white border border-2 border-stone-700 font-bold py-2 px-4 w-full rounded transition-colors">
+                        Make Enquiry
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- highlights -->
+    <section class=" py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="w-full h-1 bg-orange-900  mb-8"></div>
+            <p class="text-xs tracking-widest uppercase text-orange-700 text-center mb-2">What To Expect</p>
+            <h2 class="font-serif text-3xl font-bold text-center text-stone-800 mb-12">Package Highlights</h2>
+            <div id="safari-highlights" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+        </div>
+    </section>
+
+    <!-- includes / excludes -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="w-full h-1 bg-orange-900  mb-8"></div>
+        <h2 class="font-serif text-3xl font-bold text-center text-stone-800 mb-4">What’s Included in Your Safari</h2>
+        <p class="text-gray-600 text-base leading-relaxed mb-10 text-center">A clear breakdown of what your package covers and the additional expenses to plan for during your journey.</p>
+        <div class="flex flex-col md:flex-row gap-12">
+            <div class="md:w-1/2">
+                <p class="text-xs tracking-widest uppercase text-orange-700 mb-6">What's Included</p>
+                <ul id="safari-includes" class="space-y-3"></ul>
+            </div>
+            <div class="md:w-1/2">
+                <p class="text-xs tracking-widest uppercase text-stone-400 mb-6">Not Included</p>
+                <ul id="safari-excludes" class="space-y-3"></ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-green-700 text-white text-center">
+        <p class="text-xs tracking-widest uppercase text-orange-400 mb-2">Reserve Your Package</p>
+        <h2 id="cta-safari-name" class="font-serif text-4xl md:text-5xl mb-4"></h2>
+        <p class="text-white/50 max-w-lg mx-auto mb-10 text-sm">
+            Packages fill quickly in peak season. Secure your dates early.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <button id="cta-book-btn"
+                class="px-8 py-3 bg-orange-700 hover:bg-orange-600 text-white tracking-widest uppercase text-sm transition-colors">
+                Book Now
+            </button>
+            <button
+                class="px-8 py-3 border border-white/30 hover:border-white text-white tracking-widest uppercase text-sm transition-colors">
+                Make Enquiry
+            </button>
+        </div>
+    </section>
+
+</div>
