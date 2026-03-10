@@ -1,0 +1,449 @@
+{
+  "safaris": [
+    {
+      "id": "ultimate-grand-tour",
+      "name": "The Ultimate Grand Tour",
+      "tagline": "Four parks. Ten nights. The complete Kenya.",
+      "heroImage": "assets/safaris/ultimate-grand-tour/hero.png",
+      "thumbnailImage": "assets/safaris/ultimate-grand-tour/thumb.png",
+      "price": 420000,
+      "currency": "KES",
+      "duration": "10 Nights / 11 Days",
+      "nights": 10,
+      "category": "Luxury",
+      "rating": 4.9,
+      "reviewCount": 53,
+      "description": "Kenya's four greatest wilderness areas woven into one seamless journey. You'll wake to flamingos on Lake Nakuru, photograph elephants beneath Kilimanjaro in Amboseli, track red-dusted herds across the volcanic plains of Tsavo East, and end in the Maasai Mara for the Great Migration. This is the definitive Kenya experience — nothing left out.",
+      "parks": [
+        {
+          "parkId": "lake-nakuru",
+          "parkName": "Lake Nakuru",
+          "nights": 2,
+          "lodgeId": "sarova-lion-hill",
+          "lodgeName": "Sarova Lion Hill Lodge"
+        },
+        {
+          "parkId": "amboseli-national-park",
+          "parkName": "Amboseli",
+          "nights": 2,
+          "lodgeId": "Tortilis Camp",
+          "lodgeName": "Tortilis Camp"
+        },
+        {
+          "parkId": "tsavo-east",
+          "parkName": "Tsavo East",
+          "nights": 3,
+          "lodgeId": "lions-bluff-lodge",
+          "lodgeName": "Lions Bluff Lodge"
+        },
+        {
+          "parkId": "maasai-mara",
+          "parkName": "Maasai Mara",
+          "nights": 3,
+          "lodgeId": "spirit-of-the-mara",
+          "lodgeName": "Spirit of the Maasai Mara"
+        }
+      ],
+      "highlights": [
+        "Flamingo & rhino sightings at Lake Nakuru",
+        "Elephant photography beneath Kilimanjaro",
+        "Red-dusted herds across Tsavo's lava plains",
+        "Great Migration river crossings in the Mara",
+        "Hot air balloon safari over the Maasai Mara",
+        "Maasai village cultural experience"
+      ],
+      "includes": [
+        "10 nights full-board accommodation across all 4 lodges",
+        "All road transfers and inter-park charter flights",
+        "Private 4x4 vehicle and dedicated guide for the full journey",
+        "All meals and house beverages throughout",
+        "Hot air balloon safari in the Maasai Mara with champagne breakfast",
+        "All park entry fees and conservation levies",
+        "Nairobi airport transfers"
+      ],
+      "excludes": [
+        "International flights",
+        "Kenya visa fees",
+        "Travel insurance",
+        "Premium spirits and champagne",
+        "Guide gratuities",
+        "Personal purchases"
+      ],
+      "bestTime": ["July", "August", "September", "October"]
+    },
+    {
+      "id": "mara-samburu-contrast",
+      "name": "Mara & Samburu — North Meets South",
+      "tagline": "The wild north and the open plains. Two Kenyas, one trip.",
+      "heroImage": "assets/safaris/mara-samburu/hero.png",
+      "thumbnailImage": "assets/safaris/mara-samburu/thumb.png",
+      "price": 310000,
+      "currency": "KES",
+      "duration": "7 Nights / 8 Days",
+      "nights": 7,
+      "category": "Luxury",
+      "rating": 4.8,
+      "reviewCount": 79,
+      "description": "Three nights in Kenya's rugged, arid north tracking the Samburu Special Five — animals found nowhere else in the country. Then four nights in the Maasai Mara, where the same guide takes you into Big Five territory and onto the migration plains. Two ecosystems that could not be more different, making every single day feel entirely new.",
+      "parks": [
+        {
+          "parkId": "samburu",
+          "parkName": "Samburu",
+          "nights": 3,
+          "lodgeId": "elephant-bedroom-camp",
+          "lodgeName": "Elephant Bedroom Camp"
+        },
+        {
+          "parkId": "maasai-mara",
+          "parkName": "Maasai Mara",
+          "nights": 4,
+          "lodgeId": "alan-walker-camp",
+          "lodgeName": "Alan Walker Serian Camp"
+        }
+      ],
+      "highlights": [
+        "Samburu Special Five — reticulated giraffe, Grevy's zebra, gerenuk, Beisa oryx, Somali ostrich",
+        "Ewaso Nyiro river drives — elephants, crocs, leopards at the water",
+        "Night drives in Samburu",
+        "Great Migration wildebeest river crossings",
+        "Hot air balloon safari over the Mara at dawn",
+        "Big Five game drives on open Mara plains"
+      ],
+      "includes": [
+        "7 nights full-board accommodation across both lodges",
+        "Return charter flights: Nairobi–Samburu–Mara–Nairobi",
+        "Private 4x4 and same guide throughout",
+        "All meals and house beverages",
+        "One night drive in Samburu",
+        "Hot air balloon safari in the Mara with champagne breakfast",
+        "Samburu community cultural visit",
+        "All park fees and conservation levies",
+        "All airstrip transfers"
+      ],
+      "excludes": [
+        "International flights",
+        "Kenya visa fees",
+        "Travel insurance",
+        "Premium spirits",
+        "Gratuities",
+        "Personal expenses"
+      ],
+      "bestTime": ["July", "August", "September", "October", "January", "February"]
+    },
+    {
+      "id": "family-safari-adventure",
+      "name": "The Family Safari Adventure",
+      "tagline": "Three parks. Seven nights. Memories your children will never forget.",
+      "heroImage": "assets/safaris/family-safari/hero.png",
+      "thumbnailImage": "assets/safaris/family-safari/thumb.png",
+      "price": 175000,
+      "currency": "KES",
+      "duration": "7 Nights / 8 Days",
+      "nights": 7,
+      "category": "Mid-Range",
+      "rating": 4.9,
+      "reviewCount": 136,
+      "description": "Designed around families with children — this seven-night package moves from the urban wonder of Nairobi National Park and the David Sheldrick elephant orphanage, into the elephant paradise of Amboseli beneath Kilimanjaro, and ends in the Maasai Mara where the Big Five roam the plains. Paced for families, with child-friendly lodges and dedicated activities at every stop. Children under 12 at 50% off.",
+      "parks": [
+        {
+          "parkId": "nairobi-national-park",
+          "parkName": "Nairobi",
+          "nights": 1,
+          "lodgeId": "nairobi-tented-camp",
+          "lodgeName": "Nairobi Tented Camp"
+        },
+        {
+          "parkId": "amboseli-national-park",
+          "parkName": "Amboseli",
+          "nights": 3,
+          "lodgeId": "kilima-safari-lodge",
+          "lodgeName": "Kilima Safari Lodge"
+        },
+        {
+          "parkId": "maasai-mara",
+          "parkName": "Maasai Mara",
+          "nights": 3,
+          "lodgeId": "Entumoto-safari-camp",
+          "lodgeName": "Entumoto Safari Camp"
+        }
+      ],
+      "highlights": [
+        "David Sheldrick elephant orphanage and Giraffe Centre in Nairobi",
+        "Elephant families at close range beneath Kilimanjaro",
+        "Junior Ranger programme at Amboseli",
+        "Big Five game drives in the Maasai Mara",
+        "Maasai village visit with traditional dances",
+        "Campfire ranger storytelling for the whole family"
+      ],
+      "includes": [
+        "7 nights full-board accommodation across all 3 lodges",
+        "Road transfer Nairobi–Amboseli, light aircraft Amboseli–Mara–Nairobi",
+        "Shared 4x4 vehicle with family-specialist guide",
+        "All meals and soft drinks",
+        "David Sheldrick Wildlife Trust orphanage visit",
+        "Giraffe Centre entry",
+        "Junior Ranger activity programme at Amboseli",
+        "Maasai village cultural visit",
+        "All park entry fees (children under 12 at reduced rate)"
+      ],
+      "excludes": [
+        "International flights",
+        "Kenya visa fees",
+        "Travel insurance",
+        "Alcohol for adults",
+        "Gratuities",
+        "Souvenirs and personal expenses"
+      ],
+      "bestTime": ["July", "August", "December", "January", "February"]
+    },
+    {
+      "id": "amboseli-tsavo-classic",
+      "name": "Amboseli & Tsavo Classic",
+      "tagline": "Kilimanjaro elephants in the morning, red giants at dusk.",
+      "heroImage": "assets/safaris/amboseli-tsavo/hero.png",
+      "thumbnailImage": "assets/safaris/amboseli-tsavo/thumb.png",
+      "price": 195000,
+      "currency": "KES",
+      "duration": "6 Nights / 7 Days",
+      "nights": 6,
+      "category": "Mid-Range",
+      "rating": 4.7,
+      "reviewCount": 68,
+      "description": "Two elephant-rich parks that could not look more different. Three nights in Amboseli — green marshlands, white mountain, vast herds drifting through morning mist. Then three nights in the raw open wilderness of Tsavo East where those same animals are coated red by volcanic soil, roaming a landscape that stretches further than the eye can follow.",
+      "parks": [
+        {
+          "parkId": "amboseli-national-park",
+          "parkName": "Amboseli",
+          "nights": 3,
+          "lodgeId": "elerai-camp",
+          "lodgeName": "Elerai Camp"
+        },
+        {
+          "parkId": "tsavo-east",
+          "parkName": "Tsavo East",
+          "nights": 3,
+          "lodgeId": "satao-camp",
+          "lodgeName": "Satao Camp"
+        }
+      ],
+      "highlights": [
+        "Elephant herds silhouetted against Kilimanjaro at dawn",
+        "Wetland and marsh game drives in Amboseli",
+        "Red-dusted Tsavo elephant herds on volcanic lava plains",
+        "Lugard Falls on the Galana River",
+        "Walking safari with armed ranger escort",
+        "Floodlit waterhole viewing through the night"
+      ],
+      "includes": [
+        "6 nights full-board accommodation across both camps",
+        "All road transfers: Nairobi–Amboseli–Tsavo–Nairobi",
+        "Twice-daily game drives in a shared 4x4",
+        "All meals and soft drinks",
+        "Guided walking safari in Tsavo East",
+        "Maasai guided nature walk in Amboseli",
+        "All park entry fees and conservation levies"
+      ],
+      "excludes": [
+        "International flights",
+        "Kenya visa fees",
+        "Travel insurance",
+        "Alcohol",
+        "Gratuities",
+        "Personal expenses"
+      ],
+      "bestTime": ["June", "July", "August", "September", "January", "February"]
+    },
+    {
+      "id": "rift-valley-adventure-break",
+      "name": "Rift Valley Adventure Break",
+      "tagline": "Cycle, hike, boat, and track across Kenya's most dramatic valley.",
+      "heroImage": "assets/safaris/rift-valley/hero.png",
+      "thumbnailImage": "assets/safaris/rift-valley/thumb.png",
+      "price": 95000,
+      "currency": "KES",
+      "duration": "5 Nights / 6 Days",
+      "nights": 5,
+      "category": "Budget",
+      "rating": 4.6,
+      "reviewCount": 114,
+      "description": "Kenya's most active safari break — and the best value in our collection. Two nights cycling and gorge-hiking around Hell's Gate and Lake Naivasha, then three nights tracking rhinos and watching flamingos at Lake Nakuru. No flights needed, no crowds, just big scenery and extraordinary wildlife at a price that works.",
+      "parks": [
+        {
+          "parkId": "hell's-gate",
+          "parkName": "Hell's Gate & Naivasha",
+          "nights": 2,
+          "lodgeId": "elsamere",
+          "lodgeName": "Elsamere Lodge"
+        },
+        {
+          "parkId": "lake-nakuru",
+          "parkName": "Lake Nakuru",
+          "nights": 3,
+          "lodgeId": "flamingo-hill-camp",
+          "lodgeName": "Flamingo Hill Camp"
+        }
+      ],
+      "highlights": [
+        "Cycling safari through Hell's Gate alongside zebras and buffalo",
+        "Hike through Ol Njorowa Gorge",
+        "Fischer's Tower rock climb",
+        "Lake Naivasha boat safari — hippos and fish eagles",
+        "Geothermal spa at Olkaria hot springs",
+        "Flamingo and pelican spectacle at Lake Nakuru",
+        "Black and white rhino tracking"
+      ],
+      "includes": [
+        "5 nights full-board accommodation across both lodges",
+        "All road transfers: Nairobi–Hell's Gate–Nakuru–Nairobi",
+        "Bicycle hire for Hell's Gate cycling safari",
+        "Gorge hiking guide",
+        "Lake Naivasha boat safari",
+        "Geothermal spa entry at Olkaria",
+        "All meals throughout",
+        "All park entry fees"
+      ],
+      "excludes": [
+        "International flights",
+        "Kenya visa fees",
+        "Travel insurance",
+        "Drinks (available for purchase at lodges)",
+        "Rock climbing gear hire (available on site)",
+        "Gratuities",
+        "Personal expenses"
+      ],
+      "bestTime": ["January", "February", "June", "July", "August", "September", "October", "December"]
+    },
+    {
+      "id": "northern-frontier-deep-dive",
+      "name": "Northern Frontier Deep Dive",
+      "tagline": "The Kenya most tourists never see.",
+      "heroImage": "assets/safaris/northern-frontier/hero.png",
+      "thumbnailImage": "assets/safaris/northern-frontier/thumb.png",
+      "price": 280000,
+      "currency": "KES",
+      "duration": "6 Nights / 7 Days",
+      "nights": 6,
+      "category": "Luxury",
+      "rating": 4.8,
+      "reviewCount": 42,
+      "description": "An expedition into Kenya's least-visited territory. Five nights deep in Samburu split across two camps — tracking the Special Five along the Ewaso Nyiro River, taking night drives, and meeting the Samburu community on their own terms. The package ends with a final night at Nairobi's most extraordinary lodge, perched above the national park with the city skyline glowing behind it.",
+      "parks": [
+        {
+          "parkId": "samburu",
+          "parkName": "Samburu",
+          "nights": 3,
+          "lodgeId": "saruni-samburu",
+          "lodgeName": "Saruni Basecamp"
+        },
+        {
+          "parkId": "samburu",
+          "parkName": "Samburu",
+          "nights": 2,
+          "lodgeId": "samburu-sopa",
+          "lodgeName": "Samburu Sopa Lodge"
+        },
+        {
+          "parkId": "nairobi-national-park",
+          "parkName": "Nairobi",
+          "nights": 1,
+          "lodgeId": "the-emakoko",
+          "lodgeName": "The Emakoko"
+        }
+      ],
+      "highlights": [
+        "All five Samburu Special species in their natural habitat",
+        "Night game drives — leopards, civets, porcupines",
+        "Ewaso Nyiro River drives — crocodiles and elephants at the water's edge",
+        "Samburu community beading workshop",
+        "Guided bush walk along the river",
+        "Lions against the Nairobi skyline on the final evening"
+      ],
+      "includes": [
+        "6 nights full-board accommodation across all 3 lodges",
+        "Return charter flights: Nairobi–Samburu–Nairobi",
+        "Private 4x4 and dedicated guide for the full journey",
+        "All meals and house beverages",
+        "Two night drives in Samburu",
+        "Samburu community cultural visit and beading workshop",
+        "Guided bush walk along Ewaso Nyiro",
+        "All park and conservancy fees",
+        "All airstrip transfers"
+      ],
+      "excludes": [
+        "International flights",
+        "Kenya visa fees",
+        "Travel insurance",
+        "Premium spirits",
+        "Gratuities",
+        "Personal expenses"
+      ],
+      "bestTime": ["January", "February", "June", "July", "August", "September"]
+    },
+    {
+      "id": "nairobi-nakuru-mara-week",
+      "name": "Nairobi, Nakuru & Mara Week",
+      "tagline": "City park, flamingo lake, and the Great Migration — one perfect week.",
+      "heroImage": "assets/safaris/nkm-week/hero.png",
+      "thumbnailImage": "assets/safaris/nkm-week/thumb.png",
+      "price": 265000,
+      "currency": "KES",
+      "duration": "7 Nights / 8 Days",
+      "nights": 7,
+      "category": "Luxury",
+      "rating": 4.7,
+      "reviewCount": 91,
+      "description": "A beautifully paced week that builds from the accessible to the wild. One night at an extraordinary lodge on the edge of Nairobi National Park — lions outside your window and the city skyline behind them. Two nights on the flamingo and rhino shores of Lake Nakuru. Then four nights in the Maasai Mara, tracking the Big Five and watching the migration unfold across the plains.",
+      "parks": [
+        {
+          "parkId": "nairobi-national-park",
+          "parkName": "Nairobi",
+          "nights": 1,
+          "lodgeId": "the-emakoko",
+          "lodgeName": "The Emakoko"
+        },
+        {
+          "parkId": "lake-nakuru",
+          "parkName": "Lake Nakuru",
+          "nights": 2,
+          "lodgeId": "lake-nakuru-lodge",
+          "lodgeName": "Lake Nakuru Lodge"
+        },
+        {
+          "parkId": "maasai-mara",
+          "parkName": "Maasai Mara",
+          "nights": 4,
+          "lodgeId": "Entumoto-safari-camp",
+          "lodgeName": "Entumoto Safari Camp"
+        }
+      ],
+      "highlights": [
+        "Lions and rhinos against the Nairobi skyline",
+        "Flamingo spectacle on Lake Nakuru's shores",
+        "Black and white rhino tracking at Nakuru",
+        "Baboon Cliff panoramic views over the lake",
+        "Big Five game drives in the Maasai Mara",
+        "Great Migration wildebeest herds on the open plains",
+        "Maasai village visit and cultural experience"
+      ],
+      "includes": [
+        "7 nights full-board accommodation across all 3 lodges",
+        "Road transfer Nairobi–Nakuru, charter flight Nakuru–Mara–Nairobi",
+        "Private 4x4 vehicle and guide throughout",
+        "All meals and house beverages",
+        "Maasai village cultural visit",
+        "All park entry fees and conservation levies",
+        "All inter-park transfers and Nairobi airport pick-up"
+      ],
+      "excludes": [
+        "International flights",
+        "Kenya visa fees",
+        "Travel insurance",
+        "Alcohol",
+        "Hot air balloon (available as add-on: KES 45,000 per person)",
+        "Gratuities",
+        "Personal expenses"
+      ],
+      "bestTime": ["July", "August", "September", "October", "January", "February"]
+    }
+  ]
+}
