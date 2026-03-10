@@ -1,0 +1,88 @@
+<div class="bg-stone-50">
+    <!-- hero section -->
+    <section class="relative w-full h-screen overflow-hidden">
+        <img src="" alt="" id="lodge-hero" class="absolute inset-0 w-full h-full object-cover">
+        <div class="hero-overlay absolute inset-0"></div>
+
+        <div class="absolute top-[50%] left-0 right-0 p-10 md:p-16 fade-in ">
+            <div class="flex items-center gap-3 mb-4">
+                <span id="lodge-type"
+                    class="text-xs font-bold tracking-widest uppercase px-3 py-1 border border-white text-white"></span>
+                <span id="lodge-rank"
+                    class="text-xs tracking-widest uppercase px-3 py-1 bg-orange-700/80 text-white"></span>
+            </div>
+            <h1 id="lodge-name" class="font-serif text-5xl md:text-7xl font-bold text-white tracking-wide mb-3"></h1>
+            <p id="lodge-description" class="text-white/90 text-lg max-w-2xl font-light delay-1 fade-in"></p>
+        </div>
+    </section>
+
+    <!-- overview -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        
+        <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-[45%] flex-shrink-0">
+                    <div class="w-full h-1 bg-orange-900  mb-8"></div>
+                    <img src="" alt="" id="overview-image" class="w-full h-full object-cover" style="aspect-ratio:4/3;">
+                </div>
+
+                <div class="lg:w-[55%] ">
+                    <p class="text-xs tracking-wider uppercase text-orange-700 mb-2">Overview</p>
+                    <h2 id="overview-title" class="font-serif text-3xl text-gray-800 mb-6 leading-snug"></h2>
+                    <p id="lodge-main-desc" class="text-gray-600 text-sm leading-relaxed mb-3"></p>
+                    <p id="lodge-main-desc1" class="text-gray-600 text-sm leading-relaxed mb-8"></p>
+
+
+                    <div class="grid grid-cols-3 gap-4 mb-8">
+                        <div class="text-center p-3 bg-white shadow-sm">
+                            <p class="font-serif text-xl text-orange-700" id="stat-rooms">—</p>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider mt-1">Total Rooms</p>
+                        </div>
+                        <div class="text-center p-3 bg-white shadow-sm">
+                            <p class="font-serif text-xl text-orange-700 leading-tight" id="stat-type">—</p>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider mt-1">Type</p>
+                        </div>
+                        <div class="text-center p-3 bg-white shadow-sm">
+                            <div id="stat-eco" class="flex justify-center items-center"></div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider mt-1">Eco Rating</p>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+    </section>
+
+    <!-- rooms -->
+    <section id="rooms-section" class="py-16 ">
+        
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="w-full h-1 bg-orange-900  mb-8"></div>
+            <p class="text-xs tracking-widest uppercase text-orange-700 text-center mb-2">Accommodations</p>
+            <h2 class="font-serif text-3xl font-bold text-center mb-3 text-gray-800">Rooms &amp; Rates</h2>
+            <p class="text-gray-400 text-center max-w-xl mx-auto mb-12 text-sm">
+                All rates are per room per night. Prices vary by season. Contact us for group bookings.
+            </p>
+            <div id="rooms-div" class=""></div>
+        </div>
+    </section>
+
+    <!-- CTA section-->
+    <section class="py-20 bg-green-700 text-white text-center">
+        <p class="text-xs tracking-widest uppercase text-orange-400 mb-2">Reserve Your Stay</p>
+        <h2 id="cta-lodge-name" class="font-serif text-4xl md:text-5xl mb-4"></h2>
+        <p class="text-white/50 max-w-lg mx-auto mb-10 text-sm">
+            Availability is limited during peak seasons. Early reservations are strongly recommended.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <button onclick="openBookingModal(Object.values(currentRooms)[0])"
+                class="px-8 py-3 bg-amber-700 hover:bg-orange-600 text-white tracking-widest uppercase text-sm transition-colors">
+                Book Now
+            </button>
+            <button
+                class="px-8 py-3 border border-white/30 hover:border-white text-white tracking-widest uppercase text-sm transition-colors">
+                Make Enquiry
+            </button>
+        </div>
+    </section>
+
+</div>

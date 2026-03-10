@@ -88,6 +88,8 @@
                     "rank": "Luxury+",
                     "heroImage": "assets/maasai-mara/alan-walker/alan-hero.png",
                     "description": "Experience the ultimate in luxury and comfort at Alan Walker Serian Camp.",
+                    "mainDescription": "Tucked into a remote corner of the Maasai Mara ecosystem, Alan Walker Serian Camp is one of the reserve's most intimate and coveted addresses. With just five standard tents and three luxury tents, the camp operates on an exclusive, small-group basis that ensures a deeply personal safari experience rarely found in more commercial properties. The camp sits within a private conservancy bordering the main reserve, granting guests access to vast, uncrowded terrain where the big cats hunt undisturbed and the famous wildebeest migration passes in overwhelming numbers each year.",
+                    "mainDescription1": "The design of the camp draws from the classic East African safari tradition — weathered canvas, dark timber, lantern light, and earthy textures — yet every detail has been considered with a discerning eye. Meals are served in open-sided dining areas where the sounds of the bush fill the air, and evenings are spent around the fire listening to the distant calls of hyenas and lions. The dedicated team of guides and rangers are among the most knowledgeable in the Mara, offering game drives that go well beyond the familiar circuits to reveal the landscape's quieter, more extraordinary stories.",
                     "gallery": [
                         "assets/maasai-mara/alan-walker/alan-1.png",
                         "assets/maasai-mara/alan-walker/alan-2.png"
@@ -99,15 +101,50 @@
                             "name": "Standard Tent",
                             "capacity": 2,
                             "basePrice": 10000,
-                            "totalRooms": 5
+                            "totalRooms": 5,
+                            "image": "assets/maasai-mara/alan-walker/alan-standard.png",
+                            "description": "Our Standard Tents are intimate and beautifully considered — canvas walls, a hand-carved four-poster bed dressed in white linen, and a private veranda that looks directly onto the Mara plains. Each tent has an ensuite bathroom with a hot shower, solar lantern lighting, and enough space to feel truly immersed in the landscape while remaining entirely comfortable."
                         },
                         {
                             "id": "luxury",
                             "name": "Luxury Tent",
                             "capacity": 4,
                             "basePrice": 18000,
-                            "totalRooms": 3
+                            "totalRooms": 3,
+                            "image": "assets/maasai-mara/alan-walker/alan-luxury.png",
+                            "description": "The Luxury Tents at Alan Walker Serian are the pinnacle of classic East African safari living. Larger in footprint and richer in detail, these tents feature a clawfoot soaking tub positioned to face the bush, a dedicated dressing area, premium handwoven textiles, and a wrap-around veranda furnished with deep canvas chairs. Ideal for couples seeking total immersion in the Mara without compromising on comfort."
                         }
+                    ],
+                    "amenities": [
+                        "Private Ensuite Bathroom",
+                        "Outdoor Bush Shower",
+                        "Private Veranda with Mara Views",
+                        "King-size Bed with Mosquito Net",
+                        "Twice-daily Housekeeping",
+                        "Lantern & Solar Lighting",
+                        "In-tent Personal Safe",
+                        "Laundry Service",
+                        "Bush Breakfast on Request",
+                        "Campfire Lounge Area"
+                    ],
+                    "includes": [
+                        "Full board accommodation (breakfast, lunch & dinner)",
+                        "Twice-daily game drives in the Maasai Mara",
+                        "All local beverages (soft drinks, beers, house wines, non-premium spirits)",
+                        "Guided bush walks with armed ranger",
+                        "Sundowner drinks on the Mara plains",
+                        "Laundry service",
+                        "Emergency evacuation insurance",
+                        "Airstrip transfers (Ol Kiombo / Keekorok)"
+                    ],
+                    "excludes": [
+                        "Hot air balloon safari",
+                        "Premium spirits & champagne",
+                        "Maasai cultural village visit",
+                        "Spa & personal treatments",
+                        "International flights",
+                        "Travel insurance",
+                        "Items of personal nature"
                     ]
                 },
                 {
@@ -117,6 +154,8 @@
                     "rank": "Luxury",
                     "heroImage": "assets/maasai-mara/spirit-of-the-mara/spirit-hero.png",
                     "description": "Enjoy breathtaking views and exceptional service at Mara Serena Safari Lodge.",
+                    "mainDescription": "Set on elevated ground overlooking the open plains of the Maasai Mara, Spirit of the Maasai Mara Lodge combines the grandeur of its surroundings with the ease of a well-appointed full-service lodge. The property's architecture takes inspiration from the land itself — sweeping rooflines echo the horizon, natural stone grounds the structure to the earth, and wide-open spaces draw the eye outward to the grasslands where wildlife moves freely in every direction. It is a lodge built not to compete with the landscape, but to celebrate it.",
+                    "mainDescription1": "Inside, the rooms are spacious and carefully furnished, each featuring a private terrace designed for nothing more than stillness and observation. The lodge's restaurant serves fresh, locally inspired cuisine paired with thoughtfully selected wines, while the communal lounge and pool area provide a welcoming retreat during the midday heat. Whether guests are tracking a pride of lions at dawn or sipping sundowners as the sky turns amber and violet over the Mara triangle, Spirit of the Maasai Mara delivers an experience that is both refined and genuinely wild.",
                     "gallery": [
                         "assets/maasai-mara/spirit-of-the-mara/spirit-1.png",
                         "assets/maasai-mara/spirit-of-the-mara/spirit-2.png"
@@ -128,15 +167,50 @@
                             "name": "Standard Room",
                             "capacity": 2,
                             "basePrice": 56000,
-                            "totalRooms": 10
+                            "totalRooms": 10,
+                            "image": "assets/maasai-mara/spirit-of-the-mara/spirit-standard.png",
+                            "description": "Standard Rooms at Spirit of the Maasai Mara are spacious and thoughtfully furnished, each opening onto a private terrace with unobstructed views across the rolling savannah. King-size or twin bed configurations are available, and the ensuite bathroom features both a shower and a deep soaking tub. Natural stone finishes, locally crafted furniture, and warm earth tones give each room a strong sense of place."
                         },
                         {
                             "id": "deluxe",
                             "name": "Deluxe Room",
                             "capacity": 4,
                             "basePrice": 80000,
-                            "totalRooms": 5
+                            "totalRooms": 5,
+                            "image": "assets/maasai-mara/spirit-of-the-mara/spirit-deluxe.png",
+                            "description": "The Deluxe Rooms are our most expansive accommodation, featuring a generous living area, an oversized private terrace with direct savannah views, a minibar stocked daily, and a bathroom with dual vanities and a rainfall shower. Designed for those who want the full measure of the Mara experience — a room to return to after a long day in the field and feel completely at ease."
                         }
+                    ],
+                    "amenities": [
+                        "Ensuite Bathroom with Clawfoot Tub",
+                        "Private Terrace with Savannah Views",
+                        "King or Twin Beds",
+                        "Air Conditioning & Ceiling Fan",
+                        "Daily Turndown Service",
+                        "In-room Mini Bar",
+                        "Personal Safe",
+                        "Hair Dryer",
+                        "Complimentary Wi-Fi (lobby area)",
+                        "Swimming Pool Access",
+                        "Laundry & Pressing Service",
+                        "24-hour Room Service"
+                    ],
+                    "includes": [
+                        "Full board accommodation",
+                        "Morning and afternoon game drives",
+                        "All local beverages",
+                        "Guided nature walks",
+                        "Cultural Maasai village visit",
+                        "Laundry service",
+                        "Airstrip transfers"
+                    ],
+                    "excludes": [
+                        "Hot air balloon safari",
+                        "Premium & imported spirits",
+                        "Spa treatments",
+                        "Curio shop purchases",
+                        "Travel insurance",
+                        "Tips & gratuities"
                     ]
                 },
                 {
@@ -146,6 +220,8 @@
                     "rank": "Mid-Range",
                     "heroImage": "assets/maasai-mara/entumoto/entumoto-hero.png",
                     "description": "Experience the perfect blend of comfort and nature at Entumoto Safari Camp.",
+                    "mainDescription": "Entumoto Safari Camp offers an unpretentious and authentic gateway into the heart of the Maasai Mara. Designed for travellers who want to be close to the action without the weight of five-star formality, the camp blends comfort with a genuine connection to the bush. Solar lighting, canvas tents, and a communal campfire create an atmosphere that feels honest — a place where the focus remains firmly on the wildlife, the land, and the people who have called this landscape home for generations.",
+                    "mainDescription1": "The camp's location within the greater Mara ecosystem puts guests within striking distance of the most productive game-viewing corridors in Kenya. Morning game drives set out early into open savannah where cheetahs hunt at sunrise and elephants move in quiet herds through the acacia thickets. Entumoto also maintains close ties with the local Maasai community, offering visitors meaningful cultural exchanges that deepen the context of everything they witness in the wild. It is a camp for those who come to the Mara not just to see, but to understand.",
                     "gallery": [
                         "assets/maasai-mara/entumoto/entumoto-1.png",
                         "assets/maasai-mara/entumoto/entumoto-2.png"
@@ -157,15 +233,47 @@
                             "name": "Standard Tent",
                             "capacity": 6,
                             "basePrice": 8000,
-                            "totalRooms": 3
+                            "totalRooms": 3,
+                            "image": "assets/maasai-mara/entumoto/entumoto-standard.png",
+                            "description": "Entumoto's Standard Tents are honest and well-made — roomy canvas units on raised timber platforms with twin or double beds, a private veranda, and an ensuite bathroom with a reliable hot shower. Solar lighting keeps the footprint low and the atmosphere warm, and every tent is positioned to make the most of the morning light and the sounds of the bush at night."
                         },
                         {
                             "id": "toto",
                             "name": "Family Tent",
                             "capacity": 4,
                             "basePrice": 15000,
-                            "totalRooms": 5
+                            "totalRooms": 5,
+                            "image": "assets/maasai-mara/entumoto/entumoto-family.png",
+                            "description": "The Family Tents at Entumoto are designed for groups travelling together, with a king bed in the main sleeping area and two additional singles in a connected section. A shared veranda and a generous ensuite bathroom complete the unit, making it practical and comfortable for multi-generational safari parties. Perfect for families with children experiencing the Mara for the first time."
                         }
+                    ],
+                    "amenities": [
+                        "Ensuite Bathroom with Hot Shower",
+                        "Private Veranda",
+                        "Twin or Double Beds",
+                        "Mosquito Netting",
+                        "Solar-powered Lighting",
+                        "Charging Points",
+                        "Eco-friendly Toiletries",
+                        "Communal Campfire Area",
+                        "Laundry Service (extra charge)",
+                        "Safe Storage Box"
+                    ],
+                    "includes": [
+                        "Full board accommodation",
+                        "Morning game drive",
+                        "Park entry fees",
+                        "Bottled drinking water",
+                        "Guided nature walk"
+                    ],
+                    "excludes": [
+                        "Afternoon & night game drives (payable on-site)",
+                        "All beverages",
+                        "Hot air balloon safari",
+                        "Airstrip transfers",
+                        "Travel insurance",
+                        "Laundry service",
+                        "Tips & gratuities"
                     ]
                 }
             ]
@@ -258,6 +366,8 @@
                     "rank": "Luxury",
                     "heroImage": "assets/nairobi/safari-club/emakoko-hero.png",
                     "description": "Choose between our luxury Cliff Suites, River Suites, or our Private House. Make yourself at home.",
+                    "mainDescription": "The Emakoko is one of Kenya's most celebrated lodges, occupying a dramatic position on the cliffs above the Mbagathi River at the southern boundary of Nairobi National Park. Just forty-five minutes from the international airport, it offers an arrival experience unlike any other — stepping from the chaos of the city into a world of birdsong, leopard territory, and sweeping views across open parkland. The lodge's ten luxury suites are divided between cliff-edge rooms with panoramic vistas and river-level suites nestled in lush riparian forest, each designed with meticulous attention to comfort and natural beauty.",
+                    "mainDescription1": "Owned and managed with deep personal care, The Emakoko has earned its reputation not only for the quality of its rooms and cuisine, but for the warmth of its team and the intimacy of the experience it provides. Guests can observe rhinos and lions from an outdoor deck before sitting down to an exceptional dinner prepared using fresh, locally sourced ingredients. The combination of outstanding guiding, beautiful surroundings, and effortless hospitality has made The Emakoko a defining first or last stop on any Kenyan safari itinerary — and for many, the highlight of the entire trip.",
                     "gallery": [
                         "assets/nairobi/safari-club/emakoko-1.png",
                         "assets/nairobi/safari-club/emakoko-2.png"
@@ -269,15 +379,51 @@
                             "name": "Luxury Suites",
                             "capacity": 2,
                             "basePrice": 150000,
-                            "totalRooms": 12
+                            "totalRooms": 12,
+                            "image": "assets/nairobi/safari-club/emakoko-luxury.png",
+                            "description": "The Emakoko's Luxury Suites are divided between cliff-edge rooms perched above the Mbagathi gorge and river-level suites tucked into the riparian forest below. Each suite features a king-size bed, a private veranda designed for wildlife watching, a fireplace for cool evenings, and a bathroom with both a rain shower and a deep soaking tub. Natural stone, hand-selected art, and locally woven textiles make every suite feel like a considered home rather than a hotel room."
                         },
                         {
                             "id": "deluxe",
                             "name": "The Private House",
                             "capacity": 4,
                             "basePrice": 280000,
-                            "totalRooms": 6
+                            "totalRooms": 6,
+                            "image": "assets/nairobi/safari-club/emakoko-private-house.png",
+                            "description": "The Private House at The Emakoko is an exclusive-use villa accommodating up to four guests in its own self-contained world. With a private lounge, dining terrace, plunge pool, dedicated vehicle and guide, and fully staffed service, it offers the intimacy of a private safari home within one of Kenya's most extraordinary settings. Guests booking the Private House enjoy full access to all lodge facilities while having complete seclusion whenever they choose."
                         }
+                    ],
+                    "amenities": [
+                        "Private Veranda with Park & River Views",
+                        "Ensuite Bathroom with Rain Shower & Bathtub",
+                        "King-size Bed with Premium Linens",
+                        "Fireplace",
+                        "Air Conditioning & Ceiling Fan",
+                        "Sitting Area",
+                        "In-room Safe",
+                        "Hair Dryer & Bathroom Amenities",
+                        "Complimentary Wi-Fi",
+                        "Bathrobe & Slippers",
+                        "Daily Turndown Service",
+                        "Swimming Pool Access",
+                        "Outdoor Deck & Viewing Platform"
+                    ],
+                    "includes": [
+                        "Full board accommodation (breakfast, lunch & dinner)",
+                        "All soft drinks, beers, house wines & non-premium spirits",
+                        "Morning and evening game drives in Nairobi National Park",
+                        "Transfers to The Sheldrick Wildlife Trust & Giraffe Centre",
+                        "Guided walks in Kitengela conservation area",
+                        "Laundry service",
+                        "Airport transfers from JKIA & Wilson Airport (min. 2 guests)"
+                    ],
+                    "excludes": [
+                        "Premium spirits & champagne",
+                        "Spa & beauty treatments",
+                        "Curio shop purchases",
+                        "Travel insurance",
+                        "Tips & gratuities",
+                        "Items of a personal nature"
                     ]
                 },
                 {
@@ -287,6 +433,8 @@
                     "rank": "Mid-Range",
                     "heroImage": "assets/nairobi/nairobi-tented/tented-hero.png",
                     "description": "Authentic safari atmosphere with spacious canvas tents, en-suite bathrooms, solar lighting, and private verandas.",
+                    "mainDescription": "Nairobi Tented Camp occupies a quiet, well-wooded section of land bordering Nairobi National Park, offering a genuine tented safari atmosphere within one of the world's most remarkable urban wildlife settings. The camp's spacious canvas tents are elevated on wooden platforms and fitted with en-suite bathrooms, solar lighting, and private verandas that look out over the surrounding bush. It is a property designed for guests who want the texture of a real safari camp — the sounds of the night, the smell of the earth, the sense of exposure — without sacrificing comfort.",
+                    "mainDescription1": "The camp serves as an ideal base for early-morning game drives into Nairobi National Park, where lions, rhinos, giraffes, and buffalos roam freely against the extraordinary backdrop of the city skyline. The communal areas are open and sociable, centred around a shaded lounge and a fire that draws guests together in the evenings for conversation about the day's sightings. For travellers passing through Nairobi at the start or end of a longer safari, or for those on shorter trips who want to make the most of the city's remarkable ecological neighbours, Nairobi Tented Camp offers an experience that is both convenient and genuinely memorable.",
                     "gallery": [
                         "assets/nairobi/nairobi-tented/tented-1.png",
                         "assets/nairobi/nairobi-tented/tented-2.png"
@@ -298,15 +446,47 @@
                             "name": "Single Tent",
                             "capacity": 2,
                             "basePrice": 10000,
-                            "totalRooms": 8
+                            "totalRooms": 8,
+                            "image": "assets/nairobi/nairobi-tented/tented-single.png",
+                            "description": "The Single Tents are ideal for solo travellers or couples looking for an authentic tented safari experience within reach of Nairobi. Each tent sits on a raised wooden platform with a double bed, ensuite hot shower, private veranda, solar lighting, and charging points. Simple, well-executed, and deeply atmospheric — particularly in the early mornings when the park's wildlife begins to stir just beyond the canvas."
                         },
                         {
                             "id": "double",
                             "name": "Double Tent",
                             "capacity": 4,
                             "basePrice": 24000,
-                            "totalRooms": 5
+                            "totalRooms": 5,
+                            "image": "assets/nairobi/nairobi-tented/tented-double.png",
+                            "description": "Our Double Tents offer more generous proportions for couples or families, with a king bed, a separate sitting area, and a larger ensuite bathroom with both a shower and a soaking tub. The private veranda is furnished with reclining chairs and a low table — perfectly positioned for morning coffee as the park wakes up, or sundowners as the Nairobi skyline shifts into its evening colours."
                         }
+                    ],
+                    "amenities": [
+                        "Spacious Canvas Tent",
+                        "Ensuite Bathroom with Hot Shower",
+                        "Private Veranda",
+                        "Twin or Double Beds",
+                        "Solar Lighting & Charging Points",
+                        "Mosquito Netting",
+                        "Eco-friendly Toiletries",
+                        "Fan",
+                        "Communal Lounge & Dining Area",
+                        "Campfire Terrace",
+                        "Secure Storage"
+                    ],
+                    "includes": [
+                        "Full board accommodation",
+                        "Morning game drive in Nairobi National Park",
+                        "Park entry fees",
+                        "Bottled water & soft drinks",
+                        "Guided walking trail"
+                    ],
+                    "excludes": [
+                        "Additional game drives",
+                        "Alcoholic beverages",
+                        "Airport transfers",
+                        "Travel insurance",
+                        "Laundry (available at extra charge)",
+                        "Tips & gratuities"
                     ]
                 },
                 {
@@ -316,6 +496,8 @@
                     "rank": "Luxury",
                     "heroImage": "assets/nairobi/ololo-safari/ololo-hero.png",
                     "description": "Originally a Kenyan homestead, Ololo has transformed into a charming boutique lodge that feels both welcoming and exclusive.",
+                    "mainDescription": "Ololo Safari Lodge is a charming and characterful property set on a private estate bordering the fence line of Nairobi National Park. Originally a Kenyan family homestead, the lodge has been thoughtfully transformed over the years into a boutique retreat that retains all the warmth and personality of a private home while delivering the services and standard of a serious luxury lodge. The gardens are lush and beautifully maintained, the architecture is unpretentious and inviting, and the views across the park from the terrace suites are as remarkable as anything the Kenyan highlands have to offer.",
+                    "mainDescription1": "The lodge's eight suites each have their own distinct character, blending Swahili antiques, locally crafted textiles, and carefully chosen art in spaces that feel lived-in and intimate rather than styled for a brochure. Afternoon tea on the lawn has become something of an institution at Ololo — a civilised pause in the day that perfectly captures the old Kenya charm the lodge so effortlessly embodies. With game drives into the park departing from the front gate and the sounds of lions and hyenas drifting across the property at night, Ololo offers a rare combination of comfort, culture, and genuine wilderness that is difficult to find anywhere else so close to a capital city.",
                     "gallery": [
                         "assets/nairobi/ololo-safari/ololo-1.png",
                         "assets/nairobi/ololo-safari/ololo-2.png"
@@ -327,15 +509,50 @@
                             "name": "The Terrace Suite",
                             "capacity": 2,
                             "basePrice": 50000,
-                            "totalRooms": 10
+                            "totalRooms": 10,
+                            "image": "assets/nairobi/ololo-safari/ololo-terrace.png",
+                            "description": "The Terrace Suites at Ololo are the lodge's signature rooms — each one distinct in character, blending Swahili antiques, handcrafted textiles, and a private garden terrace that opens directly onto the park fence line. A king-size bed, a clawfoot bathtub, a fireplace, and curated bookshelves give the rooms a lived-in warmth that is rare in safari accommodation. Wildlife moves freely on the other side of the fence, and the suites are positioned to make the most of every passing animal."
                         },
                         {
                             "id": "family",
                             "name": "The Family Wing",
                             "capacity": 4,
                             "basePrice": 90000,
-                            "totalRooms": 6
+                            "totalRooms": 6,
+                            "image": "assets/nairobi/ololo-safari/ololo-family.png",
+                            "description": "The Family Wing at Ololo is a self-contained suite designed for groups or families travelling together. A master bedroom with a king bed connects through a private lounge to two additional rooms, creating a flexible configuration that works for adults and children alike. The shared terrace overlooks the lodge gardens and the park beyond, and the suite has its own entrance — providing both togetherness and privacy in equal measure."
                         }
+                    ],
+                    "amenities": [
+                        "Ensuite Bathroom with Soaking Tub & Shower",
+                        "Private Garden Terrace",
+                        "King-size Bed",
+                        "Air Conditioning",
+                        "Fireplace",
+                        "Writing Desk",
+                        "In-room Safe",
+                        "Complimentary Wi-Fi",
+                        "Hair Dryer & Premium Toiletries",
+                        "Bathrobe & Slippers",
+                        "Daily Housekeeping & Turndown",
+                        "Swimming Pool Access",
+                        "Afternoon Tea Service"
+                    ],
+                    "includes": [
+                        "Bed & breakfast accommodation",
+                        "Afternoon tea",
+                        "Morning game drive in Nairobi National Park",
+                        "Complimentary Wi-Fi",
+                        "Use of swimming pool & gardens"
+                    ],
+                    "excludes": [
+                        "Lunch & dinner (available à la carte)",
+                        "All beverages except morning tea/coffee",
+                        "Additional game drives",
+                        "Airport transfers",
+                        "Spa treatments",
+                        "Travel insurance",
+                        "Tips & gratuities"
                     ]
                 }
             ]
@@ -428,6 +645,8 @@
                     "rank": "Mid-Range",
                     "heroImage": "assets/amboseli/elerai/elerai-hero.png",
                     "description": "Elerai Camp is located in a quiet, unspoilt, unique setting on a 5000-acre private conservation area 12 kms south east of Amboseli.",
+                    "mainDescription": "Elerai Camp is positioned within a 5,000-acre private conservation area to the south-east of Amboseli National Park, offering an experience of the greater Amboseli ecosystem that feels genuinely unspoilt. The camp sits at the base of the Tanzanian border hills, surrounded by open savannah and acacia woodland that stretch uninterrupted toward the shimmering plains below Kilimanjaro. On clear mornings, the mountain reveals itself in its full scale — snow-capped and impossibly close — creating a tableau that never loses its power no matter how many times it is witnessed.",
+                    "mainDescription1": "With just ten deluxe tents and five cottage units, Elerai keeps its footprint deliberately small. The emphasis throughout the camp is on stillness, simplicity, and a connection to the landscape that feels earned rather than packaged. Game drives explore not only the main park but the private conservancy land, where vehicle density is minimal and encounters with elephants, big cats, and the plains game of the greater Amboseli area take on an intimacy that larger, busier camps cannot offer. The team at Elerai are passionate naturalists, and their knowledge of the land — its wildlife, its Maasai communities, and its conservation challenges — adds a layer of depth to every day spent here.",
                     "gallery": [
                         "assets/amboseli/elerai/elerai-1.png",
                         "assets/amboseli/elerai/elerai-2.png"
@@ -439,15 +658,46 @@
                             "name": "Deluxe Tent",
                             "capacity": 2,
                             "basePrice": 26000,
-                            "totalRooms": 10
+                            "totalRooms": 10,
+                            "image": "assets/amboseli/elerai/elerai-deluxe.png",
+                            "description": "Elerai's Deluxe Tents are positioned across the conservancy to maximise views of Kilimanjaro. Each tent is spacious with a king or twin bed, ensuite hot shower, private veranda, and solar lighting. The canvas walls and timber floors keep the atmosphere genuine — this is a camp that lets the landscape speak, with the mountain appearing to guests who wake early and step out into the still morning air."
                         },
                         {
                             "id": "cottage",
                             "name": "Cottage Tent",
                             "capacity": 4,
                             "basePrice": 49000,
-                            "totalRooms": 5
+                            "totalRooms": 5,
+                            "image": "assets/amboseli/elerai/elerai-cottage.png",
+                            "description": "The Cottage Tents at Elerai offer more substantial accommodation for guests wanting extra space. Larger than the Deluxe units, each Cottage Tent has a private lounge area, a wider veranda with dedicated wildlife-watching chairs, an ensuite bathroom with both a shower and a deep tub, and views that on clear mornings frame Kilimanjaro directly from the bedroom window. An ideal choice for honeymoon couples or guests staying three or more nights."
                         }
+                    ],
+                    "amenities": [
+                        "Ensuite Bathroom with Hot Shower",
+                        "Private Veranda with Kilimanjaro Views",
+                        "King or Twin Beds",
+                        "Mosquito Netting",
+                        "Solar Lighting",
+                        "Eco-friendly Toiletries",
+                        "In-tent Safe",
+                        "Communal Lounge & Firepit",
+                        "Laundry Service",
+                        "Charging Facilities"
+                    ],
+                    "includes": [
+                        "Full board accommodation",
+                        "Twice-daily game drives",
+                        "Park entry fees",
+                        "Bottled water & soft drinks",
+                        "Guided nature walk on the conservancy"
+                    ],
+                    "excludes": [
+                        "Alcoholic beverages",
+                        "Hot air balloon safari",
+                        "Airstrip transfers",
+                        "Travel insurance",
+                        "Tips & gratuities",
+                        "Curio purchases"
                     ]
                 },
                 {
@@ -457,6 +707,8 @@
                     "rank": "Luxury+",
                     "heroImage": "assets/amboseli/tortilis/tortilis-hero.png",
                     "description": "Tortilis Camp is named after the flat-topped, umbrella thorn tree, the Acacia Tortilis, and is situated in one of Amboseli’s areas of Acacia",
+                    "mainDescription": "Named after the iconic flat-topped acacia that defines the Amboseli skyline, Tortilis Camp has long been regarded as one of the finest camps in the greater Kilimanjaro ecosystem. Set within a private conservancy on the edge of the national park, the camp offers a privileged vantage point from which the mountain's changing moods — from cloud-wrapped to crystal clear — play out against an ever-moving tapestry of elephant herds, dust clouds, and open sky. The camp itself is beautiful, built with a light hand and a genuine respect for the environment it inhabits.",
+                    "mainDescription1": "The tents at Tortilis are spacious and elegantly appointed, each positioned to capture the best possible sightlines across the plains and, on fortunate mornings, directly toward the summit of Kilimanjaro. Private outdoor showers, handcrafted furnishings, and a shaded veranda designed for idle observation give the accommodation a sense of considered luxury that sits comfortably within the wild setting. The camp's commitment to conservation extends beyond its borders — Tortilis has been instrumental in supporting community land programs that protect critical wildlife corridors in the region and provide meaningful livelihoods for the Maasai communities who share this remarkable landscape.",
                     "gallery": [
                         "assets/amboseli/tortilis/tortilis-1.png",
                         "assets/amboseli/tortilis/tortilis-2.png"
@@ -468,15 +720,48 @@
                             "name": "Deluxe Tent",
                             "capacity": 2,
                             "basePrice": 30000,
-                            "totalRooms": 8
+                            "totalRooms": 8,
+                            "image": "assets/amboseli/tortilis/tortilis-deluxe.png",
+                            "description": "Tortilis Camp's Deluxe Tents are elegant and considered, each positioned under the shade of a tortilis acacia with a private outdoor shower that opens to the sky and the mountain beyond. King-size beds with luxury linen, handcrafted furniture, ceiling fans, and a veranda designed for uninterrupted Kilimanjaro viewing make these tents as much a destination as the park itself."
                         },
                         {
                             "id": "cottage",
                             "name": "Cottage Tent",
                             "capacity": 4,
                             "basePrice": 55000,
-                            "totalRooms": 4
+                            "totalRooms": 4,
+                            "image": "assets/amboseli/tortilis/tortilis-cottage.png",
+                            "description": "The Cottage Tents at Tortilis are the camp's most private and expansive accommodation, set slightly apart from the main cluster. Each Cottage offers a generous bedroom, a separate lounge with a fireplace, a large private veranda, and an ensuite bathroom with a rainfall shower and an outdoor soaking tub framed by the Amboseli plains. A dedicated morning tea service completes the experience for those who want the full measure of a Tortilis stay."
                         }
+                    ],
+                    "amenities": [
+                        "Private Ensuite Bathroom with Outdoor Shower",
+                        "Shaded Private Veranda",
+                        "King-size Bed with Luxury Linens",
+                        "Ceiling Fan",
+                        "Personal Safe",
+                        "Solar & Lantern Lighting",
+                        "Eco-friendly Amenities",
+                        "Swimming Pool Access",
+                        "Bush Breakfast Setup on Request",
+                        "Laundry & Pressing Service",
+                        "Campfire & Star-gazing Deck"
+                    ],
+                    "includes": [
+                        "Full board accommodation",
+                        "All local beverages",
+                        "Twice-daily game drives in Amboseli",
+                        "Guided Maasai village visit",
+                        "Nature walks with Maasai guides",
+                        "Laundry service",
+                        "Airstrip transfers (Amboseli airstrip)"
+                    ],
+                    "excludes": [
+                        "Hot air balloon safari",
+                        "Premium & imported spirits",
+                        "Spa treatments",
+                        "Travel insurance",
+                        "Tips & gratuities"
                     ]
                 },
                 {
@@ -486,6 +771,8 @@
                     "rank": "Luxury",
                     "heroImage": "assets/amboseli/kilima/kilima-hero.png",
                     "description": "Kilima safari camp is located in Amboseli National Park, next to the Kimana Gate Park entrance. It is set out on a 420 acres of a land.",
+                    "mainDescription": "Kilima Safari Lodge occupies a generous 420-acre site adjacent to Amboseli National Park's Kimana Gate, giving it some of the most accessible and productive game-viewing terrain in the greater Kilimanjaro ecosystem. The lodge takes its name from the Swahili word for mountain, a reference to the breathtaking presence of Kilimanjaro that looms across the park boundary and dominates the horizon from almost every point on the property. Wide-open views, carefully positioned rooms, and an architecture that leans into the landscape rather than imposing on it make Kilima one of Amboseli's most visually striking addresses.",
+                    "mainDescription1": "The accommodation is generous and well-appointed, with classic and superior tent categories offering private decks, ensuite bathrooms, and furnishings that blend East African safari heritage with contemporary comfort. The lodge's elevated central area — incorporating a restaurant, bar, and pool terrace — functions as a living room for guests, a place to gather before and after drives, to compare notes on the day's sightings, and to watch the mountain change colour as the sun drops behind it in the evening. With elephants regularly passing through the property itself and a committed team of guides who know the park's resident animal families by name, Kilima offers a safari experience that is both personal and deeply connected to the land.",
                     "gallery": [
                         "assets/amboseli/kilima/kilima-1.png",
                         "assets/amboseli/kilima/kilima-2.png"
@@ -497,15 +784,50 @@
                             "name": "Classic Tent",
                             "capacity": 2,
                             "basePrice": 40000,
-                            "totalRooms": 20
+                            "totalRooms": 20,
+                            "image": "assets/amboseli/kilima/kilima-classic.png",
+                            "description": "The Classic Tents at Kilima deliver exactly what the name promises — the timeless East African safari experience, well executed and reliably comfortable. King or twin beds, ensuite bathrooms with hot showers, ceiling fans, and private decks all feature as standard, and every tent is positioned across the 420-acre grounds to give guests a meaningful view of Kilimanjaro when conditions allow."
                         },
                         {
                             "id": "superior",
                             "name": "Superior Tent",
                             "capacity": 4,
                             "basePrice": 70000,
-                            "totalRooms": 12
+                            "totalRooms": 12,
+                            "image": "assets/amboseli/kilima/kilima-superior.png",
+                            "description": "Kilima's Superior Tents are the lodge's premium accommodation, offering substantially more space, a private lounge area, and a terrace with direct sightlines toward Kilimanjaro's summit. The ensuite bathroom features both a rain shower and a freestanding bathtub, and the décor is elevated throughout with locally crafted art, premium linen, and furniture built by Amboseli artisans. Air conditioning and a stocked minibar complete the picture."
                         }
+                    ],
+                    "amenities": [
+                        "Ensuite Bathroom with Shower & Bathtub",
+                        "Private Deck with Kilimanjaro Views",
+                        "King-size or Twin Beds",
+                        "Air Conditioning & Ceiling Fan",
+                        "In-room Safe",
+                        "Complimentary Wi-Fi",
+                        "Hair Dryer & Premium Toiletries",
+                        "Bathrobe & Slippers",
+                        "Swimming Pool Access",
+                        "Daily Turndown Service",
+                        "Laundry & Pressing Service",
+                        "24-hour Front Desk"
+                    ],
+                    "includes": [
+                        "Full board accommodation",
+                        "All local beverages",
+                        "Morning and afternoon game drives",
+                        "Guided walks to Observation Hill",
+                        "Cultural Maasai village visit",
+                        "Airstrip transfers",
+                        "Laundry service"
+                    ],
+                    "excludes": [
+                        "Hot air balloon safari",
+                        "Premium spirits & champagne",
+                        "Spa & wellness treatments",
+                        "Travel insurance",
+                        "Tips & gratuities",
+                        "Items of personal nature"
                     ]
                 }
             ]
@@ -598,6 +920,8 @@
                     "rank": "Mid-Range",
                     "heroImage": "assets/tsavo-east/satao/satao-hero.png",
                     "description": "satao camp is an unfenced tented camp in the heart of tsavo east national park in Kenya, it offers a unique and authentic safari experience.",
+                    "mainDescription": "Satao Camp sits unfenced in the heart of Tsavo East National Park, positioned above a natural waterhole that draws a constant and extraordinary procession of wildlife throughout the day and night. The camp is named after Satao, one of Kenya's most celebrated and beloved tuskers — a great elephant whose memory lives on in the spirit of the place and in the conservation values that underpin everything the camp does. To sit on the viewing deck and watch a herd of Tsavo's iconic red elephants move through the dust toward water as the afternoon light fades is to understand why this vast, rugged wilderness has captured imaginations for over a century.",
+                    "mainDescription1": "The tents at Satao are well-proportioned and comfortably furnished, each with a private veranda overlooking the bush and the waterhole beyond. The camp operates in a way that prioritises the wildlife and the landscape above all else — there is no fence between the tents and the animals, no manicured lawns or unnecessary infrastructure, just canvas, timber, and the sounds of wild Africa in every direction. The guiding team combines deep local knowledge with genuine enthusiasm, leading drives that range across Tsavo's immense network of game tracks to find the leopards, lions, and vast elephant herds that make this one of Kenya's most compelling safari destinations.",
                     "gallery": [
                         "assets/tsavo-east/satao/satao-1.png",
                         "assets/tsavo-east/satao/satao-2.png"
@@ -609,15 +933,47 @@
                             "name": "Standard Tent",
                             "capacity": 2,
                             "basePrice": 40000,
-                            "totalRooms": 16
+                            "totalRooms": 16,
+                            "image": "assets/tsavo-east/satao/satao-standard.png",
+                            "description": "Satao's Standard Tents are unfenced, unfiltered, and entirely honest — canvas walls, timber floors, twin or double beds with mosquito netting, and a private veranda that sits just metres above the waterhole. Designed for those who come to Tsavo for the wildlife rather than the room, offering solid comfort and genuine immersion in equal measure. Sunsets from the veranda, with elephants moving below in the amber dust, are among the most memorable Tsavo has to offer."
                         },
                         {
                             "id": "suite",
                             "name": "Suite Tent",
                             "capacity": 4,
                             "basePrice": 72000,
-                            "totalRooms": 4
+                            "totalRooms": 4,
+                            "image": "assets/tsavo-east/satao/satao-suite.png",
+                            "description": "The Suite Tents at Satao are the camp's most generous offering, featuring a larger bedroom, a private sitting area, and an expanded veranda positioned directly above the waterhole. A clawfoot bathtub, premium linens, and a dedicated morning tray service add to the experience, making these tents the natural choice for guests celebrating a special occasion or those who simply want the best seat in the camp."
                         }
+                    ],
+                    "amenities": [
+                        "Ensuite Bathroom with Hot Shower",
+                        "Private Veranda overlooking Waterhole",
+                        "Twin or Double Beds",
+                        "Mosquito Netting",
+                        "Solar & Generator Lighting",
+                        "Ceiling Fan",
+                        "Personal Safe",
+                        "Eco-friendly Toiletries",
+                        "Communal Waterhole Viewing Deck",
+                        "Laundry Service",
+                        "Charging Station"
+                    ],
+                    "includes": [
+                        "Full board accommodation",
+                        "Twice-daily game drives",
+                        "Park entry fees",
+                        "All local beverages",
+                        "Guided bush walk (on request)",
+                        "Laundry service"
+                    ],
+                    "excludes": [
+                        "Night game drives (available at extra cost)",
+                        "Premium spirits",
+                        "Airstrip transfers",
+                        "Travel insurance",
+                        "Tips & gratuities"
                     ]
                 },
                 {
@@ -627,6 +983,8 @@
                     "rank": "Luxury",
                     "heroImage": "assets/tsavo-east/lions-bluff/lions-hero.png",
                     "description": "Lions Bluff Lodge is a luxury lodge located in Tsavo East National Park, Kenya. It offers stunning views of the park and its wildlife, making it a popular choice for safari-goers.",
+                    "mainDescription": "Lions Bluff Lodge stands apart in Tsavo East for the sheer drama of its position — elevated high above the Tsavo plains on a rocky bluff, the lodge commands views that extend for miles across the red-earthed wilderness below. From every suite and every shared space, the landscape rolls away in waves of ochre, olive, and deep green, bisected by the dark ribbon of the Galana River and framed by distant volcanic hills. It is the kind of vista that makes the act of simply sitting still feel like an event in itself, and the lodge has been designed around that experience with total conviction.",
+                    "mainDescription1": "The rooms at Lions Bluff are among the most generously proportioned in the Tsavo region, each featuring a private deck that cantilevers over the escarpment and a bathroom with views across the plains. The interiors draw on the earthy palette of the landscape — raw stone, hand-trowelled plaster, deep ochre linens, and locally crafted furniture that gives the rooms a sense of place as strong as the views beyond the glass. Game drives descend from the lodge into the park below, where red elephants, lion prides, and the occasional leopard reward early departures, while guided walks to the spectacular Lugard Falls on the Galana River offer a more intimate engagement with the extraordinary geology and ecology of Tsavo East.",
                     "gallery": [
                         "assets/tsavo-east/lions-bluff/lions-1.png",
                         "assets/tsavo-east/lions-bluff/lions-2.png"
@@ -638,15 +996,50 @@
                             "name": "Standard Room",
                             "capacity": 2,
                             "basePrice": 50000,
-                            "totalRooms": 20
+                            "totalRooms": 20,
+                            "image": "assets/tsavo-east/lions-bluff/lions-standard.png",
+                            "description": "Lions Bluff Standard Rooms are positioned along the escarpment with private decks cantilevered over the bluff and views that stretch across the Tsavo plains to the Galana River below. King or twin beds, an ensuite bathroom with a rain shower and soaking tub, and a palette drawn from the landscape's ochre and olive tones give the rooms a strong sense of place. Floor-to-ceiling glass on the bush-facing wall ensures the view is present from every point in the room — including from the bath."
                         },
                         {
                             "id": "deluxe",
                             "name": "Deluxe Room",
                             "capacity": 4,
                             "basePrice": 120000,
-                            "totalRooms": 10
+                            "totalRooms": 10,
+                            "image": "assets/tsavo-east/lions-bluff/lions-deluxe.png",
+                            "description": "The Deluxe Rooms at Lions Bluff are the lodge's most elevated accommodation. Each features a private plunge pool on the escarpment deck, a separate lounge and dressing room, a bathroom with dual rainfall showers and a freestanding tub with panoramic bush views, and butler service throughout the stay. The scale of the landscape from these rooms — the plains, the river, the volcanic hills — is simply without comparison in the Tsavo region."
                         }
+                    ],
+                    "amenities": [
+                        "Ensuite Bathroom with Rain Shower & Bathtub",
+                        "Elevated Private Deck with Tsavo Plains Views",
+                        "King-size Bed with Premium Linens",
+                        "Air Conditioning & Ceiling Fan",
+                        "In-room Safe",
+                        "Complimentary Wi-Fi",
+                        "Minibar",
+                        "Hair Dryer & Luxury Toiletries",
+                        "Bathrobe & Slippers",
+                        "Swimming Pool & Sun Deck Access",
+                        "Daily Turndown Service",
+                        "Laundry & Pressing Service"
+                    ],
+                    "includes": [
+                        "Full board accommodation",
+                        "All local beverages",
+                        "Morning and afternoon game drives",
+                        "Night game drive (one per stay)",
+                        "Guided walk at Lugard Falls",
+                        "Airstrip transfers (Voi airstrip)",
+                        "Laundry service"
+                    ],
+                    "excludes": [
+                        "Premium & imported spirits",
+                        "Spa treatments",
+                        "Hot air balloon safari",
+                        "Travel insurance",
+                        "Tips & gratuities",
+                        "Curio shop purchases"
                     ]
                 },
                 {
@@ -656,6 +1049,8 @@
                     "rank": "Luxury+",
                     "heroImage": "assets/tsavo-east/kilaguni/kilaguni-hero.png",
                     "description": "Kilaguni Serena Safari Lodge is a luxury lodge located in Tsavo East National Park, Kenya. It offers stunning views of the park and its wildlife, making it a popular choice for safari-goers.",
+                    "mainDescription": "Kilaguni Serena Safari Lodge holds a distinctive place in the story of Kenyan conservation — opened in 1962, it was the first lodge ever built inside a national park in Kenya, and it has never lost the sense of occasion that comes with that pioneering history. Set against the backdrop of the Chyulu Hills within the greater Tsavo ecosystem, the lodge overlooks a floodlit waterhole that draws elephants, buffalo, and plains game throughout the day and late into the evening. On clear days, the distant snowfields of Kilimanjaro are visible on the horizon, adding yet another layer of grandeur to a location that scarcely needs it.",
+                    "mainDescription1": "The lodge has been carefully updated and expanded by Serena Hotels over the decades, maintaining its character and sense of place while adding the services and standards that modern travellers expect. Thirty rooms and a selection of deluxe options are arranged around the central lodge area, each offering views across the waterhole and the bush beyond. The restaurant serves well-executed cuisine informed by local produce, the spa offers a welcome retreat after long days in the field, and the guiding team — among the most experienced in the Tsavo region — leads drives that regularly turn up the lions, leopards, and vast red elephant herds for which this extraordinary wilderness is justly famous.",
                     "gallery": [
                         "assets/tsavo-east/kilaguni/kilaguni-1.png",
                         "assets/tsavo-east/kilaguni/kilaguni-2.png"
@@ -667,15 +1062,52 @@
                             "name": "Standard Room",
                             "capacity": 2,
                             "basePrice": 60000,
-                            "totalRooms": 30
+                            "totalRooms": 30,
+                            "image": "assets/tsavo-east/kilaguni/kilaguni-standard.png",
+                            "description": "Kilaguni's Standard Rooms are well-proportioned and carefully finished, each with a private balcony overlooking the floodlit waterhole and, on clear days, the distant snowfields of Kilimanjaro on the horizon. Air conditioning, an ensuite bathroom with both a tub and shower, complimentary Wi-Fi, and the full range of Serena Hotels amenities make these rooms a reliable and comfortable base for exploring the wider Tsavo ecosystem."
                         },
                         {
                             "id": "deluxe",
                             "name": "Deluxe Room",
                             "capacity": 4,
                             "basePrice": 150000,
-                            "totalRooms": 15
+                            "totalRooms": 15,
+                            "image": "assets/tsavo-east/kilaguni/kilaguni-deluxe.png",
+                            "description": "Kilaguni's Deluxe Rooms offer more generous floor space, a sitting area, a larger private balcony, a premium bathroom with rainfall shower and soaking tub, and enhanced minibar and butler services. The views from the Deluxe balcony — across the waterhole, through the Chyulu Hills, and on exceptional days to the faint profile of Kilimanjaro — are among the most layered and beautiful available anywhere in the greater Tsavo ecosystem."
                         }
+                    ],
+                    "amenities": [
+                        "Ensuite Bathroom with Bathtub & Shower",
+                        "Private Balcony with Waterhole & Kilimanjaro Views",
+                        "King or Twin Beds",
+                        "Air Conditioning",
+                        "In-room Safe",
+                        "Telephone",
+                        "Complimentary Wi-Fi",
+                        "Hair Dryer & Premium Toiletries",
+                        "Bathrobe & Slippers",
+                        "Swimming Pool Access",
+                        "Spa & Wellness Centre",
+                        "Daily Turndown Service",
+                        "Laundry Service",
+                        "24-hour Room Service"
+                    ],
+                    "includes": [
+                        "Full board accommodation",
+                        "All local beverages",
+                        "Twice-daily game drives",
+                        "Guided Mzima Springs excursion",
+                        "Cultural evening entertainment",
+                        "Laundry service",
+                        "Airstrip transfers (Tsavo / Voi)"
+                    ],
+                    "excludes": [
+                        "Premium & imported spirits",
+                        "Spa treatments & personal services",
+                        "Hot air balloon safari",
+                        "Travel insurance",
+                        "Tips & gratuities",
+                        "Items of personal nature"
                     ]
                 }
             ]
@@ -769,6 +1201,8 @@
                     "rank": "Luxury",
                     "heroImage": "assets/nakuru/sarova/sarova-hero.png",
                     "description": "Experience the ultimate in luxury and comfort at Alan Walker Serian Camp.",
+                    "mainDescription": "Perched on a wooded hillside inside Lake Nakuru National Park, Sarova Lion Hill Lodge offers an elevated perspective over one of Kenya's most visually spectacular wildlife sanctuaries. The lodge sits within the park boundary, meaning game — including the park's celebrated rhino population and a resident pride of lions — moves freely through the surrounding forest and can regularly be seen from the rooms and common areas without ever boarding a vehicle. It is a genuinely immersive setting, and the lodge has been built to make the most of it at every turn.",
+                    "mainDescription1": "The rooms are arranged across the hillside in clusters that minimise their visual impact on the landscape while maximising the views available from each private balcony. Inside, the décor is warm and unfussy — locally crafted furniture, earthy fabrics, and a colour palette drawn from the lake, the flamingos, and the acacia woodlands that surround the property. The lodge's central dining and pool area is a lively and welcoming space, particularly at dawn when the lake below turns pink with flamingos and the first game drive vehicles roll out into the cool morning air. For its combination of location, comfort, and value within a national park, Sarova Lion Hill remains one of the Nakuru region's most dependable and satisfying choices.",
                     "gallery": [
                         "assets/nakuru/sarova/sarova-1.png",
                         "assets/nakuru/sarova/sarova-2.png"
@@ -780,15 +1214,47 @@
                             "name": "Standard Room",
                             "capacity": 2,
                             "basePrice": 21000,
-                            "totalRooms": 5
+                            "totalRooms": 5,
+                            "image": "assets/nakuru/sarova/sarova-standard.png",
+                            "description": "Sarova Lion Hill's Standard Rooms are set within the wooded hillside, each offering a private balcony with views down through the yellow fever acacias toward the lake below. King or twin beds, air conditioning, an ensuite bathroom, and warm safari-toned interiors make for a comfortable and characterful stay. The forested setting means guests regularly see birds and small mammals from their balconies without leaving the room."
                         },
                         {
                             "id": "deluxe",
                             "name": "Deluxe Room",
                             "capacity": 4,
                             "basePrice": 48000,
-                            "totalRooms": 3
+                            "totalRooms": 3,
+                            "image": "assets/nakuru/sarova/sarova-deluxe.png",
+                            "description": "The Deluxe Rooms at Sarova Lion Hill are positioned for the best lake views the property has to offer — elevated on the upper hillside with wide private balconies framing Lake Nakuru and, in good flamingo seasons, the pink haze that extends along the shoreline. Larger than the Standard category and finished with upgraded linens, a soaking tub, and complimentary minibar, these rooms are the natural upgrade for guests who want to make the most of the lodge's extraordinary setting."
                         }
+                    ],
+                    "amenities": [
+                        "Ensuite Bathroom with Shower & Bathtub",
+                        "Private Balcony with Lake Views",
+                        "King or Twin Beds",
+                        "Air Conditioning & Ceiling Fan",
+                        "In-room Safe",
+                        "Complimentary Wi-Fi",
+                        "Hair Dryer & Toiletries",
+                        "Swimming Pool Access",
+                        "Daily Housekeeping",
+                        "Laundry Service",
+                        "24-hour Front Desk"
+                    ],
+                    "includes": [
+                        "Full board accommodation",
+                        "Morning and afternoon game drives",
+                        "All local beverages",
+                        "Guided rhino tracking walk",
+                        "Laundry service",
+                        "Airstrip transfers (Nakuru airstrip)"
+                    ],
+                    "excludes": [
+                        "Premium spirits & champagne",
+                        "Spa treatments",
+                        "Travel insurance",
+                        "Tips & gratuities",
+                        "Curio purchases"
                     ]
                 },
                 {
@@ -798,6 +1264,8 @@
                     "rank": "Luxury+",
                     "heroImage": "assets/nakuru/lake-lodge/lake-hero.png",
                     "description": "Enjoy breathtaking views and exceptional service at Mara Serena Safari Lodge.",
+                    "mainDescription": "Lake Nakuru Lodge occupies one of the most coveted positions in the national park — a spacious, elevated site within the forest zone that provides both seclusion and sweeping views toward the lake below. The property has developed over many years into a well-established full-service lodge that serves the widest possible range of travellers without ever losing the sense of place that makes Nakuru so compelling. Towering yellow fever acacias shade the pathways between rooms and public areas, and the forest around the lodge is alive with bird activity throughout the day, including the Fischer's turaco, the silvery-cheeked hornbill, and dozens of other species that reward guests who simply pause and look upward.",
+                    "mainDescription1": "The rooms at Lake Nakuru Lodge offer generous proportions and private terraces that capture the forest light at different times of day. The lodge's spa and wellness facilities provide a genuine counterpoint to the vigour of game driving — a place to decompress, reflect, and absorb the slower rhythms of the landscape. Game drives lead directly into the park from the lodge gates, with rhino tracking among the most sought-after experiences the reserve offers. Whether guests are watching the lake's flamingos turn it pink at dawn, following a black rhino through the dense euphorbia forest at midday, or enjoying sundowners on the terrace as the acacia canopy catches the last of the evening light, Lake Nakuru Lodge provides a setting and a standard of comfort that make every moment feel well spent.",
                     "gallery": [
                         "assets/nakuru/lake-lodge/lake-1.png",
                         "assets/nakuru/lake-lodge/lake-2.png"
@@ -809,15 +1277,50 @@
                             "name": "Standard Room",
                             "capacity": 2,
                             "basePrice": 66000,
-                            "totalRooms": 10
+                            "totalRooms": 10,
+                            "image": "assets/nakuru/lake-lodge/lake-standard.png",
+                            "description": "Lake Nakuru Lodge's Standard Rooms are generous and well-appointed, set within the forest zone with private terraces that capture the shifting light filtering through the acacia canopy. Each room features a king or twin bed, an ensuite bathroom with a rain shower and soaking tub, air conditioning, and thoughtfully chosen décor that draws from the colours of the lake and the woodland. The forest setting is alive with birdsong throughout the day."
                         },
                         {
                             "id": "deluxe",
                             "name": "Deluxe Room",
                             "capacity": 4,
                             "basePrice": 98000,
-                            "totalRooms": 5
+                            "totalRooms": 5,
+                            "image": "assets/nakuru/lake-lodge/lake-deluxe.png",
+                            "description": "The Deluxe Rooms at Lake Nakuru Lodge offer a significant step up in space and positioning, with larger terraces oriented toward the lake's open water and enhanced bathroom facilities including dual vanities, a freestanding bathtub, and a rainfall shower. A minibar, fireplace, premium toiletries, and upgraded linens complete the picture. The Deluxe category is particularly popular with photographers who appreciate the elevated vantage point for early-morning flamingo light."
                         }
+                    ],
+                    "amenities": [
+                        "Ensuite Bathroom with Rain Shower & Soaking Tub",
+                        "Private Terrace with Lake & Flamingo Views",
+                        "King-size Bed with Luxury Linens",
+                        "Air Conditioning",
+                        "Fireplace",
+                        "In-room Safe",
+                        "Complimentary Wi-Fi",
+                        "Minibar",
+                        "Hair Dryer & Premium Toiletries",
+                        "Bathrobe & Slippers",
+                        "Swimming Pool & Spa Access",
+                        "Daily Turndown Service",
+                        "Laundry & Pressing Service"
+                    ],
+                    "includes": [
+                        "Full board accommodation",
+                        "All local beverages",
+                        "Twice-daily game drives",
+                        "Rhino tracking experience",
+                        "Guided birdwatching walk",
+                        "Laundry service",
+                        "Airstrip transfers"
+                    ],
+                    "excludes": [
+                        "Premium & imported spirits",
+                        "Spa & wellness treatments",
+                        "Travel insurance",
+                        "Tips & gratuities",
+                        "Photography safari equipment rental"
                     ]
                 },
                 {
@@ -827,6 +1330,8 @@
                     "rank": "Mid-Range",
                     "heroImage": "assets/nakuru/flamingo-hill/flamingo-hero.png",
                     "description": "Experience the perfect blend of comfort and nature at Entumoto Safari Camp.",
+                    "mainDescription": "Flamingo Hill Camp takes its name from the breathtaking flamingo spectacle for which Lake Nakuru is globally renowned, and the camp's position — close to the lakeshore within the national park — places guests at the centre of that spectacle with minimal fuss and maximum honesty. The camp is intentionally small and unpretentious, built from canvas and natural materials with a light footprint on the land and a strong emphasis on the outdoor experience. Early mornings bring the lake closest — its surface reflecting the pink haze of flamingos moving in vast flocks — and the camp's communal areas are oriented to make the most of those unforgettable hours before the sun climbs high.",
+                    "mainDescription1": "The tents at Flamingo Hill are comfortable and practical, offering the essentials of a good safari camp — hot showers, solid beds, mosquito netting, and a private veranda from which to listen to the lake's soundtrack at night. Meals are taken communally under a shaded banda, creating the sociable atmosphere that is one of the enduring pleasures of tented camp life. Game drives from the camp cover the full circuit of the park, from the rhino sanctuary in the north to the waterfall picnic site in the south, while birdwatching walks along the lakeshore offer an entirely different and deeply rewarding way to engage with this remarkable place.",
                     "gallery": [
                         "assets/nakuru/flamingo-hill/flamingo-1.png",
                         "assets/nakuru/flamingo-hill/flamingo-2.png"
@@ -838,15 +1343,44 @@
                             "name": "Standard Tent",
                             "capacity": 6,
                             "basePrice": 8000,
-                            "totalRooms": 3
+                            "totalRooms": 3,
+                            "image": "assets/nakuru/flamingo-hill/flamingo-standard.png",
+                            "description": "Flamingo Hill's Standard Tents are comfortable and unpretentious — spacious canvas units with twin or double beds, hot showers, and a private veranda positioned to face the lake. Solar lighting, eco-friendly toiletries, and thoughtful storage keep the footprint light. The camp's proximity to the lakeshore means that guests can hear the flamingos from their beds on still evenings, which is perhaps the finest amenity any room in Nakuru can offer."
                         },
                         {
                             "id": "toto",
                             "name": "Family Tent",
                             "capacity": 4,
                             "basePrice": 15000,
-                            "totalRooms": 5
+                            "totalRooms": 5,
+                            "image": "assets/nakuru/flamingo-hill/flamingo-family.png",
+                            "description": "The Family Tents at Flamingo Hill are configured for groups of up to four, with a king bed in the main sleeping area and two additional singles in an adjacent section. The shared veranda is generously sized, the ensuite bathroom has a reliable hot shower, and the canvas structure is well-maintained and weatherproof. A practical, well-priced option for families who want a genuine lakeside tented camp experience."
                         }
+                    ],
+                    "amenities": [
+                        "Ensuite Bathroom with Hot Shower",
+                        "Private Canvas Veranda",
+                        "Twin or Double Beds",
+                        "Mosquito Netting",
+                        "Solar Lighting & Charging Points",
+                        "Eco-friendly Toiletries",
+                        "Communal Campfire Lounge",
+                        "Safe Storage",
+                        "Laundry Service (extra charge)"
+                    ],
+                    "includes": [
+                        "Full board accommodation",
+                        "Morning game drive",
+                        "Park entry fees",
+                        "Bottled water & soft drinks",
+                        "Flamingo & bird walk along the lakeshore"
+                    ],
+                    "excludes": [
+                        "Alcoholic beverages",
+                        "Additional game drives",
+                        "Airstrip transfers",
+                        "Travel insurance",
+                        "Tips & gratuities"
                     ]
                 }
             ]
@@ -939,6 +1473,8 @@
                     "rank": "Luxury+",
                     "heroImage": "assets/samburu/samburu-sopa/sopa-hero.png",
                     "description": "Experience the ultimate in luxury and comfort at Alan Walker Serian Camp.",
+                    "mainDescription": "Samburu Sopa Lodge sits on the banks of the Ewaso Nyiro River in one of northern Kenya's most dramatic and biologically distinctive landscapes. The river is the lifeblood of Samburu — a ribbon of green cutting through an otherwise arid terrain of red rock and sparse bush — and the lodge's position along its southern bank gives guests front-row access to the remarkable concentration of wildlife that gathers here throughout the year. Elephants wade across the shallows, crocodiles bask on the sandy banks, and the Samburu Special Five — Grevy's zebra, reticulated giraffe, Beisa oryx, Somali ostrich, and gerenuk — are regularly seen from the lodge grounds themselves.",
+                    "mainDescription1": "The lodge is the largest property in the reserve and operates with the full complement of services expected at a Sopa property — a restaurant serving generous and well-prepared meals, a swimming pool that offers cooling relief in the midday heat, and a team of experienced guides who know the reserve's game circuits and resident animal families in intimate detail. Rooms are arranged along the riverbank, each with a balcony designed for unhurried observation of whatever the Ewaso Nyiro delivers on any given day. It is a lodge that combines reliable comfort with a setting of genuine northern frontier wildness, making it one of the most complete options available in the Samburu region.",
                     "gallery": [
                         "assets/samburu/samburu-sopa/sopa-1.png",
                         "assets/samburu/samburu-sopa/sopa-2.png"
@@ -950,15 +1486,48 @@
                             "name": "Standard Room",
                             "capacity": 2,
                             "basePrice": 30000,
-                            "totalRooms": 24
+                            "totalRooms": 24,
+                            "image": "assets/samburu/samburu-sopa/sopa-standard.png",
+                            "description": "Samburu Sopa's Standard Rooms are well-proportioned and comfortable, each with a private balcony overlooking the Ewaso Nyiro River and the dry acacia bush stretching toward the reserve's rocky hills. King or twin beds, air conditioning, an ensuite bathroom with shower and tub, and a warm safari palette throughout the room make this a reliable and enjoyable base for days spent exploring northern Kenya's extraordinary wildlife."
                         },
                         {
                             "id": "luxury",
                             "name": "Luxury room",
                             "capacity": 4,
                             "basePrice": 68000,
-                            "totalRooms": 10
+                            "totalRooms": 10,
+                            "image": "assets/samburu/samburu-sopa/sopa-luxury.png",
+                            "description": "The Luxury Rooms at Samburu Sopa are the lodge's signature accommodation, offering a larger floor plan, a wider river-facing terrace, a clawfoot bathtub with open views, premium linens, and butler service throughout the stay. The elevated position above the Ewaso Nyiro means elephants, crocodiles, and the Samburu Special Five are regularly visible from the terrace without ever boarding a vehicle — an extraordinary privilege that makes these rooms worth every shilling."
                         }
+                    ],
+                    "amenities": [
+                        "Ensuite Bathroom with Shower & Bathtub",
+                        "Private Balcony with Ewaso Nyiro River Views",
+                        "King or Twin Beds",
+                        "Air Conditioning & Ceiling Fan",
+                        "In-room Safe",
+                        "Complimentary Wi-Fi (lobby)",
+                        "Hair Dryer & Toiletries",
+                        "Swimming Pool Access",
+                        "Daily Housekeeping & Turndown",
+                        "Laundry Service",
+                        "24-hour Front Desk & Room Service"
+                    ],
+                    "includes": [
+                        "Full board accommodation",
+                        "Twice-daily game drives",
+                        "All local beverages",
+                        "Guided cultural visit to Samburu village",
+                        "Sundowner on the riverbank",
+                        "Laundry service",
+                        "Airstrip transfers (Samburu airstrip)"
+                    ],
+                    "excludes": [
+                        "Premium & imported spirits",
+                        "Spa treatments",
+                        "Camel rides & specialised activities",
+                        "Travel insurance",
+                        "Tips & gratuities"
                     ]
                 },
                 {
@@ -968,6 +1537,8 @@
                     "rank": "Luxury",
                     "heroImage": "assets/samburu/elephant-camp/elephant-hero.png",
                     "description": "Enjoy breathtaking views and exceptional service at Mara Serena Safari Lodge.",
+                    "mainDescription": "Elephant Bedroom Camp is one of Samburu's most distinguished and characterful properties, built directly on the bank of the Ewaso Nyiro River at a point where elephants cross daily in family groups of extraordinary size. The camp takes its name from this daily ritual — a procession of giants moving through the water just metres from the tents — and everything about the design, the guiding, and the daily rhythm of the camp is built around making that experience as intimate and unhurried as possible. With eleven tents strung along the riverbank beneath a canopy of fig and acacia, Elephant Bedroom is small enough to feel personal without ever feeling sparse.",
+                    "mainDescription1": "The tents themselves are beautifully appointed — spacious interiors with outdoor hot showers, handcrafted furniture, and private decks positioned to face the river and the dramatic escarpment rising beyond its northern bank. The guiding team at Elephant Bedroom is among the best in Samburu, equally skilled at tracking the Samburu Special Five through the reserve's open bush terrain and identifying the extraordinary variety of birds — including the Vulturine guineafowl, Eastern yellow-billed hornbill, and Somali bee-eater — that make this part of Kenya a destination of real significance for wildlife photographers and naturalists alike. Evenings at the camp end around a fire on the riverbank with the sounds of the bush and the Ewaso Nyiro moving quietly in the dark.",
                     "gallery": [
                         "assets/samburu/elephant-camp/elephant-1.png",
                         "assets/samburu/elephant-camp/elephant-2.png"
@@ -979,15 +1550,48 @@
                             "name": "Standard Tent",
                             "capacity": 2,
                             "basePrice": 36000,
-                            "totalRooms": 25
+                            "totalRooms": 25,
+                            "image": "assets/samburu/elephant-camp/elephant-standard.png",
+                            "description": "Elephant Bedroom's Standard Tents are set directly on the bank of the Ewaso Nyiro River, each with an outdoor hot shower open to the sky, a king-size bed under a canopy of mosquito netting, and a private veranda facing the water and the elephant crossing that gives the camp its name. Lantern lighting, handcrafted furniture, and the constant soundtrack of the river make these tents among the most atmospheric in Kenya's northern reserves."
                         },
                         {
                             "id": "luxury",
                             "name": "Luxury Tent",
                             "capacity": 4,
                             "basePrice": 50000,
-                            "totalRooms": 11
+                            "totalRooms": 11,
+                            "image": "assets/samburu/elephant-camp/elephant-luxury.png",
+                            "description": "The Luxury Tents at Elephant Bedroom are the camp's most expansive and thoughtfully finished accommodation. A larger canvas footprint encompasses a private lounge area, a dressing room, a bathroom with a copper soaking tub and outdoor rain shower, and a wide veranda with front-row river views. The tent is positioned at the quietest end of the camp, ensuring maximum privacy while remaining close to the communal fire and the camp's excellent dining area."
                         }
+                    ],
+                    "amenities": [
+                        "Ensuite Bathroom with Outdoor Hot Shower",
+                        "Private Veranda Overlooking the River",
+                        "King-size Bed with Mosquito Net & Luxury Linens",
+                        "Solar & Lantern Lighting",
+                        "Personal Safe",
+                        "Ceiling Fan",
+                        "Eco-friendly Toiletries",
+                        "Riverfront Swimming Pool Access",
+                        "Bush Breakfast on Request",
+                        "Laundry & Pressing Service",
+                        "Campfire & Star-gazing Deck"
+                    ],
+                    "includes": [
+                        "Full board accommodation",
+                        "All local beverages",
+                        "Morning and afternoon game drives",
+                        "Guided nature walk along the Ewaso Nyiro",
+                        "Samburu cultural village visit",
+                        "Laundry service",
+                        "Airstrip transfers"
+                    ],
+                    "excludes": [
+                        "Premium spirits & champagne",
+                        "Spa treatments",
+                        "Camel rides",
+                        "Travel insurance",
+                        "Tips & gratuities"
                     ]
                 },
                 {
@@ -997,6 +1601,8 @@
                     "rank": "Luxury+",
                     "heroImage": "assets/samburu/saruni/saruni-hero.png",
                     "description": "Experience the perfect blend of comfort and nature at Entumoto Safari Camp.",
+                    "mainDescription": "Saruni Basecamp offers the most accessible entry point into the Samburu experience within the Saruni portfolio — a compact, well-run camp designed for travellers who want to engage deeply with northern Kenya's extraordinary landscape without the full weight of a luxury lodge tariff. The camp's three main tents and five family units are honest and comfortable, fitted with the essentials of a good safari stay and oriented toward the bush rather than inward on themselves. Meals are taken together in a shaded banda, guiding is attentive and informed, and the atmosphere throughout the camp is relaxed and sociable.",
+                    "mainDescription1": "The camp sits within access of the Samburu National Reserve's core game-viewing areas, giving guests direct exposure to the species that make this part of Kenya unique — most notably the Samburu Special Five and the rich birdlife of the Ewaso Nyiro corridor. Family tents make Saruni Basecamp a particularly practical option for groups travelling with children, and the camp's community partnerships with local Samburu pastoralists add a layer of cultural richness to the stay that is genuinely informative. For those new to northern Kenya or looking for an honest, well-priced introduction to a landscape unlike anything further south, Saruni Basecamp delivers exactly what it promises.",
                     "gallery": [
                         "assets/samburu/saruni/saruni-1.png",
                         "assets/samburu/saruni/saruni-2.png"
@@ -1008,15 +1614,46 @@
                             "name": "Standard Tent",
                             "capacity": 6,
                             "basePrice": 8000,
-                            "totalRooms": 3
+                            "totalRooms": 3,
+                            "image": "assets/samburu/saruni/saruni-standard.png",
+                            "description": "Saruni Basecamp's Standard Tents are solid, comfortable, and well-suited to the camp's honest safari ethos. Each tent sleeps up to six guests across a combination of bunk and single beds — making them a popular choice for families or friend groups travelling together. An ensuite bathroom with a hot shower, a shaded veranda, and solar lighting complete the setup. The focus is firmly on the landscape and wildlife beyond the tent."
                         },
                         {
                             "id": "toto",
                             "name": "Family Tent",
                             "capacity": 4,
                             "basePrice": 15000,
-                            "totalRooms": 5
+                            "totalRooms": 5,
+                            "image": "assets/samburu/saruni/saruni-family.png",
+                            "description": "The Family Tents at Saruni Basecamp are configured for groups of four, with a double bed in the primary sleeping area and two singles in an adjacent zone — well suited to parents travelling with children. A private veranda with unobstructed bush views, a dedicated ensuite bathroom, and proximity to the communal lounge and dining banda make these tents a practical and comfortable choice for families new to Samburu's extraordinary northern landscape."
                         }
+                    ],
+                    "amenities": [
+                        "Ensuite Bathroom with Hot Shower",
+                        "Shaded Private Veranda",
+                        "Bunk or Family Beds",
+                        "Mosquito Netting",
+                        "Solar Lighting",
+                        "Eco-friendly Toiletries",
+                        "Communal Lounge & Dining Banda",
+                        "Safe Storage Box",
+                        "Campfire Terrace",
+                        "Laundry Service (limited)"
+                    ],
+                    "includes": [
+                        "Full board accommodation",
+                        "Morning game drive",
+                        "Park entry fees",
+                        "Drinking water & soft drinks",
+                        "Guided Samburu Special Five walk"
+                    ],
+                    "excludes": [
+                        "Alcoholic beverages",
+                        "Additional game drives",
+                        "Airstrip transfers",
+                        "Travel insurance",
+                        "Laundry (limited, extra charge)",
+                        "Tips & gratuities"
                     ]
                 }
             ]
@@ -1109,6 +1746,8 @@
                     "rank": "Luxury",
                     "heroImage": "assets/hells-gate/kongoni/kongoni-hero.png",
                     "description": "Experience the ultimate in luxury and comfort at Alan Walker Serian Camp.",
+                    "mainDescription": "Naivasha Kongoni Lodge is a refined lakeside retreat set on the shores of Lake Naivasha, within easy reach of Hell's Gate National Park and the surrounding Rift Valley landscape. The lodge takes its name from the Kongoni — the Coke's hartebeest — one of the more characterful antelope species that graze the open grasslands around the property. It is a place of quiet beauty, where the lake shimmers through papyrus reeds, fish eagles call from the fever trees, and the dramatic silhouette of the Rift Valley escarpment frames every view to the south and west. Guests arrive and almost immediately slow down, drawn into the unhurried pace that Lake Naivasha seems to demand of all who spend time on its banks.",
+                    "mainDescription1": "The lodge's twenty-two deluxe rooms and ten executive rooms are generously sized and well-appointed, each with a private terrace positioned to capture the lake light across different times of day. Bicycle hire is available directly from the lodge for expeditions into Hell's Gate — one of the few Kenyan parks where cycling among the wildlife is permitted — and the guiding team organises gorge walks, boat rides on the lake, and evening drives through the park that round out the activity programme beautifully. It is a lodge that rewards guests who choose to explore the full breadth of what the Naivasha region offers, from the volcanic drama of Hell's Gate to the hippo pods and birdlife that crowd the lake's shallow margins.",
                     "gallery": [
                         "assets/hells-gate/kongoni/kongoni-1.png",
                         "assets/hells-gate/kongoni/kongoni-2.png"
@@ -1120,15 +1759,50 @@
                             "name": "Deluxe Room",
                             "capacity": 2,
                             "basePrice": 10000,
-                            "totalRooms": 22
+                            "totalRooms": 22,
+                            "image": "assets/hells-gate/kongoni/kongoni-deluxe.png",
+                            "description": "Kongoni Lodge's Deluxe Rooms are positioned across the lakeshore grounds with private terraces that open toward the shimmering surface of Lake Naivasha and the papyrus-lined banks beyond. King-size beds, rain showers, locally crafted furnishings, and a palette drawn from the Rift Valley's earth tones make these rooms a genuinely restorative retreat after a day of cycling through Hell's Gate or hiking the gorge."
                         },
                         {
                             "id": "executive",
                             "name": "Executive Room",
                             "capacity": 4,
                             "basePrice": 18000,
-                            "totalRooms": 10
+                            "totalRooms": 10,
+                            "image": "assets/hells-gate/kongoni/kongoni-executive.png",
+                            "description": "The Executive Rooms at Kongoni are the lodge's premium offering — larger, more elevated, and fitted with a private terrace that commands an expansive view of Lake Naivasha from above the treeline. A clawfoot bathtub positioned to face the lake, a minibar, premium linens, and enhanced butler service make these rooms a meaningful step up. Ideal for couples on a special occasion or guests who want the full lodge experience after an active day in the field."
                         }
+                    ],
+                    "amenities": [
+                        "Ensuite Bathroom with Rain Shower & Bathtub",
+                        "Private Terrace with Lake Naivasha Views",
+                        "King-size Bed with Premium Linens",
+                        "Air Conditioning & Ceiling Fan",
+                        "In-room Safe",
+                        "Complimentary Wi-Fi",
+                        "Hair Dryer & Luxury Toiletries",
+                        "Bathrobe & Slippers",
+                        "Swimming Pool & Sundeck Access",
+                        "Daily Turndown Service",
+                        "Laundry & Pressing Service",
+                        "Bicycle Hire (for Hell's Gate)"
+                    ],
+                    "includes": [
+                        "Full board accommodation",
+                        "All local beverages",
+                        "Bicycle hire for Hell's Gate National Park",
+                        "Guided gorge hike",
+                        "Boat ride on Lake Naivasha",
+                        "Laundry service",
+                        "Airport transfers from Nairobi (min. 2 guests)"
+                    ],
+                    "excludes": [
+                        "Premium & imported spirits",
+                        "Spa & wellness treatments",
+                        "Rock climbing equipment hire",
+                        "Spa at Olkaria Geothermal",
+                        "Travel insurance",
+                        "Tips & gratuities"
                     ]
                 },
                 {
@@ -1138,6 +1812,8 @@
                     "rank": "Mid-Range",
                     "heroImage": "assets/hells-gate/elsamere/elsamere-hero.png",
                     "description": "Enjoy breathtaking views and exceptional service at Mara Serena Safari Lodge.",
+                    "mainDescription": "Elsamere Lodge carries one of the most storied names in Kenyan conservation history. The original homestead of Joy and George Adamson — authors of Born Free — the property sits in a mature garden on the southern shore of Lake Naivasha, shaded by ancient yellow fever acacias and inhabited by black-and-white colobus monkeys who treat the grounds as their own. The lodge has been carefully preserved and expanded since Joy Adamson's death, retaining the intimate, garden-party atmosphere of the original house while adding enough rooms and facilities to welcome a wider range of guests who come as much for the history and setting as for a base from which to explore Hell's Gate.",
+                    "mainDescription1": "Afternoon tea on the lawn at Elsamere has become something of a pilgrimage for visitors to the Naivasha region — a ritual of scones, Earl Grey, and colobus monkeys overhead that captures the particular quality of old Kenyan hospitality the lodge embodies so naturally. The rooms are comfortable and unpretentious, with a style that feels consistent with the property's character rather than imposed upon it. The Adamson conservation documentary plays each evening for guests interested in the history of the place and the remarkable story of Elsa the lioness. For those who want a meaningful, story-rich, and genuinely beautiful base in the Naivasha area, Elsamere offers something no amount of design budget can replicate — real history, lived in and lovingly kept.",
                     "gallery": [
                         "assets/hells-gate/elsamere/elsamere-1.png",
                         "assets/hells-gate/elsamere/elsamere-2.png"
@@ -1149,15 +1825,48 @@
                             "name": "Standard Room",
                             "capacity": 2,
                             "basePrice": 9000,
-                            "totalRooms": 16
+                            "totalRooms": 16,
+                            "image": "assets/hells-gate/elsamere/elsamere-standard.png",
+                            "description": "Elsamere's Standard Rooms are comfortable and full of character — each one reflecting the lodge's history as the home of Joy and George Adamson, with personal touches, vintage furniture, and a style that feels genuinely inherited rather than designed. Lake or garden views, a ceiling fan, ensuite bathroom with shower, and complimentary Wi-Fi feature throughout. The grounds are inhabited by black-and-white colobus monkeys and over 200 bird species."
                         },
                         {
                             "id": "superior",
                             "name": "Superior Room",
                             "capacity": 4,
                             "basePrice": 14000,
-                            "totalRooms": 7
+                            "totalRooms": 7,
+                            "image": "assets/hells-gate/elsamere/elsamere-superior.png",
+                            "description": "The Superior Rooms at Elsamere are the lodge's most spacious category, each offering a direct lake view from a private veranda and upgraded bathroom facilities with a rainfall shower and soaking tub. The interiors continue the lodge's distinctive aesthetic — Adamson-era photographs, African art, natural wood floors, and the unhurried atmosphere the original house embodied. A perfect room from which to watch the sun set over the lake as the colobus troops settle into the fever trees above."
                         }
+                    ],
+                    "amenities": [
+                        "Ensuite Bathroom with Shower",
+                        "Garden or Lake View Room",
+                        "Twin or Double Beds",
+                        "Ceiling Fan",
+                        "Complimentary Wi-Fi",
+                        "Toiletries",
+                        "Swimming Pool Access",
+                        "Historic Afternoon Tea on the Lawn",
+                        "Birdwatching Deck",
+                        "Daily Housekeeping",
+                        "Laundry Service"
+                    ],
+                    "includes": [
+                        "Bed, breakfast & dinner",
+                        "Afternoon tea on the lawn",
+                        "Joy Adamson documentary screening",
+                        "Guided birdwatching walk",
+                        "Use of swimming pool",
+                        "Complimentary Wi-Fi"
+                    ],
+                    "excludes": [
+                        "Lunch (available à la carte)",
+                        "All beverages except included meals",
+                        "Bicycle hire & Hell's Gate entry",
+                        "Boat trips on Lake Naivasha",
+                        "Travel insurance",
+                        "Tips & gratuities"
                     ]
                 },
                 {
@@ -1167,6 +1876,8 @@
                     "rank": "Luxury+",
                     "heroImage": "assets/maasai-mara/entumoto/entumoto-hero.png",
                     "description": "Experience the perfect blend of comfort and nature at Entumoto Safari Camp.",
+                    "mainDescription": "The Great Rift Valley Lodge commands one of the most spectacular positions available to any lodge in Kenya — perched at the very edge of the Rift Valley escarpment above Lake Naivasha, the property looks out over a drop so vast and so visually arresting that the first view from the terrace tends to stop guests completely in their tracks. The lodge and its villa suites are arranged along the escarpment rim, each one positioned to capture the full sweep of the valley floor stretching away below — the lake's silver surface, the volcanic hills of Longonot and Suswa in the middle distance, and on clear days the endless roll of the Rift toward the south.",
+                    "mainDescription1": "The lodge serves as a genuinely all-encompassing destination in its own right. In addition to game drives and activities in Hell's Gate National Park below, the property features a golf course, a spa, extensive grounds for walking, and direct access to the escarpment's extraordinary viewpoints. The villa accommodations offer the most expansive experience — large, self-contained units with fireplaces, private terraces, and the kind of space that encourages extended stays. Whether guests come for the views, the activities, the golf, or simply to sit at the edge of one of the great geological wonders of the world and let the scale of it settle in, The Great Rift Valley Lodge provides a setting and standard of service equal to the extraordinary landscape it inhabits.",
                     "gallery": [
                         "assets/maasai-mara/entumoto/entumoto-1.png",
                         "assets/maasai-mara/entumoto/entumoto-2.png"
@@ -1178,15 +1889,50 @@
                             "name": "Lodge Room",
                             "capacity": 6,
                             "basePrice": 24000,
-                            "totalRooms": 3
+                            "totalRooms": 3,
+                            "image": "assets/hells-gate/great-rift/rift-lodge.png",
+                            "description": "The Lodge Rooms at The Great Rift Valley Lodge are perched at the escarpment's edge with views across Lake Naivasha and the valley floor that rank among the finest from any hotel in Kenya. King or twin beds, air conditioning, an ensuite bathroom with a shower and tub, and a private balcony designed for nothing but looking out at the scale of the Rift Valley make these rooms an experience in their own right. Access to the golf course, spa, and swimming pool is included."
                         },
                         {
                             "id": "villa",
                             "name": "Longonot villas",
                             "capacity": 4,
                             "basePrice": 45000,
-                            "totalRooms": 5
+                            "totalRooms": 5,
+                            "image": "assets/hells-gate/great-rift/rift-villa.png",
+                            "description": "The Longonot Villas are The Great Rift Valley Lodge's most exclusive accommodation — fully self-contained units set right at the lip of the escarpment with private plunge pools, open-plan living areas, fireplaces for cool highland evenings, and panoramic terraces looking directly over the valley and across to Mount Longonot. A private butler, dedicated vehicle, and full access to the lodge's facilities make the villas the natural choice for guests who want the Rift Valley entirely to themselves."
                         }
+                    ],
+                    "amenities": [
+                        "Ensuite Bathroom with Shower & Bathtub",
+                        "Private Balcony with Rift Valley Views",
+                        "King or Twin Beds",
+                        "Air Conditioning & Ceiling Fan",
+                        "Fireplace (villas)",
+                        "In-room Safe",
+                        "Complimentary Wi-Fi",
+                        "Hair Dryer & Premium Toiletries",
+                        "Bathrobe & Slippers",
+                        "Swimming Pool & Golf Course Access",
+                        "Spa & Wellness Centre",
+                        "Daily Turndown Service",
+                        "Laundry & Pressing Service",
+                        "24-hour Room Service"
+                    ],
+                    "includes": [
+                        "Bed & breakfast accommodation",
+                        "Complimentary Wi-Fi",
+                        "Use of swimming pool & golf course",
+                        "Morning guided walk along the Rift escarpment"
+                    ],
+                    "excludes": [
+                        "Lunch & dinner (available at the restaurant)",
+                        "All beverages",
+                        "Hell's Gate & cycling activities",
+                        "Spa treatments",
+                        "Golf green fees",
+                        "Travel insurance",
+                        "Tips & gratuities"
                     ]
                 }
             ]
