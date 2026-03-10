@@ -19,7 +19,22 @@ async function fetchParksData() {
         console.error('Error fetching parks data:', error);
     }
 }
-
+//  fetch safaris data
+let safarisData = [];
+async function fetchsafarisData() {
+    if(safarisData.length > 0) return;
+    try {
+        const response = await fetch('data/safaris.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        safarisData = data.safaris;
+    } catch (error){
+        console.error('Error fetching Safaris data', error);
+    }
+}
 // create park card
 
 function createParkCards() {
@@ -356,7 +371,7 @@ function loadParkDetails(id) {
 
 }
 
-
+// Load lodge details for each lodge in lodge.html
 function loadLodgeDetails(id) {
     let lodge = null;
     parksData.forEach(park => {
@@ -465,3 +480,5 @@ function loadLodgeDetails(id) {
     document.title = `${lodge.name} | Safarii`
 
 }
+
+
