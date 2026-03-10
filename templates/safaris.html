@@ -1,0 +1,49 @@
+<!-- Safari Listing Page -->
+<div class="bg-stone-50 min-h-screen">
+
+    <!-- Hero Banner -->
+    <section class="relative h-72 md:h-96 overflow-hidden bg-stone-900">
+        <div class="absolute inset-0 bg-gradient-to-b from-stone-900/60 via-stone-900/30 to-stone-900/80 z-10"></div>
+        <img src="assets/safaris/safari-banner.png" alt="Kenya Safari"
+            class="absolute inset-0 w-full h-full object-cover opacity-60">
+        <div class="relative z-20 flex flex-col items-center justify-center h-full text-center px-4">
+            <p class="text-xs tracking-widest uppercase text-orange-400 mb-3">Curated Journeys</p>
+            <h1 class="font-serif text-5xl md:text-6xl font-bold text-white tracking-wide mb-4">Safari Packages</h1>
+            <p class="text-white/70 max-w-xl text-md font-light">
+                Every package is a fully blended tour: multiple parks, hand-picked lodges, all logistics handled.
+                You simply arrive.
+            </p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <div class="sticky top-0 z-30 bg-white border-b border-stone-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3 overflow-x-auto">
+            <span class="text-xs uppercase tracking-widest text-stone-400 whitespace-nowrap mr-2">Filter:</span>
+            <button onclick="filterSafaris('all')"
+                class="safari-filter-btn active-filter text-xs tracking-widest uppercase px-4 py-2 border whitespace-nowrap transition-colors"
+                data-filter="all">All Packages</button>
+            <button onclick="filterSafaris('Luxury')"
+                class="safari-filter-btn text-xs tracking-widest uppercase px-4 py-2 border whitespace-nowrap transition-colors"
+                data-filter="Luxury">Luxury</button>
+            <button onclick="filterSafaris('Mid-Range')"
+                class="safari-filter-btn text-xs tracking-widest uppercase px-4 py-2 border whitespace-nowrap transition-colors"
+                data-filter="Mid-Range">Mid-Range</button>
+            <button onclick="filterSafaris('Budget')"
+                class="safari-filter-btn text-xs tracking-widest uppercase px-4 py-2 border whitespace-nowrap transition-colors"
+                data-filter="Budget">Budget</button>
+            <div class="ml-auto flex items-center gap-2 whitespace-nowrap">
+                <span class="text-xs text-stone-400" id="safari-count"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Safari Cards Grid -->
+    <div class="max-w-7xl mx-auto px-4 py-12">
+        <div id="safariContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        <div id="safari-empty" class="hidden text-center py-24">
+            <p class="text-stone-400 text-sm">No packages match this filter.</p>
+        </div>
+    </div>
+
+</div>

@@ -378,72 +378,7 @@
         "Personal expenses"
       ],
       "bestTime": ["January", "February", "June", "July", "August", "September"]
-    },
-    {
-      "id": "nairobi-nakuru-mara-week",
-      "name": "Nairobi, Nakuru & Mara Week",
-      "tagline": "City park, flamingo lake, and the Great Migration — one perfect week.",
-      "heroImage": "assets/safaris/nkm-week/hero.png",
-      "thumbnailImage": "assets/safaris/nkm-week/thumb.png",
-      "price": 265000,
-      "currency": "KES",
-      "duration": "7 Nights / 8 Days",
-      "nights": 7,
-      "category": "Luxury",
-      "rating": 4.7,
-      "reviewCount": 91,
-      "description": "A beautifully paced week that builds from the accessible to the wild. One night at an extraordinary lodge on the edge of Nairobi National Park — lions outside your window and the city skyline behind them. Two nights on the flamingo and rhino shores of Lake Nakuru. Then four nights in the Maasai Mara, tracking the Big Five and watching the migration unfold across the plains.",
-      "parks": [
-        {
-          "parkId": "nairobi-national-park",
-          "parkName": "Nairobi",
-          "nights": 1,
-          "lodgeId": "the-emakoko",
-          "lodgeName": "The Emakoko"
-        },
-        {
-          "parkId": "lake-nakuru",
-          "parkName": "Lake Nakuru",
-          "nights": 2,
-          "lodgeId": "lake-nakuru-lodge",
-          "lodgeName": "Lake Nakuru Lodge"
-        },
-        {
-          "parkId": "maasai-mara",
-          "parkName": "Maasai Mara",
-          "nights": 4,
-          "lodgeId": "Entumoto-safari-camp",
-          "lodgeName": "Entumoto Safari Camp"
-        }
-      ],
-      "highlights": [
-        "Lions and rhinos against the Nairobi skyline",
-        "Flamingo spectacle on Lake Nakuru's shores",
-        "Black and white rhino tracking at Nakuru",
-        "Baboon Cliff panoramic views over the lake",
-        "Big Five game drives in the Maasai Mara",
-        "Great Migration wildebeest herds on the open plains",
-        "Maasai village visit and cultural experience"
-      ],
-      "includes": [
-        "7 nights full-board accommodation across all 3 lodges",
-        "Road transfer Nairobi–Nakuru, charter flight Nakuru–Mara–Nairobi",
-        "Private 4x4 vehicle and guide throughout",
-        "All meals and house beverages",
-        "Maasai village cultural visit",
-        "All park entry fees and conservation levies",
-        "All inter-park transfers and Nairobi airport pick-up"
-      ],
-      "excludes": [
-        "International flights",
-        "Kenya visa fees",
-        "Travel insurance",
-        "Alcohol",
-        "Hot air balloon (available as add-on: KES 45,000 per person)",
-        "Gratuities",
-        "Personal expenses"
-      ],
-      "bestTime": ["July", "August", "September", "October", "January", "February"]
     }
+   
   ]
 }

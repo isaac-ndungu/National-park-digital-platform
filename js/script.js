@@ -22,16 +22,17 @@ async function fetchParksData() {
 //  fetch safaris data
 let safarisData = [];
 async function fetchsafarisData() {
-    if(safarisData.length > 0) return;
+    if (safarisData.length > 0) return;
     try {
         const response = await fetch('data/safaris.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        
+
         const data = await response.json();
         safarisData = data.safaris;
-    } catch (error){
+        // console.log(safarisData);
+    } catch (error) {
         console.error('Error fetching Safaris data', error);
     }
 }
@@ -104,6 +105,11 @@ const routes = {
         title: "Parks | " + pageTitle,
         description: "Featured parks"
     },
+    safaris: {
+        template: "/templates/safaris.html",
+        title: "Safaris | " + pageTitle,
+        description: "Featured safari packages"
+    },
     safari: {
         template: "/templates/safari.html",
         title: "Safaris | " + pageTitle,
@@ -159,6 +165,10 @@ const locationHandler = async () => {
     }
     if (route === 'lodge' && id) {
         loadLodgeDetails(id);
+    }
+    await fetchsafarisData();
+    if (route === 'safaris') {
+        loadSafaris();
     }
 
     document.title = routeObj.title;
@@ -338,8 +348,9 @@ function loadParkDetails(id) {
 
     // Lodges
     lodges.innerHTML = '';
-    if(park.lodges) {park.lodges.forEach(lodge => {
-        lodges.innerHTML += `
+    if (park.lodges) {
+        park.lodges.forEach(lodge => {
+            lodges.innerHTML += `
         <div class=" bg-white shadow-sm overflow-hidden"> 
             <img src="${lodge.heroImage}" alt="${lodge.name}" class=" w-full h-48 object-cover mb-2">
              
@@ -358,8 +369,8 @@ function loadParkDetails(id) {
         
         </div>
         `;
-    });
-}
+        });
+    }
     document.title = `${park.name} | Safarii`;
 
     lodges.addEventListener('click', (event) => {
@@ -375,7 +386,7 @@ function loadParkDetails(id) {
 function loadLodgeDetails(id) {
     let lodge = null;
     parksData.forEach(park => {
-        if(!park.lodges) return;
+        if (!park.lodges) return;
         const exists = park.lodges.find(lodge => lodge.id === id);
         if (exists) lodge = exists;
     });
@@ -482,3 +493,105 @@ function loadLodgeDetails(id) {
 }
 
 
+// function to load safaris listing
+
+function loadSafaris() {
+    const safariContainer = document.getElementById('safariContainer');
+    if (!safariContainer) return;
+    safariContainer.innerHTML = '';
+
+    safarisData.forEach(safari => {
+        const parkNames = safari.parks.map(p => p.parkName).join(' → ');
+        const card = document.createElement('div');
+        card.classList.add('safari-card');
+
+        card.innerHTML = `
+            <div class="safari-image overflow-hidden relative">
+                <img src="${safari.thumbnailImage}" alt="${safari.name}" class="w-full h-56 object-cover">
+                <span class="absolute top-3 left-3 text-xs uppercase tracking-widest px-3 py-1 bg-stone-800/80 text-white">${safari.category}</span>
+                <span class="absolute top-3 right-3 text-xs uppercase tracking-widest px-3 py-1 bg-orange-700 text-white">${safari.duration}</span>
+            </div>
+
+            <div class="safari-content p-5 bg-white">
+                <p class="text-xs text-orange-700 tracking-widest uppercase mb-1">${parkNames}</p>
+                <h3 class="text-xl font-serif font-bold text-stone-800 mb-2">${safari.name}</h3>
+                <p class="text-sm text-stone-500 mb-5">${safari.tagline}</p>
+
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-xs text-stone-400 uppercase tracking-wider">From</p>
+                        <p class="font-serif text-xl text-orange-700">KES ${Number(safari.price).toLocaleString('en-KE')}</p>
+                        <p class="text-xs text-stone-400">per person</p>
+                    </div>
+                    <button class="view-safari-btn bg-stone-800 hover:bg-orange-700 text-white text-xs tracking-widest uppercase py-2 px-5 transition-colors" data-id="${safari.id}">
+                        View Package
+                    </button>
+                </div>
+            </div>
+        `;
+
+        safariContainer.appendChild(card);
+    });
+
+    safariContainer.addEventListener('click', (event) => {
+        if (event.target.classList.contains('view-safari-btn')) {
+            const id = event.target.dataset.id;
+            window.location.hash = `safari-detail/${id}`;
+        }
+    });
+}
+
+// filter 
+function filterSafaris(category) {
+    const safariContainer = document.getElementById('safariContainer');
+    if (!safariContainer) return;
+
+    document.querySelectorAll('.safari-filter-btn').forEach(btn => {
+        btn.classList.toggle('active-filter', btn.dataset.filter === category);
+    });
+
+    safariContainer.innerHTML = '';
+
+    const filtered = category === 'all'
+        ? safarisData
+        : safarisData.filter(s => s.category === category);
+
+    filtered.forEach(safari => {
+        const parkNames = safari.parks.map(p => p.parkName).join(' → ');
+
+        safariContainer.innerHTML += `
+            <div class="safari-card">
+                <div class="safari-image overflow-hidden relative">
+                    <img src="${safari.thumbnailImage}" alt="${safari.name}" class="w-full h-56 object-cover">
+                    <span class="absolute top-3 left-3 text-xs uppercase tracking-widest px-3 py-1 bg-stone-800/80 text-white">${safari.category}</span>
+                    <span class="absolute top-3 right-3 text-xs uppercase tracking-widest px-3 py-1 bg-orange-700 text-white">${safari.duration}</span>
+                </div>
+
+                <div class="safari-content p-5 bg-white">
+                    <p class="text-xs text-orange-700 tracking-widest uppercase mb-1">${parkNames}</p>
+                    <h3 class="text-xl font-serif font-bold text-stone-800 mb-2">${safari.name}</h3>
+                    <p class="text-sm text-stone-500 mb-5">${safari.tagline}</p>
+
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-xs text-stone-400 uppercase tracking-wider">From</p>
+                            <p class="font-serif text-xl text-orange-700">KES ${Number(safari.price).toLocaleString('en-KE')}</p>
+                            <p class="text-xs text-stone-400">per person</p>
+                        </div>
+                        <button class="view-safari-btn bg-stone-800 hover:bg-orange-700 text-white text-xs tracking-widest uppercase py-2 px-5 transition-colors" data-id="${safari.id}">
+                            View Package
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+
+    // Re-attach click listener after re-render
+    safariContainer.addEventListener('click', (event) => {
+        if (event.target.classList.contains('view-safari-btn')) {
+            const id = event.target.dataset.id;
+            window.location.hash = `safari-detail/${id}`;
+        }
+    });
+}
