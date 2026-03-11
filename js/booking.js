@@ -1,7 +1,16 @@
 import { parksData, safarisData, state } from "./data.js";
+import { getSession } from "./auth.js";
 
 // Safari booking
 export function safariBooking(id) {
+    // redirect if user is not signed in
+    const session = getSession();
+    if (!session) {
+        localStorage.setItem('safarii-redirect', 'Please sign in to make a booking.');
+        window.location.hash = 'login';
+        return;
+    }
+
     state.currentSafari = safarisData.find(safari => safari.id === id);
     if (!currentSafari) return;
 
@@ -85,8 +94,16 @@ export function submitSafariBooking() {
     document.getElementById('safari-step-2').classList.remove('hidden');
 }
 
-
+//  Lodge Booking
 export function openLodgeBooking(roomId) {
+    // redirect if user is not signed in
+    const session = getSession();
+    if (!session) {
+        localStorage.setItem('safarii-redirect', 'Please sign in to make a booking.');
+        window.location.hash = 'login';
+        return;
+    }
+
     // find the room across all parks/lodges
     state.currentRoom = null;
     parksData.forEach(park => {

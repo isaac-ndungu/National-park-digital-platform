@@ -7,6 +7,7 @@ import {
     safariBooking, closeSafariModal, changeSafariGuests, submitSafariBooking,
     openLodgeBooking, closeLodgeModal, changeLodgeGuests, changeLodgeRooms, submitLodgeBooking
 } from './booking.js';
+import { submitLogin, submitRegister, logout, getSession, updateNavAuth, checkLoginNotice } from './auth.js';
 
 window.filterSafaris = filterSafaris;
 window.submitContactForm = submitContactForm;
@@ -19,6 +20,11 @@ window.closeLodgeModal = closeLodgeModal;
 window.changeLodgeGuests = changeLodgeGuests;
 window.changeLodgeRooms = changeLodgeRooms;
 window.submitLodgeBooking = submitLodgeBooking;
+window.submitLogin = submitLogin;
+window.submitRegister = submitRegister;
+window.logout = logout;
+window.getSession = getSession;
+
 
 // DOM Elements
 const content = document.getElementById('content');
@@ -87,13 +93,17 @@ const routes = {
 const locationHandler = async () => {
     var location = window.location.hash.replace('#', '');
 
-    // handle parks
-
-
     if (location.length == 0) {
         location = '/';
     }
     const [route, id] = location.split('/');
+
+    // handle login
+    const session = getSession();
+    if (session && (route === 'login' || route === 'register')) {
+        window.location.hash = '';
+        return;
+    }
 
     // get the route object from the routes object
     const routeObj = routes[route] || routes[404];
@@ -102,6 +112,8 @@ const locationHandler = async () => {
     const html = await fetch(routeObj.template).then((response) => response.text());
 
     content.innerHTML = html;
+    window.scrollTo(0, 0);
+    
     await fetchParksData();
     createParkCards();
     createWildlifeHighlights();
@@ -119,6 +131,8 @@ const locationHandler = async () => {
     if (route === 'safari' && id) {
         loadSafariDetails(id);
     }
+    updateNavAuth();
+    if (route === 'login') checkLoginNotice();
 
     document.title = routeObj.title;
     // set the desctiprion of the document to the descriotion of the route
