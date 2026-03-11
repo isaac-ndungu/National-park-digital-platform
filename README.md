@@ -1,6 +1,6 @@
 # Safarii — Kenya Safari Discovery Platform
 
-Safarii is a frontend safari travel platform for discovering Kenya's national parks, lodges, and curated safari packages. The project is built with HTML, Tailwind CSS, and vanilla JavaScript.
+Safarii is a frontend safari travel platform for discovering Kenya's national parks, lodges, and curated safari packages. The project is built with HTML, Tailwind CSS, and vanilla JavaScript as a single-page application, with no frameworks or build tools required. All content is loaded dynamically from JSON data files at runtime, making the platform fully data-driven and easy to maintain.
 
 ## Contributor
 
@@ -41,37 +41,40 @@ Safari Packages
   2-step booking modal matching the lodge booking flow
 
 About, Contact & Static Pages
+
 - About page covering the platform's story, mission, and mandate
-Contact page with a validated enquiry form
+  Contact page with a validated enquiry form
 
 Authentication
-- Register and login pages with form validation
-Session management using localStorage
 
+- Register and login pages with form validation
+  Session management using localStorage
 
 ## Technologies Used
 
 - HTML5
 - Tailwind CSS
 - Vanilla JavaScript (ES6+)
-- Font Awesome 
-- JSON 
+- Font Awesome
+- JSON
 
 ## Usage Instructions
+
 1. Clone the repository
+
 ```bash
 git@github.com:isaac-ndungu/vision-auto.git
 ```
+
 2. Open the project folder.
 3. Open index.html using Live Server (VS Code extension) or any local static file server.
 
 ## Screenshots
+
 ![home hero screenshot](assets/screenshot1.png)
 ![national park screenshot](assets/screenshot2.png)
 ![national park screenshot](assets/screenshot3.png)
 ![national park screenshot](assets/screenshot4.png)
-
-
 
 ## Future Improvements
 
@@ -82,4 +85,4 @@ git@github.com:isaac-ndungu/vision-auto.git
 - Reviews and ratings system
 
 - Multi-language support — English and Swahili
-Expansion to include Tanzania and Uganda parks
+  Expansion to include Tanzania and Uganda parks
