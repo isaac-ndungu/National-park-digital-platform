@@ -364,13 +364,13 @@
                     "name": "The Emakoko",
                     "type": "Hotel",
                     "rank": "Luxury",
-                    "heroImage": "assets/nairobi/safari-club/emakoko-hero.png",
+                    "heroImage": "assets/nairobi/emakoko/emakoko-hero.png",
                     "description": "Choose between our luxury Cliff Suites, River Suites, or our Private House. Make yourself at home.",
                     "mainDescription": "The Emakoko is one of Kenya's most celebrated lodges, occupying a dramatic position on the cliffs above the Mbagathi River at the southern boundary of Nairobi National Park. Just forty-five minutes from the international airport, it offers an arrival experience unlike any other  stepping from the chaos of the city into a world of birdsong, leopard territory, and sweeping views across open parkland. The lodge's ten luxury suites are divided between cliff-edge rooms with panoramic vistas and river-level suites nestled in lush riparian forest, each designed with meticulous attention to comfort and natural beauty.",
                     "mainDescription1": "Owned and managed with deep personal care, The Emakoko has earned its reputation not only for the quality of its rooms and cuisine, but for the warmth of its team and the intimacy of the experience it provides. Guests can observe rhinos and lions from an outdoor deck before sitting down to an exceptional dinner prepared using fresh, locally sourced ingredients. The combination of outstanding guiding, beautiful surroundings, and effortless hospitality has made The Emakoko a defining first or last stop on any Kenyan safari itinerary  and for many, the highlight of the entire trip.",
                     "gallery": [
-                        "assets/nairobi/safari-club/emakoko-1.png",
-                        "assets/nairobi/safari-club/emakoko-2.png"
+                        "assets/nairobi/emakoko/emakoko-1.png",
+                        "assets/nairobi/emakoko/emakoko-2.png"
                     ],
                     "ecoRating": 4.0,
                     "rooms": [
@@ -380,7 +380,7 @@
                             "capacity": 2,
                             "basePrice": 150000,
                             "totalRooms": 12,
-                            "image": "assets/nairobi/safari-club/emakoko-luxury.png",
+                            "image": "assets/nairobi/emakoko/emakoko-luxury.png",
                             "description": "The Emakoko's Luxury Suites are divided between cliff-edge rooms perched above the Mbagathi gorge and river-level suites tucked into the riparian forest below. Each suite features a king-size bed, a private veranda designed for wildlife watching, a fireplace for cool evenings, and a bathroom with both a rain shower and a deep soaking tub. Natural stone, hand-selected art, and locally woven textiles make every suite feel like a considered home rather than a hotel room."
                         },
                         {
@@ -389,7 +389,7 @@
                             "capacity": 4,
                             "basePrice": 280000,
                             "totalRooms": 6,
-                            "image": "assets/nairobi/safari-club/emakoko-private-house.png",
+                            "image": "assets/nairobi/emakoko/emakoko-private-house.png",
                             "description": "The Private House at The Emakoko is an exclusive-use villa accommodating up to four guests in its own self-contained world. With a private lounge, dining terrace, plunge pool, dedicated vehicle and guide, and fully staffed service, it offers the intimacy of a private safari home within one of Kenya's most extraordinary settings. Guests booking the Private House enjoy full access to all lodge facilities while having complete seclusion whenever they choose."
                         }
                     ],
