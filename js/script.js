@@ -84,8 +84,18 @@ const routes = {
     },
     register: {
         template: "/templates/register.html",
-        title: "Resgister | " + pageTitle,
+        title: "Register | " + pageTitle,
         description: "User registration page"
+    },
+    cancel: {
+        template: "/templates/cancel.html",
+        title: "Cancellation Policy | " + pageTitle,
+        description: "Cancellation policy page"
+    },
+    terms: {
+        template: "/templates/terms.html",
+        title: "Terms of Service | " + pageTitle,
+        description: "Terms of Service page"
     },
 };
 
@@ -113,7 +123,7 @@ const locationHandler = async () => {
 
     content.innerHTML = html;
     window.scrollTo(0, 0);
-    
+
     await fetchParksData();
     createParkCards();
     createWildlifeHighlights();
@@ -132,7 +142,9 @@ const locationHandler = async () => {
         loadSafariDetails(id);
     }
     updateNavAuth();
-    if (route === 'login') checkLoginNotice();
+    if (route === 'login') {
+        checkLoginNotice();
+    }
 
     document.title = routeObj.title;
     // set the desctiprion of the document to the descriotion of the route
