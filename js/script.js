@@ -134,6 +134,16 @@ const routes = {
         title: "Lodge | " + pageTitle,
         description: "Lodge Details"
     },
+    login: {
+        template: "/templates/login.html",
+        title: "Login | " + pageTitle,
+        description: "User login page"
+    },
+    register: {
+        template: "/templates/register.html",
+        title: "Resgister | " + pageTitle,
+        description: "User registration page"
+    },
 };
 
 // location handling
