@@ -6,33 +6,49 @@
                 <div>
                     <p class="text-xs tracking-widest uppercase text-orange-700 mb-3">Get In Touch</p>
                     <h2 class="font-serif text-5xl text-slate-900 font-bold mb-4">Contact us</h2>
-                    <p class="text-md text-slate-600 leading-relaxed mb-10">Have questions or need assistance? We're here
+                    <p class="text-md text-slate-600 leading-relaxed mb-10">Have questions or need assistance? We're
+                        here
                         to help! Reach out to our team for support, inquiries, or collaboration opportunities.</p>
                 </div>
                 <form>
                     <div class="grid sm:grid-cols-2 gap-5">
                         <div>
-                            <label class='text-xs tracking-widest text-slate-900 uppercase font-bold mb-2 block'>Name</label>
+                            <label
+                                class='text-xs tracking-widest text-slate-900 uppercase font-bold mb-2 block'>Name</label>
                             <input type='text' id="contact-name" placeholder='Enter Name'
                                 class="w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm outline-0 rounded-md" />
                         </div>
                         <div>
-                            <label class='text-xs tracking-widest text-slate-900 uppercase font-bold mb-2 block'>Email</label>
+                            <label
+                                class='text-xs tracking-widest text-slate-900 uppercase font-bold mb-2 block'>Email</label>
                             <input type='email' id="contact-email" placeholder='Enter Email'
                                 class="w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm outline-0 rounded-md" />
                         </div>
                         <div>
-                            <label class='text-xs tracking-widest text-slate-900 uppercase font-bold mb-2 block'>Phone No.</label>
+                            <label class='text-xs tracking-widest text-slate-900 uppercase font-bold mb-2 block'>Phone
+                                No.</label>
                             <input type='number' id="contact-phone" placeholder='Enter Phone No.'
                                 class="w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm outline-0 rounded-md" />
                         </div>
                         <div>
-                            <label class='text-xs tracking-widest text-slate-900 uppercase font-bold mb-2 block'>Subject</label>
-                            <input type='text' id="contact-subject" placeholder='Enter Subject'
-                                class="w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm outline-0 rounded-md" />
+                            <label
+                                class='text-xs tracking-widest text-slate-900 uppercase font-bold mb-2 block'>Subject</label>
+                            <select id="contact-subject"
+                                class="w-full py-3 px-4 text-stone-800 bg-white border border-stone-300 focus:border-orange-700 text-sm outline-none cursor-pointer">
+                                <option value="" disabled selected class="text-stone-400">Select an enquiry type
+                                </option>
+                                <option value="Safari Package Enquiry">Safari Package Enquiry</option>
+                                <option value="Lodge Booking Enquiry">Lodge Booking Enquiry</option>
+                                <option value="Park Information">Park Information</option>
+                                <option value="Group & Family Booking">Group & Family Booking</option>
+                                <option value="Cancellation & Refunds">Cancellation & Refunds</option>
+                                <option value="General Enquiry">General Enquiry</option>
+                            </select>
+
                         </div>
                         <div class="col-span-full">
-                            <label class='text-xs tracking-widest text-slate-900 uppercase font-bold mb-2 block'>Message</label>
+                            <label
+                                class='text-xs tracking-widest text-slate-900 uppercase font-bold mb-2 block'>Message</label>
                             <textarea placeholder='Enter Message' id="contact-message" rows="6"
                                 class="w-full px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm pt-3 outline-0 rounded-md"></textarea>
                         </div>
@@ -47,7 +63,7 @@
                         message</button>
                 </form>
             </div>
-    
+
             <div class="relative hidden lg:block">
                 <div class="absolute inset-0 bg-gradient-to-r from-stone-50 via-transparent to-transparent z-10"></div>
                 <img src="../assets/contact-image.png" alt="contact image"
