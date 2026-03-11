@@ -13,7 +13,7 @@
       "category": "Luxury",
       "rating": 4.9,
       "reviewCount": 53,
-      "description": "Kenya's four greatest wilderness areas woven into one seamless journey. You'll wake to flamingos on Lake Nakuru, photograph elephants beneath Kilimanjaro in Amboseli, track red-dusted herds across the volcanic plains of Tsavo East, and end in the Maasai Mara for the Great Migration. This is the definitive Kenya experience — nothing left out.",
+      "description": "Kenya's four greatest wilderness areas woven into one seamless journey. You'll wake to flamingos on Lake Nakuru, photograph elephants beneath Kilimanjaro in Amboseli, track red-dusted herds across the volcanic plains of Tsavo East, and end in the Maasai Mara for the Great Migration. This is the definitive Kenya experience   nothing left out.",
       "parks": [
         {
           "parkId": "lake-nakuru",
@@ -73,7 +73,7 @@
     },
     {
       "id": "mara-samburu-contrast",
-      "name": "Mara & Samburu — North Meets South",
+      "name": "Mara & Samburu   North Meets South",
       "tagline": "The wild north and the open plains. Two Kenyas, one trip.",
       "heroImage": "assets/safaris/mara-samburu/hero.png",
       "thumbnailImage": "assets/safaris/mara-samburu/thumb.png",
@@ -84,7 +84,7 @@
       "category": "Luxury",
       "rating": 4.8,
       "reviewCount": 79,
-      "description": "Three nights in Kenya's rugged, arid north tracking the Samburu Special Five — animals found nowhere else in the country. Then four nights in the Maasai Mara, where the same guide takes you into Big Five territory and onto the migration plains. Two ecosystems that could not be more different, making every single day feel entirely new.",
+      "description": "Three nights in Kenya's rugged, arid north tracking the Samburu Special Five   animals found nowhere else in the country. Then four nights in the Maasai Mara, where the same guide takes you into Big Five territory and onto the migration plains. Two ecosystems that could not be more different, making every single day feel entirely new.",
       "parks": [
         {
           "parkId": "samburu",
@@ -102,8 +102,8 @@
         }
       ],
       "highlights": [
-        "Samburu Special Five — reticulated giraffe, Grevy's zebra, gerenuk, Beisa oryx, Somali ostrich",
-        "Ewaso Nyiro river drives — elephants, crocs, leopards at the water",
+        "Samburu Special Five   reticulated giraffe, Grevy's zebra, gerenuk, Beisa oryx, Somali ostrich",
+        "Ewaso Nyiro river drives   elephants, crocs, leopards at the water",
         "Night drives in Samburu",
         "Great Migration wildebeest river crossings",
         "Hot air balloon safari over the Mara at dawn",
@@ -143,7 +143,7 @@
       "category": "Mid-Range",
       "rating": 4.9,
       "reviewCount": 136,
-      "description": "Designed around families with children — this seven-night package moves from the urban wonder of Nairobi National Park and the David Sheldrick elephant orphanage, into the elephant paradise of Amboseli beneath Kilimanjaro, and ends in the Maasai Mara where the Big Five roam the plains. Paced for families, with child-friendly lodges and dedicated activities at every stop. Children under 12 at 50% off.",
+      "description": "Designed around families with children   this seven-night package moves from the urban wonder of Nairobi National Park and the David Sheldrick elephant orphanage, into the elephant paradise of Amboseli beneath Kilimanjaro, and ends in the Maasai Mara where the Big Five roam the plains. Paced for families, with child-friendly lodges and dedicated activities at every stop. Children under 12 at 50% off.",
       "parks": [
         {
           "parkId": "nairobi-national-park",
@@ -209,7 +209,7 @@
       "category": "Mid-Range",
       "rating": 4.7,
       "reviewCount": 68,
-      "description": "Two elephant-rich parks that could not look more different. Three nights in Amboseli — green marshlands, white mountain, vast herds drifting through morning mist. Then three nights in the raw open wilderness of Tsavo East where those same animals are coated red by volcanic soil, roaming a landscape that stretches further than the eye can follow.",
+      "description": "Two elephant-rich parks that could not look more different. Three nights in Amboseli   green marshlands, white mountain, vast herds drifting through morning mist. Then three nights in the raw open wilderness of Tsavo East where those same animals are coated red by volcanic soil, roaming a landscape that stretches further than the eye can follow.",
       "parks": [
         {
           "parkId": "amboseli-national-park",
@@ -266,7 +266,7 @@
       "category": "Budget",
       "rating": 4.6,
       "reviewCount": 114,
-      "description": "Kenya's most active safari break — and the best value in our collection. Two nights cycling and gorge-hiking around Hell's Gate and Lake Naivasha, then three nights tracking rhinos and watching flamingos at Lake Nakuru. No flights needed, no crowds, just big scenery and extraordinary wildlife at a price that works.",
+      "description": "Kenya's most active safari break   and the best value in our collection. Two nights cycling and gorge-hiking around Hell's Gate and Lake Naivasha, then three nights tracking rhinos and watching flamingos at Lake Nakuru. No flights needed, no crowds, just big scenery and extraordinary wildlife at a price that works.",
       "parks": [
         {
           "parkId": "hell's-gate",
@@ -287,7 +287,7 @@
         "Cycling safari through Hell's Gate alongside zebras and buffalo",
         "Hike through Ol Njorowa Gorge",
         "Fischer's Tower rock climb",
-        "Lake Naivasha boat safari — hippos and fish eagles",
+        "Lake Naivasha boat safari   hippos and fish eagles",
         "Geothermal spa at Olkaria hot springs",
         "Flamingo and pelican spectacle at Lake Nakuru",
         "Black and white rhino tracking"
@@ -326,7 +326,7 @@
       "category": "Luxury",
       "rating": 4.8,
       "reviewCount": 42,
-      "description": "An expedition into Kenya's least-visited territory. Five nights deep in Samburu split across two camps — tracking the Special Five along the Ewaso Nyiro River, taking night drives, and meeting the Samburu community on their own terms. The package ends with a final night at Nairobi's most extraordinary lodge, perched above the national park with the city skyline glowing behind it.",
+      "description": "An expedition into Kenya's least-visited territory. Five nights deep in Samburu split across two camps   tracking the Special Five along the Ewaso Nyiro River, taking night drives, and meeting the Samburu community on their own terms. The package ends with a final night at Nairobi's most extraordinary lodge, perched above the national park with the city skyline glowing behind it.",
       "parks": [
         {
           "parkId": "samburu",
@@ -352,8 +352,8 @@
       ],
       "highlights": [
         "All five Samburu Special species in their natural habitat",
-        "Night game drives — leopards, civets, porcupines",
-        "Ewaso Nyiro River drives — crocodiles and elephants at the water's edge",
+        "Night game drives   leopards, civets, porcupines",
+        "Ewaso Nyiro River drives   crocodiles and elephants at the water's edge",
         "Samburu community beading workshop",
         "Guided bush walk along the river",
         "Lions against the Nairobi skyline on the final evening"

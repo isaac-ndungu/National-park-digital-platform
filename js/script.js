@@ -5,6 +5,9 @@ const content = document.getElementById('content');
 
 let parksData = [];
 let currentSafari = null;
+let currentRoom = null;
+let lodgeGuestCount = 2;
+let lodgeRoomCount  = 1;
 
 async function fetchParksData() {
     if (parksData.length > 0) return;
@@ -396,6 +399,9 @@ function loadLodgeDetails(id) {
         if (exists) lodge = exists;
     });
 
+    currentRoom = lodge.rooms[0];
+    window.currentLodge = lodge;
+
     if (!lodge) return;
 
     // Elements
@@ -466,8 +472,7 @@ function loadLodgeDetails(id) {
                     <strong class="text-gray-700">${room.totalRooms}</strong>&nbsp;rooms
                 </span>
             </div>
-            <button"
-                class="self-start px-8 py-3 bg-stone-800 hover:bg-orange-600 text-white text-xs tracking-widest uppercase transition-colors">
+            <button onclick="openLodgeBooking('${room.id}')" class="self-start px-8 py-3 bg-stone-800 hover:bg-orange-600 text-white text-xs tracking-widest uppercase transition-colors">
                 Book This Room
             </button>
         </div>
@@ -596,7 +601,7 @@ function filterSafaris(category) {
     safariContainer.addEventListener('click', (event) => {
         if (event.target.classList.contains('view-safari-btn')) {
             const id = event.target.dataset.id;
-            window.location.hash = `safaris/${id}`;
+            window.location.hash = `safari/${id}`;
         }
     });
 }
@@ -723,6 +728,7 @@ function loadSafariDetails(id) {
     // Validation
     if (!name.value.trim() || !email.value.trim() || !subject.value.trim() || !message.value.trim()) {
         err.textContent = 'Please fill in all required fields.';
+        err.classList.remove('hidden');
         return;
     }
 
@@ -826,4 +832,107 @@ function submitSafariBooking() {
     document.getElementById('safari-booking-ref').textContent = ref;
     document.getElementById('safari-step-1').classList.add('hidden');
     document.getElementById('safari-step-2').classList.remove('hidden');
+}
+
+
+function openLodgeBooking(roomId) {
+    // find the room across all parks/lodges
+    currentRoom = null;
+    parksData.forEach(park => {
+        if (!park.lodges) return;
+        park.lodges.forEach(lodge => {
+            const found = lodge.rooms.find(r => r.id === roomId);
+            if (found) currentRoom = found;
+        });
+    });
+    if (!currentRoom) return;
+
+    // reset to step 1
+    document.getElementById('lodge-step-1').classList.remove('hidden');
+    document.getElementById('lodge-step-2').classList.add('hidden');
+
+    // reset fields
+    document.getElementById('lodge-firstname').value = '';
+    document.getElementById('lodge-lastname').value  = '';
+    document.getElementById('lodge-email').value     = '';
+    document.getElementById('lodge-phone').value     = '';
+    document.getElementById('lodge-checkin').value   = '';
+    document.getElementById('lodge-checkout').value  = '';
+    document.getElementById('lodge-requests').value  = '';
+    lodgeGuestCount = 2;
+    lodgeRoomCount  = 1;
+    document.getElementById('lodge-guest-count').textContent = lodgeGuestCount;
+    document.getElementById('lodge-room-count').textContent  = lodgeRoomCount;
+
+    // clear errors
+    ['err-lodge-firstname', 'err-lodge-lastname', 'err-lodge-email', 'err-lodge-date'].forEach(id => {
+        document.getElementById(id).classList.add('hidden');
+    });
+
+    document.getElementById('modal-room-name').textContent = currentRoom.name;
+
+    const modal = document.getElementById('lodge-booking-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+}
+
+function closeLodgeModal() {
+    const modal = document.getElementById('lodge-booking-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+}
+
+function changeLodgeGuests(delta) {
+    const max = currentRoom ? currentRoom.capacity : 10;
+    lodgeGuestCount = Math.max(1, Math.min(max, lodgeGuestCount + delta));
+    document.getElementById('lodge-guest-count').textContent = lodgeGuestCount;
+}
+
+function changeLodgeRooms(delta) {
+    const max = currentRoom ? currentRoom.totalRooms : 10;
+    lodgeRoomCount = Math.max(1, Math.min(max, lodgeRoomCount + delta));
+    document.getElementById('lodge-room-count').textContent = lodgeRoomCount;
+}
+
+function submitLodgeBooking() {
+    const firstname = document.getElementById('lodge-firstname');
+    const lastname  = document.getElementById('lodge-lastname');
+    const email     = document.getElementById('lodge-email');
+    const checkin   = document.getElementById('lodge-checkin');
+
+    let valid = true;
+
+    // clear errors
+    ['err-lodge-firstname', 'err-lodge-lastname', 'err-lodge-email', 'err-lodge-date'].forEach(id => {
+        document.getElementById(id).classList.add('hidden');
+    });
+
+    if (!firstname.value.trim()) {
+        document.getElementById('err-lodge-firstname').textContent = 'Required';
+        document.getElementById('err-lodge-firstname').classList.remove('hidden');
+        valid = false;
+    }
+    if (!lastname.value.trim()) {
+        document.getElementById('err-lodge-lastname').textContent = 'Required';
+        document.getElementById('err-lodge-lastname').classList.remove('hidden');
+        valid = false;
+    }
+    if (!email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+        document.getElementById('err-lodge-email').textContent = 'Valid email required';
+        document.getElementById('err-lodge-email').classList.remove('hidden');
+        valid = false;
+    }
+    if (!checkin.value) {
+        document.getElementById('err-lodge-date').textContent = 'Please select a check-in date';
+        document.getElementById('err-lodge-date').classList.remove('hidden');
+        valid = false;
+    }
+
+    if (!valid) return;
+
+    // generate ref and show success
+    const ref = 'SBR-' + Date.now().toString(36).toUpperCase().slice(-6);
+    document.getElementById('lodge-booking-ref').textContent = ref;
+    document.getElementById('lodge-step-1').classList.add('hidden');
+    document.getElementById('lodge-step-2').classList.remove('hidden');
 }

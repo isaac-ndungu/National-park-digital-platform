@@ -18,35 +18,35 @@
 
     <!-- overview -->
     <section class="max-w-7xl mx-auto px-4 py-16">
-        
+
         <div class="flex flex-col lg:flex-row gap-12">
-                <div class="lg:w-[45%] flex-shrink-0">
-                    <div class="w-full h-1 bg-orange-900  mb-8"></div>
-                    <img src="" alt="" id="overview-image" class="w-full h-full object-cover" style="aspect-ratio:4/3;">
-                </div>
+            <div class="lg:w-[45%] flex-shrink-0">
+                <div class="w-full h-1 bg-orange-900  mb-8"></div>
+                <img src="" alt="" id="overview-image" class="w-full h-full object-cover" style="aspect-ratio:4/3;">
+            </div>
 
-                <div class="lg:w-[55%] ">
-                    <p class="text-xs tracking-wider uppercase text-orange-700 mb-2">Overview</p>
-                    <h2 id="overview-title" class="font-serif text-3xl text-gray-800 mb-6 leading-snug"></h2>
-                    <p id="lodge-main-desc" class="text-gray-600 text-sm leading-relaxed mb-3"></p>
-                    <p id="lodge-main-desc1" class="text-gray-600 text-sm leading-relaxed mb-8"></p>
+            <div class="lg:w-[55%] ">
+                <p class="text-xs tracking-wider uppercase text-orange-700 mb-2">Overview</p>
+                <h2 id="overview-title" class="font-serif text-3xl text-gray-800 mb-6 leading-snug"></h2>
+                <p id="lodge-main-desc" class="text-gray-600 text-sm leading-relaxed mb-3"></p>
+                <p id="lodge-main-desc1" class="text-gray-600 text-sm leading-relaxed mb-8"></p>
 
 
-                    <div class="grid grid-cols-3 gap-4 mb-8">
-                        <div class="text-center p-3 bg-white shadow-sm">
-                            <p class="font-serif text-xl text-orange-700" id="stat-rooms">—</p>
-                            <p class="text-xs text-gray-400 uppercase tracking-wider mt-1">Total Rooms</p>
-                        </div>
-                        <div class="text-center p-3 bg-white shadow-sm">
-                            <p class="font-serif text-xl text-orange-700 leading-tight" id="stat-type">—</p>
-                            <p class="text-xs text-gray-400 uppercase tracking-wider mt-1">Type</p>
-                        </div>
-                        <div class="text-center p-3 bg-white shadow-sm">
-                            <div id="stat-eco" class="flex justify-center items-center"></div>
-                            <p class="text-xs text-gray-400 uppercase tracking-wider mt-1">Eco Rating</p>
-                        </div>
+                <div class="grid grid-cols-3 gap-4 mb-8">
+                    <div class="text-center p-3 bg-white shadow-sm">
+                        <p class="font-serif text-xl text-orange-700" id="stat-rooms">—</p>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider mt-1">Total Rooms</p>
+                    </div>
+                    <div class="text-center p-3 bg-white shadow-sm">
+                        <p class="font-serif text-xl text-orange-700 leading-tight" id="stat-type">—</p>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider mt-1">Type</p>
+                    </div>
+                    <div class="text-center p-3 bg-white shadow-sm">
+                        <div id="stat-eco" class="flex justify-center items-center"></div>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider mt-1">Eco Rating</p>
                     </div>
                 </div>
+            </div>
 
 
         </div>
@@ -54,7 +54,7 @@
 
     <!-- rooms -->
     <section id="rooms-section" class="py-16 ">
-        
+
         <div class="max-w-7xl mx-auto px-4">
             <div class="w-full h-1 bg-orange-900  mb-8"></div>
             <p class="text-xs tracking-widest uppercase text-orange-700 text-center mb-2">Accommodations</p>
@@ -74,7 +74,7 @@
             Availability is limited during peak seasons. Early reservations are strongly recommended.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <button onclick="openBookingModal(Object.values(currentRooms)[0])"
+            <button onclick="openLodgeBooking(currentLodge.rooms[0].id)"
                 class="px-8 py-3 bg-amber-700 hover:bg-orange-600 text-white tracking-widest uppercase text-sm transition-colors">
                 Book Now
             </button>
@@ -84,5 +84,113 @@
             </button>
         </div>
     </section>
+
+    <div id="lodge-booking-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-stone-900/70">
+        <div class="bg-white w-full max-w-lg mx-4 shadow-xl">
+
+            <!-- modal header -->
+            <div class="flex items-center justify-between px-6 py-4 border-b border-stone-100">
+                <div>
+                    <p class="text-xs tracking-widest uppercase text-orange-700 mb-0.5">Book Room</p>
+                    <h3 id="modal-room-name" class="font-serif text-xl text-stone-800"></h3>
+                </div>
+                <button onclick="closeLodgeModal()"
+                    class="text-stone-400 hover:text-stone-800 text-xl transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- step 1: guest details -->
+            <div id="lodge-step-1" class="px-6 py-6">
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label class="text-xs tracking-widest uppercase text-stone-500 mb-1 block">First Name</label>
+                        <input type="text" id="lodge-firstname" placeholder="Jane"
+                            class="w-full py-2.5 px-3 border border-stone-300 focus:border-orange-700 text-sm outline-none text-stone-800" />
+                        <p id="err-lodge-firstname" class="hidden text-red-500 text-xs mt-1"></p>
+                    </div>
+                    <div>
+                        <label class="text-xs tracking-widest uppercase text-stone-500 mb-1 block">Last Name</label>
+                        <input type="text" id="lodge-lastname" placeholder="Doe"
+                            class="w-full py-2.5 px-3 border border-stone-300 focus:border-orange-700 text-sm outline-none text-stone-800" />
+                        <p id="err-lodge-lastname" class="hidden text-red-500 text-xs mt-1"></p>
+                    </div>
+                    <div>
+                        <label class="text-xs tracking-widest uppercase text-stone-500 mb-1 block">Email</label>
+                        <input type="email" id="lodge-email" placeholder="jane@example.com"
+                            class="w-full py-2.5 px-3 border border-stone-300 focus:border-orange-700 text-sm outline-none text-stone-800" />
+                        <p id="err-lodge-email" class="hidden text-red-500 text-xs mt-1"></p>
+                    </div>
+                    <div>
+                        <label class="text-xs tracking-widest uppercase text-stone-500 mb-1 block">Phone</label>
+                        <input type="tel" id="lodge-phone" placeholder="+254 700 000 000"
+                            class="w-full py-2.5 px-3 border border-stone-300 focus:border-orange-700 text-sm outline-none text-stone-800" />
+                    </div>
+                    <div>
+                        <label class="text-xs tracking-widest uppercase text-stone-500 mb-1 block">Check-in</label>
+                        <input type="date" id="lodge-checkin"
+                            class="w-full py-2.5 px-3 border border-stone-300 focus:border-orange-700 text-sm outline-none text-stone-800" />
+                        <p id="err-lodge-date" class="hidden text-red-500 text-xs mt-1"></p>
+                    </div>
+                    <div>
+                        <label class="text-xs tracking-widest uppercase text-stone-500 mb-1 block">Check-out</label>
+                        <input type="date" id="lodge-checkout"
+                            class="w-full py-2.5 px-3 border border-stone-300 focus:border-orange-700 text-sm outline-none text-stone-800" />
+                    </div>
+                    <div>
+                        <label class="text-xs tracking-widest uppercase text-stone-500 mb-1 block">Guests</label>
+                        <div class="flex items-center border border-stone-300">
+                            <button onclick="changeLodgeGuests(-1)"
+                                class="px-3 py-2.5 text-stone-500 hover:text-orange-700 text-sm transition-colors">−</button>
+                            <span id="lodge-guest-count" class="flex-1 text-center text-sm text-stone-800">2</span>
+                            <button onclick="changeLodgeGuests(1)"
+                                class="px-3 py-2.5 text-stone-500 hover:text-orange-700 text-sm transition-colors">+</button>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-xs tracking-widest uppercase text-stone-500 mb-1 block">Rooms</label>
+                        <div class="flex items-center border border-stone-300">
+                            <button onclick="changeLodgeRooms(-1)"
+                                class="px-3 py-2.5 text-stone-500 hover:text-orange-700 text-sm transition-colors">−</button>
+                            <span id="lodge-room-count" class="flex-1 text-center text-sm text-stone-800">1</span>
+                            <button onclick="changeLodgeRooms(1)"
+                                class="px-3 py-2.5 text-stone-500 hover:text-orange-700 text-sm transition-colors">+</button>
+                        </div>
+                    </div>
+                    <div class="col-span-2">
+                        <label class="text-xs tracking-widest uppercase text-stone-500 mb-1 block">Special
+                            Requests</label>
+                        <textarea id="lodge-requests" rows="2"
+                            placeholder="Dietary requirements, accessibility needs..."
+                            class="w-full py-2.5 px-3 border border-stone-300 focus:border-orange-700 text-sm outline-none text-stone-800 resize-none"></textarea>
+                    </div>
+                </div>
+
+                <button onclick="submitLodgeBooking()"
+                    class="w-full py-3 bg-stone-800 hover:bg-orange-700 text-white text-xs tracking-widest uppercase transition-colors">
+                    Confirm Booking
+                </button>
+            </div>
+
+            <!-- step 2: success -->
+            <div id="lodge-step-2" class="hidden px-6 py-10 text-center">
+                <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
+                    <i class="fa-solid fa-check text-green-600 text-lg"></i>
+                </div>
+                <p class="text-xs tracking-widest uppercase text-orange-700 mb-2">Booking Received</p>
+                <h3 class="font-serif text-2xl text-stone-800 mb-2">You're all set!</h3>
+                <p class="text-gray-500 text-sm mb-4">Your booking reference is</p>
+                <p id="lodge-booking-ref" class="font-mono text-lg font-bold text-orange-700 mb-6"></p>
+                <p class="text-gray-400 text-xs max-w-xs mx-auto mb-8">We'll send a confirmation to your email shortly.
+                    Our team will be in touch within 24 hours.</p>
+                <button onclick="closeLodgeModal()"
+                    class="px-8 py-3 bg-stone-800 hover:bg-orange-700 text-white text-xs tracking-widest uppercase transition-colors">
+                    Done
+                </button>
+            </div>
+
+        </div>
+    </div>
+
 
 </div>
